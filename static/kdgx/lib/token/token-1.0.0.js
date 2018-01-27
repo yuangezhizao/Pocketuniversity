@@ -158,8 +158,6 @@ function _parseQueryString() {
     return queryObj
 }
 
-var A_HOUR_MILLISECOND = 50 * 60 * 1000
-
 var queryString = _parseQueryString()
 
 var token = queryString.token
@@ -167,6 +165,8 @@ var token = queryString.token
 
 var innerToken = window._Cookies.get('token')
   , innerTokenSec = window._Cookies.get('token-inner')
+
+window._$pocket_token = window._Cookies.get('token')
 
 if (!innerToken || !innerTokenSec || innerToken == 'undefined' || innerTokenSec == 'undefined') {
     try {
@@ -183,7 +183,7 @@ if (!innerToken || !innerTokenSec || innerToken == 'undefined' || innerTokenSec 
     XMLHttpRequest.prototype.open = (function(open) {
         return function() {
             open.apply(this, arguments)
-            this.setRequestHeader('authorization', window._Cookies.get('token'))
+            this.setRequestHeader('authorization', window._$pocket_token)
         }
     }
     )((new XMLHttpRequest()).open)
