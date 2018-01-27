@@ -1138,7 +1138,7 @@ webpackJsonp([0], [, , , , , , function(t, e, i) {
                         menuList: ["menuItem:share:timeline", "menuItem:share:appMessage"]
                     }),
                     _kd.wxShare({
-                        title: t + "给大家发“生肖卡”红包啦！先到先得。",
+                        title: (t || "") + "给大家发“生肖卡”红包啦！先到先得。",
                         desc: "早起赢好礼，新年“迎”一个崭新的自己",
                         imgUrl: "http://www.pocketuniversity.cn/static/roommate4/zodiac/images/0.png",
                         link: e
@@ -1489,8 +1489,8 @@ webpackJsonp([0], [, , , , , , function(t, e, i) {
                         if (t.loading = !1,
                         t.$emit("exchanged", t.data),
                         0 != i.errcode)
-                            return void weui.alert(i.errmsg);
-                        weui.alert("兑换成功，请到兑换列表查看")
+                            return void alert(i.errmsg);
+                        alert("兑换成功，请到兑换列表查看")
                     })
                 }
             },
@@ -2548,12 +2548,12 @@ webpackJsonp([0], [, , , , , , function(t, e, i) {
             count: 1
         }],
         prize: {
-            name: "车票红包",
+            name: "ofo手气卡",
             count: 1,
             url: ""
         },
         count: 0,
-        goods_id: 38
+        goods_id: 45
     }, {
         zodiac: [{
             name: "龙",
@@ -5461,7 +5461,13 @@ webpackJsonp([0], [, , , , , , function(t, e, i) {
                 }) : 3 == t.data.state ? this.fetchUser("hasSign") : this.fetchUser("outTime")
             },
             startPuPublicFans: function() {
-                _kd.parseQueryString().action
+                var t = this;
+                "putemplate" == _kd.parseQueryString().action && this.fetch_zodiac_card({
+                    type: "putemplate"
+                }).then(function(e) {
+                    t.visible.zodiac = !0,
+                    t.zodiacType = e.type
+                })
             },
             getMediaInfo: function() {
                 var t = _kd.parseQueryString().media_id;
