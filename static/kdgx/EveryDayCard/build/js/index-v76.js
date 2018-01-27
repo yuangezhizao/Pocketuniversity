@@ -1,6 +1,18 @@
-webpackJsonp([0], [, , , , , , , , function(t, e, i) {
+webpackJsonp([0], [, , , , , , function(t, e, i) {
     "use strict";
-    var a = i(101)
+    function a(t) {
+        i(100)
+    }
+    var n = i(34)
+      , s = i(103)
+      , o = i(0)
+      , r = a
+      , c = o(n.a, s.a, !1, r, "data-v-1acbba5d", null);
+    e.a = c.exports
+}
+, , , , function(t, e, i) {
+    "use strict";
+    var a = i(106)
       , n = i(0)
       , s = n(null, a.a, !1, null, null, null);
     e.a = s.exports
@@ -8,10 +20,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(91)
+        i(96)
     }
     var n = i(32)
-      , s = i(92)
+      , s = i(97)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, "data-v-080e481e", null);
@@ -20,33 +32,21 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(96)
+        i(101)
     }
     var n = i(35)
-      , s = i(97)
+      , s = i(102)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, "data-v-1a215b65", null);
     e.a = c.exports
 }
-, , , , , , , , , function(t, e, i) {
+, , , , , , , , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(95)
+        i(107)
     }
-    var n = i(34)
-      , s = i(98)
-      , o = i(0)
-      , r = a
-      , c = o(n.a, s.a, !1, r, "data-v-73c7f6c6", null);
-    e.a = c.exports
-}
-, function(t, e, i) {
-    "use strict";
-    function a(t) {
-        i(102)
-    }
-    var n = i(103)
+    var n = i(108)
       , s = i(0)
       , o = a
       , r = s(null, n.a, !1, o, "data-v-4c6b9c02", null);
@@ -164,7 +164,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 }
 , function(t, e, i) {
     "use strict";
-    var a = i(7)
+    var a = i(8)
       , n = i.n(a)
       , s = null;
     e.a = {
@@ -218,11 +218,15 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 }
 , function(t, e, i) {
     "use strict";
-    var a = i(12);
+    var a = i(14);
     e.a = {
         props: {
             type: {
                 required: !0
+            },
+            btnText: {
+                type: String,
+                default: "收藏此卡"
             }
         },
         data: function() {
@@ -507,9 +511,9 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
     "use strict";
     var a = i(2)
       , n = i.n(a)
-      , s = i(8)
+      , s = i(10)
       , o = i(22)
-      , r = i(10)
+      , r = i(12)
       , c = i(1);
     e.a = {
         data: function() {
@@ -597,8 +601,8 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
     "use strict";
     var a = i(2)
       , n = i.n(a)
-      , s = i(8)
-      , o = i(10)
+      , s = i(10)
+      , o = i(12)
       , r = i(1);
     e.a = {
         data: function() {
@@ -647,12 +651,12 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 }
 , function(t, e, i) {
     "use strict";
-    var a = i(109)
+    var a = i(114)
       , n = i.n(a)
       , s = i(2)
       , o = i.n(s)
-      , r = i(8)
-      , c = i(114)
+      , r = i(10)
+      , c = i(119)
       , d = i(22)
       , l = i(1);
     e.a = {
@@ -718,10 +722,8 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                         data: o
                     }),
                     t.count = a.count,
-                    console.error(t.count),
                     t.allList = n,
-                    t.lists = t.allList.splice(0, 100),
-                    t.fetchQRCode()
+                    t.lists = t.allList.splice(0, 100)
                 })
             },
             fetchQRCode: function() {
@@ -745,11 +747,11 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
     "use strict";
     var a = i(2)
       , n = i.n(a)
-      , s = (i(69),
-    i(70))
-      , o = i(68)
-      , r = i(66)
-      , c = i(65)
+      , s = (i(74),
+    i(75))
+      , o = i(73)
+      , r = i(71)
+      , c = i(70)
       , d = i(1);
     e.a = {
         data: function() {
@@ -836,23 +838,25 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 }
 , function(t, e, i) {
     "use strict";
-    var a = i(16)
+    var a = i(17)
       , n = i.n(a)
       , s = i(2)
       , o = i.n(s)
-      , r = i(12)
-      , c = i(131)
-      , d = i(137)
-      , l = i(147)
-      , u = i(155)
-      , h = (i(50),
+      , r = i(14)
+      , c = i(134)
+      , d = i(140)
+      , l = i(158)
+      , u = i(166)
+      , h = i(6)
+      , p = (i(54),
     i(45))
-      , p = i(162)
-      , m = i(1)
-      , f = i(7)
-      , v = i.n(f)
-      , g = i(53)
-      , b = i(11);
+      , m = i(173)
+      , f = i(50)
+      , v = i(1)
+      , g = i(8)
+      , b = i.n(g)
+      , A = i(57)
+      , y = i(13);
     e.a = {
         name: "IWantHome",
         data: function() {
@@ -941,15 +945,18 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                 choosing: !1,
                 multipleChoosing: !1,
                 visible: {
-                    newcard: !1,
                     prompt: !1,
                     preview: !1,
                     tip: !1,
                     oneMore: !1,
                     redbag: !1,
-                    shareSign: !1
+                    shareSign: !1,
+                    newcard: !1,
+                    newcardSystem: !1,
+                    group: !1
                 },
-                prizeData: g.a,
+                newCardType: "",
+                prizeData: A.a,
                 prizeList: [],
                 scrollTop: 0,
                 touchStartX: 0,
@@ -960,10 +967,16 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                     count: 2
                 },
                 redbagData: {},
-                exchageList: []
+                exchageList: [],
+                groupType: 1,
+                enableCount: 0,
+                kfUrlObj: {},
+                defaultQunUrl: "http://oss.pocketuniversity.cn/media/2018-01-25/5a69c05abc32c.jpeg",
+                qunUrls: ["http://oss.pocketuniversity.cn/media/2018-01-25/5a69f0a56a4a4.jpeg", "http://oss.pocketuniversity.cn/media/2018-01-25/5a69f0ab349af.jpeg", "http://oss.pocketuniversity.cn/media/2018-01-25/5a69f0ab3f452.jpeg", "http://oss.pocketuniversity.cn/media/2018-01-25/5a69f0ab3e1cc.jpeg", "http://oss.pocketuniversity.cn/media/2018-01-25/5a69f0ab3efbd.jpeg", "http://oss.pocketuniversity.cn/media/2018-01-25/5a69f0ab3ed01.jpeg", "http://oss.pocketuniversity.cn/media/2018-01-25/5a69f0ab420ee.jpeg", "http://oss.pocketuniversity.cn/media/2018-01-25/5a69f0ab3d704.jpeg", "http://oss.pocketuniversity.cn/media/2018-01-25/5a69f0ab49dfa.jpeg", "http://oss.pocketuniversity.cn/media/2018-01-26/5a6af7541586c.jpeg", "http://oss.pocketuniversity.cn/media/2018-01-26/5a6af754290ef.jpeg", "http://oss.pocketuniversity.cn/media/2018-01-26/5a6af7542654b.jpeg", "http://oss.pocketuniversity.cn/media/2018-01-26/5a6af754140b4.jpeg", "http://oss.pocketuniversity.cn/media/2018-01-26/5a6af75414224.jpeg", "http://oss.pocketuniversity.cn/media/2018-01-26/5a6af754281ba.jpeg", "http://oss.pocketuniversity.cn/media/2018-01-26/5a6af7540e9d4.jpeg", "http://oss.pocketuniversity.cn/media/2018-01-26/5a6af75417925.jpeg", "http://oss.pocketuniversity.cn/media/2018-01-26/5a6af754299a8.jpeg"],
+                oneMoreType: "oneMore"
             }
         },
-        computed: o()({}, Object(m.d)(["currentZodiac"]), Object(m.d)(["publicInfo"]), {
+        computed: o()({}, Object(v.d)(["currentZodiac"]), Object(v.d)(["publicInfo"]), {
             prizeDataCommon: function() {
                 return this.prizeData.filter(function(t) {
                     return 2 != t.inner_goods_type
@@ -985,6 +998,9 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             },
             energyShopLinkIndex: function() {
                 return "http://www.pocketuniversity.cn/index.php/Signin/shop?media_id=" + this.publicInfo.media_id
+            },
+            qunUrl: function() {
+                return this.kfUrlObj.qun_url || this.defaultQunUrl
             }
         }),
         created: function() {
@@ -993,14 +1009,38 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             this.fetchExchangeList(),
             this.fetch_user_info(),
             this.currentZodiac && (this.visible.newcard = !0),
-            this.setPUId(),
+            "getOneMore" == this.$route.query.action && (this.visible.oneMore = !0),
             this.initClipboard(),
-            setTimeout(function() {}, 1500)
+            this.setCardExchangeQRCode(),
+            this.fetchKfUrl()
+        },
+        mounted: function() {
+            var t = this;
+            if (_kd.parseQueryString().code) {
+                var e = weui.loading();
+                this.fetch_media_info({}).then(function(i) {
+                    e.hide(),
+                    t.setCustomWxShare(i.name)
+                }),
+                this.getPublicCustomCard()
+            } else
+                setTimeout(function() {
+                    t.setShare()
+                }, 1500);
+            this.setPUId();
+            var i = _kd.parseQueryString().puappuid
+              , a = _kd.parseQueryString().action;
+            i && "appsecret" == a && (this.visible.oneMore = !0,
+            this.oneMoreType = "appsecret"),
+            "miniapp" == a && (this.visible.oneMore = !0,
+            this.oneMoreType = "miniapp"),
+            "putemplate" == a && (this.visible.oneMore = !0,
+            this.oneMoreType = "appsecret")
         },
         activated: function() {
             this.fetchZodiacCards()
         },
-        methods: o()({}, Object(m.c)(["save_current_zodiac"]), Object(m.b)("user", ["fetch_user_info"]), {
+        methods: o()({}, Object(v.c)(["save_current_zodiac"]), Object(v.b)("user", ["fetch_user_info"]), Object(v.b)(["fetch_zodiac_card", "fetch_media_info"]), {
             setPUId: function() {
                 if (this.puid = Cookies.get("_puid"),
                 !this.puid)
@@ -1009,8 +1049,15 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                         Cookies.set("_puid", this.puid)
                     } catch (t) {}
             },
+            handleNew: function(t) {
+                this.enableCount = t
+            },
+            setCardExchangeQRCode: function() {
+                var t = (new Date).getTime();
+                t > new Date(2018,0,27,11,0,0).getTime() ? this.defaultQunUrl = this.qunUrls[17] : t > new Date(2018,0,27,9,0,0).getTime() ? this.defaultQunUrl = this.qunUrls[16] : t > new Date(2018,0,27,7,30,0).getTime() ? this.defaultQunUrl = this.qunUrls[15] : t > new Date(2018,0,27,6,0,0).getTime() && (this.defaultQunUrl = this.qunUrls[14])
+            },
             initClipboard: function() {
-                this.clipboard = new v.a("#copyButton"),
+                this.clipboard = new b.a("#copyButton"),
                 this.clipboard.on("success", function() {
                     weui.alert("复制成功")
                 })
@@ -1027,6 +1074,74 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                         var i = t.zodiacArr[Number(e.type) - 1];
                         t.zodiacList[i].items.push(e),
                         t.zodiacList[i].count++
+                    })
+                })
+            },
+            getPublicCustomCard: function() {
+                var t = this
+                  , e = _kd.parseQueryString().code
+                  , i = _kd.parseQueryString().media_id;
+                e && this.fetch_zodiac_card({
+                    type: "custom",
+                    media_id: i,
+                    code: e
+                }).then(function(e) {
+                    weui.toast("领取成功, 恭喜获得一张生肖卡"),
+                    t.visible.newcardSystem = !0,
+                    t.newCardType = e.type,
+                    t.fetchZodiacCards()
+                }).catch(function(t) {
+                    weui.alert(t, function() {
+                        setTimeout(function() {
+                            weui.alert("点击右上角分享“生肖卡”红包")
+                        }, 500)
+                    })
+                })
+            },
+            handleZodiacClose: function() {
+                "putemplate" == _kd.parseQueryString().action || weui.alert("点击右上角分享“生肖卡”红包"),
+                this.visible.newcardSystem = !1
+            },
+            fetchKfUrl: function() {
+                var t = this;
+                axios.get("http://www.pocketuniversity.cn/signin/store/getKf", {
+                    params: {
+                        media_id: this.publicInfo.media_id
+                    }
+                }).then(function(e) {
+                    var i = e.data;
+                    i.data.length && (t.kfUrlObj = i.data[0])
+                })
+            },
+            setCustomWxShare: function(t) {
+                var e = ""
+                  , i = _kd.parseQueryString().code;
+                "daka.fuyao.xyz" == location.hostname ? (axios.post("http://daka.fuyao.xyz/share.php", {
+                    url: location.href.split("#")[0]
+                }).then(function(t) {
+                    var e = t.data
+                      , i = e;
+                    wx.config({
+                        debug: !1,
+                        appId: i.appId,
+                        timestamp: i.timestamp,
+                        nonceStr: i.nonceStr,
+                        signature: i.signature,
+                        jsApiList: ["onMenuShareTimeline", "onMenuShareAppMessage", "hideAllNonBaseMenuItem", "showMenuItems"]
+                    })
+                }),
+                e = "http://daka.fuyao.xyz/zodiac.html?media_id=" + this.publicInfo.media_id + "&code=" + i) : (_kd.insertWxConfig("http://www.pocketuniversity.cn/index.php/home/Wechat/getsignPackage", ["onMenuShareTimeline", "onMenuShareAppMessage", "hideAllNonBaseMenuItem", "showMenuItems"]),
+                e = "http://www.pocketuniversity.cn/index.php/Signin/Activity/zodiac?media_id=" + this.publicInfo.media_id + "&code=" + i),
+                wx.ready(function() {
+                    wx.hideAllNonBaseMenuItem(),
+                    wx.showMenuItems({
+                        menuList: ["menuItem:share:timeline", "menuItem:share:appMessage"]
+                    }),
+                    _kd.wxShare({
+                        title: t + "给大家发“生肖卡”红包啦！先到先得。",
+                        desc: "早起赢好礼，新年“迎”一个崭新的自己",
+                        imgUrl: "http://www.pocketuniversity.cn/static/roommate4/zodiac/images/0.png",
+                        link: e
                     })
                 })
             },
@@ -1059,7 +1174,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                     e[t.type] = 1
                 });
                 var i = weui.loading("奖品兑换中...");
-                axios.post(b.a, {
+                axios.post(y.a, {
                     goods_id: 33,
                     cards: e
                 }).then(function() {
@@ -1087,30 +1202,13 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                 axios.get("http://www.pocketuniversity.cn/index.php/Signin/shop/getCarouselList").then(function(e) {
                     var i = e.data;
                     t.exchageList = i.errmsg.map(function(e) {
-                        var i = n()({}, e);
-                        return i.name = t.prizeList.filter(function(t) {
+                        var i = n()({}, e)
+                          , a = t.prizeList.filter(function(t) {
                             return t.goods_id == e.goods_id
-                        })[0].goods_name,
+                        })[0];
+                        return i.name = a ? a.goods_name : "",
                         i
-                    });
-                    var a = [{
-                        name: "开心红包",
-                        headimgurl: "http://oss.pocketuniversity.cn/imgs/2017-11-10/e7afd59798ae8e8698c846c9214e29c6.png",
-                        nickname: "默林ゞ"
-                    }, {
-                        name: "开心红包",
-                        headimgurl: "http://oss.pocketuniversity.cn/imgs/2017-11-10/4eda58c30073437dc07e9fec4e48a3c3.png",
-                        nickname: "二狗的爱"
-                    }, {
-                        name: "开心红包",
-                        headimgurl: "http://oss.pocketuniversity.cn/imgs/2017-11-10/e7afd59798ae8e8698c846c9214e29c6.png",
-                        nickname: "Amadeus"
-                    }, {
-                        name: "尊享红包",
-                        headimgurl: "http://oss.pocketuniversity.cn/imgs/2017-11-10/fd67c2fc42537058f9c4aaabbada0f6c.png",
-                        nickname: "陈先生"
-                    }];
-                    t.exchageList = t.exchageList.length ? t.exchageList.concat(a) : []
+                    })
                 })
             },
             exchangeSuccess: function(t) {
@@ -1134,18 +1232,36 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                     currentZodiac: null
                 })
             },
-            handleScroll: function(t) {
-                var e = t.target.scrollTop;
-                e > this.scrollTop ? this.moveDirect = "down" : this.moveDirect = "up",
-                e < 140 && (this.moveDirect = "down"),
-                this.scrollTop = e
+            sendSystemCompensation: function() {
+                var t = this;
+                weui.alert("今天早些时候，系统出现打卡异常。出现的小故障，已经恢复正常。为表达我们诚挚的歉意，我们为您送上“生肖卡一张”，并加赠1500个开心红包，150个尊享银包作为补偿。", {
+                    title: "系统公告",
+                    buttons: [{
+                        label: "点此领取",
+                        type: "primary",
+                        onClick: function() {
+                            t.fetch_zodiac_card({
+                                type: "system"
+                            }).then(function(e) {
+                                console.log(e),
+                                console.log(e.type),
+                                t.newCardType = e.type,
+                                t.visible.newcardSystem = !0,
+                                t.fetchZodiacCards()
+                            })
+                        }
+                    }]
+                })
             },
-            handleTouchStart: function(t) {
-                this.touchStartX = t.changedTouches[0].pageX
-            },
-            handleTouchEnd: function(t) {
-                var e = t.changedTouches[0].pageX;
-                this.touchStartX < e ? this.moveDirect = "down" : this.moveDirect = "up"
+            checkIsbucang: function() {
+                var t = this;
+                axios.get("http://www.pocketuniversity.cn/signin/sxcard/isbucang", {
+                    params: {
+                        get_type: 10
+                    }
+                }).then(function(e) {
+                    0 == e.data.code && t.sendSystemCompensation()
+                })
             },
             handleBack: function() {
                 this.$router.back()
@@ -1204,8 +1320,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             OneMoreWrapper: d.a,
             ZodiacCards: l.a,
             RedBag: u.a,
-            QRCodeSecret: h.a,
-            Marquee: p.a
+            QRCodeSecret: p.a,
+            Marquee: m.a,
+            CnZodiacPopup: h.a,
+            Modal: f.a
         }
     }
 }
@@ -1213,8 +1331,8 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
     "use strict";
     var a = i(2)
       , n = i.n(a)
-      , s = i(12)
-      , o = i(11)
+      , s = i(14)
+      , o = i(13)
       , r = i(1);
     e.a = {
         props: {
@@ -1318,12 +1436,15 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                         }
                 }
                 return Number(this.data.count) <= 0 ? {
-                    message: "来晚了一步, 这个奖品已经被抢光啦~",
+                    message: "来晚了一步, 这个奖品已经被抢光啦~（每日5点刷新）",
                     type: 1
                 } : null
             },
             handleBeforeExchange: function() {
                 var t = this;
+                if (this.exchangeStatus = this.checkCanIExchange(),
+                this.exchangeStatus)
+                    return void weui.alert(this.exchangeStatus.message);
                 weui.confirm("确认兑换该奖品，兑换后将扣除对应的生肖卡片数量", {
                     title: "请确认",
                     buttons: [{
@@ -1341,17 +1462,12 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             },
             handleExchange: function() {
                 var t = this;
-                if (this.exchangeStatus = this.checkCanIExchange(),
-                this.exchangeStatus)
-                    return void setTimeout(function() {
-                        weui.alert(t.exchangeStatus.message)
-                    }, 500);
                 if (!this.exchanging) {
                     if (2 == this.data.inner_goods_type)
                         return void this.$emit("choose", {
                             count: this.data.required_cards_count,
                             required: [],
-                            tip: "请选择三张不同的生肖卡",
+                            tip: "请选择" + this.data.required_cards_count + "张不同的生肖卡",
                             callback: function(e) {
                                 t.exchange(e)
                             }
@@ -1384,6 +1500,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                 t.cards.forEach(function(t) {
                     i[t] = 1
                 }),
+                this.loading || (this.loading = !0,
                 axios.post(o.a, {
                     goods_id: this.data.goods_id,
                     cards: i
@@ -1402,7 +1519,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                     e.visible.qrcode = !0,
                     e.$emit("exchanged", e.data)) : (e.$emit("exchanged", e.data),
                     alert("兑换成功，请到兑换列表查看"))
-                }).catch(function() {})
+                }).catch(function() {}))
             },
             previewImage: function(t) {
                 var e = weui.gallery(t, {
@@ -1420,15 +1537,39 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 }
 , function(t, e, i) {
     "use strict";
-    var a = i(138)
-      , n = i(67)
+    var a = i(141)
+      , n = i(72)
       , s = i(45)
-      , o = i(143);
+      , o = i(146)
+      , r = i(149)
+      , c = i(152);
     e.a = {
+        props: {
+            componentType: {
+                type: String,
+                default: "oneMore"
+            }
+        },
         data: function() {
             return {
-                type: "oneMore"
+                type: "oneMore",
+                secret: "",
+                miniAppTitle: "2017我们的最佳记忆",
+                miniAppTip: "记录给你印象最深的人或事,赢开年大奖",
+                miniAppOperation: "长按进入小程序，领生肖卡"
             }
+        },
+        created: function() {
+            this.type = this.componentType;
+            var t = _kd.parseQueryString()
+              , e = t.puappuid
+              , i = (t.media_id,
+            t.action);
+            e && "miniapp" == i && (this.type = "miniapp",
+            this.miniAppTitle = "再来一张",
+            this.miniAppTip = '长按识别小程序码再领一张"生肖卡"',
+            this.miniAppOperation = ""),
+            this.randomSecret()
         },
         methods: {
             handleChoose: function(t) {
@@ -1442,41 +1583,129 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             },
             handleGetOneMoreSuccess: function() {
                 this.$emit("success")
+            },
+            randomSecret: function() {
+                var t = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+                  , e = t.sort(function(t, e) {
+                    return Math.random() > .5 ? -1 : 1
+                });
+                this.secret = e.splice(0, 6).join("")
+            },
+            handleNew: function(t) {
+                this.$emit("new", t)
             }
         },
         components: {
             OneMore: a.a,
             AYearCard: n.a,
             QRCodeSecret: s.a,
-            InviteCode: o.a
+            InviteCode: o.a,
+            MiniAppQrcode: r.a,
+            GetPublicFans: c.a
         }
     }
 }
 , function(t, e, i) {
     "use strict";
+    var a = i(2)
+      , n = i.n(a)
+      , s = i(1)
+      , o = i(6);
     e.a = {
         data: function() {
             return {
-                isWeixin: _kd.checkIsWeixin()
+                enable: {
+                    signin: !1,
+                    aYearCard: !1,
+                    secret: !1,
+                    invite: !1,
+                    miniapp: !1,
+                    puappminiapp: !1
+                },
+                visible: {
+                    newCard: !1
+                },
+                newCardType: 0,
+                enableCounts: 0,
+                isSignTime: !1
             }
         },
-        methods: {
+        computed: n()({}, Object(s.d)(["userInfo"])),
+        created: function() {
+            this.fetch_type(),
+            (new Date).getHours() >= 5 && (this.isSignTime = !0)
+        },
+        methods: n()({}, Object(s.b)("zodiac", ["is_zodiac_reach_limit"]), Object(s.b)(["fetch_zodiac_card"]), {
             close: function() {
                 this.$emit("close")
             },
+            handleChooseSecret: function() {
+                _kd.checkIsWeixin() ? this.chooseOne("secret") : this.chooseOne("appsecret")
+            },
             chooseOne: function(t) {
                 this.$emit("choose", t)
+            },
+            handleGetSigninZodiacCard: function() {
+                if (!this.enable.signin)
+                    return void weui.alert("本日已领早起生肖卡, 不可重复领取");
+                this.getSigninZodiacCard()
+            },
+            getSigninZodiacCard: function() {
+                var t = this;
+                this.fetch_zodiac_card({
+                    type: "normal"
+                }).then(function(e) {
+                    t.visible.newCard = !0,
+                    t.newCardType = e.type,
+                    weui.toast("恭喜领取早起生肖卡成功", {
+                        duration: 1e3
+                    })
+                })
+            },
+            fetch_type: function() {
+                var t = this;
+                this.is_zodiac_reach_limit({
+                    get_type: 1
+                }).then(function() {
+                    t.enable.signin = !0,
+                    t.enableCounts++,
+                    t.$emit("new", t.enableCounts)
+                }).catch(function(t) {}),
+                this.is_zodiac_reach_limit({
+                    get_type: 3
+                }).then(function() {
+                    t.enable.miniapp = !0,
+                    t.enableCounts++,
+                    t.$emit("new", t.enableCounts)
+                }).catch(function(t) {}),
+                this.is_zodiac_reach_limit({
+                    get_type: 4
+                }).then(function() {
+                    t.enable.secret = !0,
+                    t.enableCounts++,
+                    t.$emit("new", t.enableCounts)
+                }).catch(function(t) {}),
+                this.is_zodiac_reach_limit({
+                    get_type: 13
+                }).then(function() {
+                    t.enable.puappminiapp = !0,
+                    t.enableCounts++,
+                    t.$emit("new", t.enableCounts)
+                }).catch(function(t) {})
             }
+        }),
+        components: {
+            CnZodiacPopup: o.a
         }
     }
 }
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(141)
+        i(144)
     }
     var n = i(46)
-      , s = i(142)
+      , s = i(145)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, "data-v-420574c4", null);
@@ -1486,7 +1715,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
     "use strict";
     var a = i(2)
       , n = i.n(a)
-      , s = i(7)
+      , s = i(8)
       , o = i.n(s)
       , r = i(1);
     e.a = {
@@ -1552,9 +1781,9 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
     var a = i(2)
       , n = i.n(a)
       , s = i(1)
-      , o = i(7)
+      , o = i(8)
       , r = i.n(o)
-      , c = i(21);
+      , c = i(6);
     e.a = {
         data: function() {
             return {
@@ -1645,12 +1874,263 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 }
 , function(t, e, i) {
     "use strict";
+    var a = i(9)
+      , n = i.n(a)
+      , s = i(2)
+      , o = i.n(s)
+      , r = i(8)
+      , c = (i.n(r),
+    i(6))
+      , d = i(1);
+    e.a = {
+        props: {
+            title: {
+                type: String,
+                default: "2017我们的最佳记忆"
+            },
+            tip: {
+                type: String,
+                default: "记录给你印象最深的人或事,赢开年大奖"
+            },
+            operation: {
+                type: String,
+                default: "长按进入小程序，领生肖卡"
+            }
+        },
+        data: function() {
+            return {
+                lockId: 100,
+                hasScan: !1,
+                btnText: "刷新领卡",
+                visible: {
+                    newcard: !1
+                },
+                newCardType: 0,
+                reachLimit: !1,
+                isFromApp: !1
+            }
+        },
+        computed: o()({}, Object(d.d)(["publicInfo", "userInfo"]), {
+            qrcodeUrl: function() {
+                return "http://www.pocketuniversity.cn/static/EveryDay/miniappqrcode/" + this.lockId + ".jpg"
+            }
+        }),
+        created: function() {
+            var t = this
+              , e = _kd.parseQueryString().puappuid
+              , i = _kd.parseQueryString().action;
+            e && "miniapp" == i ? (this.isFromApp = !0,
+            this.fetchLockIdFromPuapp()) : "miniapp" == i ? (this.isFromApp = !0,
+            this.fetchLockIdFromPublic()) : this.fetchLockId(),
+            this.is_zodiac_reach_limit({
+                get_type: 3
+            }).then(function() {
+                t.reachLimit = !1
+            }).catch(function() {
+                t.reachLimit = !0
+            })
+        },
+        methods: o()({}, Object(d.b)(["fetch_media_info", "fetch_zodiac_card"]), Object(d.b)("zodiac", ["is_zodiac_reach_limit"]), {
+            fetchLockId: function() {
+                var t = this;
+                return new n.a(function(e, i) {
+                    axios.get("http://www.pocketuniversity.cn/signin/sxcard/getLockQrcode").then(function(i) {
+                        var a = i.data;
+                        t.lockId = a.data.lock,
+                        t.reachLimit = !1,
+                        e()
+                    })
+                }
+                )
+            },
+            fetchLockIdFromPuapp: function() {
+                var t = this;
+                return new n.a(function(e, i) {
+                    axios.get("http://www.pocketuniversity.cn/signin/sxcard/getLock13Qrcode", {
+                        params: {
+                            uid: _kd.parseQueryString().puappuid
+                        }
+                    }).then(function(i) {
+                        var a = i.data;
+                        t.lockId = a.data.lock,
+                        t.reachLimit = !1,
+                        e()
+                    })
+                }
+                )
+            },
+            fetchLockIdFromPublic: function() {
+                var t = this;
+                return new n.a(function(e, i) {
+                    axios.get("http://www.pocketuniversity.cn/signin/sxcard/getLock23Qrcode", {
+                        params: {
+                            uid: _kd.parseQueryString().puappuid
+                        }
+                    }).then(function(i) {
+                        var a = i.data;
+                        t.lockId = a.data.lock,
+                        t.reachLimit = !1,
+                        e()
+                    })
+                }
+                )
+            },
+            getScanStatus: function() {
+                var t = this;
+                axios.get("http://www.pocketuniversity.cn/signin/sxcard/flushLock", {
+                    params: {
+                        lock: this.lockId,
+                        uid: _kd.parseQueryString().puappuid || this.userInfo.uid
+                    }
+                }).then(function(e) {
+                    var i = e.data;
+                    0 == i.code ? t.hasScan = !0 : weui.alert(i.msg)
+                })
+            },
+            handleGetCard: function() {
+                _kd.parseQueryString().puappuid ? this.fetMiniCardFromApp() : this.getMiniCard()
+            },
+            getMiniCard: function() {
+                var t = this;
+                this.fetch_zodiac_card({
+                    type: "miniapp"
+                }).then(function(e) {
+                    t.visible.newcard = !0,
+                    t.newCardType = e.type,
+                    t.reachLimit = !0,
+                    t.$emit("success")
+                }).catch(function(t) {
+                    weui.alert(t)
+                })
+            },
+            fetMiniCardFromApp: function() {
+                var t = _kd.parseQueryString().puappuid;
+                axios.get("http://www.pocketuniversity.cn/signin/sxcard/sendCardOfCode", {
+                    params: {
+                        uid: t,
+                        media_id: "gh_faf56d98f3b7",
+                        type: 3
+                    }
+                }).then(function(t) {
+                    var e = t.data;
+                    if (0 != e.code)
+                        return weui.alert(e.msg, function() {
+                            WeixinJSBridge.call("closeWindow")
+                        });
+                    weui.alert("领取成功, 请到PU app中查询", function() {
+                        WeixinJSBridge.call("closeWindow")
+                    })
+                }).catch(function(t) {
+                    weui.alert(t, function() {
+                        WeixinJSBridge.call("closeWindow")
+                    })
+                })
+            },
+            close: function() {
+                _kd.parseQueryString().puappuid || this.$emit("close")
+            }
+        }),
+        components: {
+            CnZodiacPopup: c.a
+        }
+    }
+}
+, function(t, e, i) {
+    "use strict";
     var a = i(2)
       , n = i.n(a)
-      , s = i(12)
-      , o = i(149)
-      , r = i(50)
-      , c = i(21)
+      , s = i(1)
+      , o = i(50);
+    e.a = {
+        props: {
+            title: {
+                default: "再来一张"
+            }
+        },
+        data: function() {
+            return {
+                paramsQRCodes: ["http://open.weixin.qq.com/qr/code?username=gh_faf56d98f3b7", "http://open.weixin.qq.com/qr/code?username=gh_b598cb7474d8", "http://open.weixin.qq.com/qr/code?username=gh_bcc64f2e1a74"],
+                puappuid: "",
+                action: "",
+                isCover: !1,
+                tip: ""
+            }
+        },
+        computed: n()({}, Object(s.d)("user", ["userInfo"]), {
+            PuQRCodeUrl: function() {
+                return "http://www.pocketuniversity.cn/signin/QrShare/getPu11Code?uid=" + this.userInfo.uid
+            },
+            FpdxQRCodeUrlFromApp: function() {
+                return "http://www.pocketuniversity.cn/signin/QrShare/getFpdx12Cocde?uid=" + this.puappuid
+            },
+            FpdxQRCodeUrlFromMedia: function() {
+                return "http://www.pocketuniversity.cn/signin/QrShare/getFpdx22Cocde?uid=" + this.userInfo.uid
+            },
+            QRCodeUrl: function() {
+                return this.action || this.puappuid ? this.puappuid && "appsecret" == this.action ? (this.tip = '长按识别二维码, 直接领取"生肖卡"',
+                this.FpdxQRCodeUrlFromApp) : this.FpdxQRCodeUrlFromMedia : (this.tip = '截屏保存当前界面, 在微信识别二维码, 领取额外"生肖卡"',
+                this.PuQRCodeUrl)
+            }
+        }),
+        created: function() {
+            this.action = _kd.parseQueryString().action,
+            this.puappuid = _kd.parseQueryString().puappuid,
+            this.isCover = this._$IS_WEIXIN
+        },
+        methods: {
+            close: function() {
+                this.puappuid || this.$emit("close")
+            }
+        },
+        components: {
+            Modal: o.a
+        }
+    }
+}
+, function(t, e, i) {
+    "use strict";
+    function a(t) {
+        i(154)
+    }
+    var n = i(51)
+      , s = i(155)
+      , o = i(0)
+      , r = a
+      , c = o(n.a, s.a, !1, r, "data-v-29085338", null);
+    e.a = c.exports
+}
+, function(t, e, i) {
+    "use strict";
+    e.a = {
+        props: {
+            backgroundColor: {
+                type: String,
+                default: "white"
+            },
+            cover: {
+                type: Boolean,
+                default: !1
+            }
+        },
+        data: function() {
+            return {}
+        },
+        created: function() {},
+        methods: {
+            close: function() {
+                this.$emit("close")
+            }
+        }
+    }
+}
+, function(t, e, i) {
+    "use strict";
+    var a = i(2)
+      , n = i.n(a)
+      , s = i(14)
+      , o = i(160)
+      , r = i(54)
+      , c = i(6)
       , d = i(1);
     e.a = {
         props: {
@@ -1765,14 +2245,35 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                   , i = t.items[0]
                   , a = i.uuid
                   , n = i.type;
-                this.visible.share = !0,
-                _kd.insertWxConfig("http://www.pocketuniversity.cn/index.php/home/Wechat/getsignPackage", ["onMenuShareTimeline", "onMenuShareAppMessage", "hideAllNonBaseMenuItem", "showMenuItems"]),
+                this.visible.share = !0;
+                var s = ""
+                  , o = ""
+                  , r = weui.loading();
+                "daka.fuyao.xyz" == location.hostname ? (axios.post("http://daka.fuyao.xyz/share.php", {
+                    url: location.href
+                }).then(function(t) {
+                    var e = t.data
+                      , i = e;
+                    wx.config({
+                        debug: !1,
+                        appId: i.appId,
+                        timestamp: i.timestamp,
+                        nonceStr: i.nonceStr,
+                        signature: i.signature,
+                        jsApiList: ["onMenuShareTimeline", "onMenuShareAppMessage", "hideAllNonBaseMenuItem", "showMenuItems"]
+                    })
+                }),
+                s = "http://daka.fuyao.xyz/zodiac.html?media_id=" + this.publicInfo.media_id + "&uuid=" + a + "&uuid_type=" + n,
+                o = "http://www.pocketuniversity.cn/static/roommate4/zodiac/images/" + n + ".png") : (_kd.insertWxConfig("http://www.pocketuniversity.cn/index.php/home/Wechat/getsignPackage", ["onMenuShareTimeline", "onMenuShareAppMessage", "hideAllNonBaseMenuItem", "showMenuItems"]),
+                s = "http://www.pocketuniversity.cn/index.php/Signin/Activity/zodiac?media_id=" + this.publicInfo.media_id + "&uuid=" + a + "&uuid_type=" + n,
+                o = "http://www.pocketuniversity.cn/static/roommate4/zodiac/images/" + n + ".png"),
                 wx.ready(function() {
+                    r.hide(),
                     _kd.wxShare({
                         title: e.userInfo.nickname + "有一张" + t.name + "卡要送给你，戳此领取",
-                        desc: "集生肖卡，抢千元现金红包、超多新年好礼！",
-                        imgUrl: "http://oss.pocketuniversity.cn/media/2018-01-18/5a608a069655b.png",
-                        link: "http://www.pocketuniversity.cn/index.php/Signin/zodiac?media_id=" + e.publicInfo.media_id + "&uuid=" + a + "&uuid_type=" + n,
+                        desc: "领生肖卡，抢千元现金红包、超多新年好礼！",
+                        imgUrl: o,
+                        link: s,
                         success: function() {
                             e.send_zodiac_card({
                                 uuid: a
@@ -1801,7 +2302,8 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                     i.newCardType = e,
                     weui.toast("恭喜, 成功领取一张生肖卡", {
                         duration: 1e3
-                    })
+                    }),
+                    i.$emit("sended")
                 })
             },
             handleSendCard: function(t) {
@@ -1866,10 +2368,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(152)
+        i(163)
     }
-    var n = i(51)
-      , s = i(153)
+    var n = i(55)
+      , s = i(164)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, "data-v-1c6c4b11", null);
@@ -1916,7 +2418,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
     var a = i(2)
       , n = i.n(a)
       , s = i(1)
-      , o = i(53);
+      , o = i(57);
     e.a = {
         props: {
             data: {
@@ -1947,7 +2449,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                 }]
             }
         },
-        computed: n()({}, Object(s.d)(["userInfo", "publicInfo"]), {
+        computed: n()({}, Object(s.d)(["userInfo", "publicInfo"]), Object(s.d)("user", ["userInfo"]), {
             currentRedBag: function() {
                 var t = this;
                 return this.redBags.filter(function(e) {
@@ -1961,7 +2463,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                 return "http://www.pocketuniversity.cn/index.php/Signin/shop/wallet?media_id=" + this.publicInfo.media_id
             },
             energyShopLink: function() {
-                return "http://www.pocketuniversity.cn/index.php/Signin/shop?media_id=" + this.publicInfo.media_id
+                return "http://www.pocketuniversity.cn/index.php/Signin/shop?media_id=" + this.publicInfo.media_id + "#/list"
             }
         }),
         methods: {
@@ -2209,13 +2711,13 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         }
     }
 }
-, , , , , , , , , , , function(t, e, i) {
+, , , , , , , , , , , , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(88)
+        i(93)
     }
     var n = i(31)
-      , s = i(89)
+      , s = i(94)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, null, null);
@@ -2224,10 +2726,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(93)
+        i(98)
     }
     var n = i(33)
-      , s = i(94)
+      , s = i(99)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, "data-v-e1fd2ff4", null);
@@ -2236,10 +2738,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(99)
+        i(104)
     }
     var n = i(36)
-      , s = i(100)
+      , s = i(105)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, "data-v-d868012c", null);
@@ -2248,10 +2750,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(104)
+        i(109)
     }
     var n = i(37)
-      , s = i(105)
+      , s = i(110)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, null, null);
@@ -2260,10 +2762,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(106)
+        i(111)
     }
     var n = i(38)
-      , s = i(107)
+      , s = i(112)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, null, null);
@@ -2272,10 +2774,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(108)
+        i(113)
     }
     var n = i(39)
-      , s = i(116)
+      , s = i(121)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, null, null);
@@ -2310,7 +2812,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         }, [a("img", {
             staticClass: "loading",
             attrs: {
-                src: i(90)
+                src: i(95)
             }
         })])])
     }
@@ -2459,7 +2961,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         return i("div", {
             staticClass: "CnZodiacPopup"
         }, [i("div", {
-            staticClass: "modal__mask"
+            staticClass: "modal__mask",
+            staticStyle: {
+                "z-index": "1005"
+            }
         }), t._v(" "), i("div", {
             staticClass: "zodiac__btn_close",
             on: {
@@ -2482,7 +2987,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             on: {
                 click: t.close
             }
-        }, [t._v("\n                收藏此卡\n            ")])])])])
+        }, [t._v("\n                " + t._s(t.btnText) + "\n            ")])])])])
     }
       , n = []
       , s = {
@@ -2804,7 +3309,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     e.__esModule = !0;
-    var a = i(110)
+    var a = i(115)
       , n = function(t) {
         return t && t.__esModule ? t : {
             default: t
@@ -2822,26 +3327,26 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 }
 , function(t, e, i) {
     t.exports = {
-        default: i(111),
+        default: i(116),
         __esModule: !0
     }
 }
 , function(t, e, i) {
-    i(62),
-    i(112),
-    t.exports = i(6).Array.from
+    i(67),
+    i(117),
+    t.exports = i(7).Array.from
 }
 , function(t, e, i) {
     "use strict";
     var a = i(23)
-      , n = i(13)
-      , s = i(61)
-      , o = i(83)
-      , r = i(84)
-      , c = i(58)
-      , d = i(113)
-      , l = i(85);
-    n(n.S + n.F * !i(87)(function(t) {
+      , n = i(15)
+      , s = i(65)
+      , o = i(88)
+      , r = i(89)
+      , c = i(62)
+      , d = i(118)
+      , l = i(90);
+    n(n.S + n.F * !i(92)(function(t) {
         Array.from(t)
     }), "Array", {
         from: function(t) {
@@ -2862,7 +3367,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 }
 , function(t, e, i) {
     "use strict";
-    var a = i(9)
+    var a = i(11)
       , n = i(24);
     t.exports = function(t, e, i) {
         e in t ? a.f(t, e, n(0, i)) : t[e] = i
@@ -2870,7 +3375,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 }
 , function(t, e, i) {
     "use strict";
-    var a = i(115)
+    var a = i(120)
       , n = i(0)
       , s = n(null, a.a, !1, null, null, null);
     e.a = s.exports
@@ -2959,12 +3464,12 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             }, [n > 2 ? a("img", {
                 staticClass: "icon cup-school",
                 attrs: {
-                    src: i(117)
+                    src: i(122)
                 }
             }) : a("img", {
                 staticClass: "icon cup-school",
                 attrs: {
-                    src: i(118)
+                    src: i(123)
                 }
             }), t._v(" "), a("span", {
                 staticClass: "name"
@@ -2976,28 +3481,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                 }
             }), t._v("次")]), t._v(" "), a("span", {
                 staticClass: "energy"
-            }, [a("i", [t._v(t._s(t._f("myEnergy")(e.score)))])]), t._v(" "), e.yesterday_rank && e.yesterday_rank - (n + 1) != 0 ? a("span", {
-                class: ["rank", {
-                    rankUp: e.yesterday_rank - (n + 1) > 0,
-                    rankDown: e.yesterday_rank - (n + 1) < 0
-                }]
-            }, [e.yesterday_rank - (n + 1) > 0 ? a("img", {
-                staticClass: "icon-shang",
-                attrs: {
-                    src: i(119),
-                    alt: ""
-                }
-            }) : a("img", {
-                staticClass: "icon-shang",
-                attrs: {
-                    src: i(120),
-                    alt: ""
-                }
-            }), t._v(" "), a("span", {
-                staticClass: "rank-num"
-            }, [t._v(t._s(Math.abs(e.yesterday_rank - (n + 1))))])]) : a("span", {
-                staticClass: "rank rankPeace"
-            }, [t._v("\n                    -\n                ")])])])
+            }, [a("i", [t._v(t._s(t._f("myEnergy")(e.score)))])])])])
         }), t._v(" "), a("div", {
             directives: [{
                 name: "show",
@@ -3027,20 +3511,14 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e) {
     t.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFEAAABNCAYAAADem4jWAAAACXBIWXMAABYlAAAWJQFJUiTwAAAPoUlEQVR42tVcW09b2RX+MAZCCNh4BGXSSHaE1FYoI4zUSB2JDk4f+oqxfwCeXzDOu6UYjd/j/AKc9/GFX5BjFakPrRSjTkfTB5RjKU1RUMGGJCQExn1gbbO82OfmC0m3ZIGP7bP3/va6fnvtg1arhet8rf3wfXDth++DA7p35Lrn02q14MM1tkQxlwJgAogOqIsXiWIuj2tuvmsEMA5gE0BgwF19lyjmsv/3ICaKuWCimDMSxVyQXU5f47weifFUEsXcoKQfQ61WaxAg1gAsAlgrJTMVusY7ugsgBiBF7xsA8qVkxnB5/wiALIAIXTIA5AHUAITp2oNSMqMW8hBAE0C0lMyYn70kkt1bpLe61f+WANgEsEKvCAHgtjUABNnvHxGQKQKLNzWGAPX7+alzopiLC7WN2Xx9hwFWpdfDUjITLSUzDbd9lpKZRimZidOCbNF9DALMTppjmgX/tOpMalUjVczSNYOkAwAeMHu4SiA2yEOnvQDnYixZBtIK9ZUHUKH+ArQAQ/T9GIBn3OR8KknM0uD4iiq13CLwIvT5Dqn5CoB1ACYtQj+cWI1UWql3k/o0ARToBZJY1dSY859andfpb5gBwm1bAYBJEhcTkwiQlKAPC7nI3tcBxErJTE05LLKfTQJVqna4V8/dqzrzHy/R3wrzkHxi8VIyU6N4McocRKEXtSa7phbQZAtTYWZFtSaZkUKimGuwmPWB28igZxBJbVK0ytz+VWnQMVLhLJNSPgElIYMM6oPkXBY1Ti1OahyhBfxO2En127iXUMjfRehSYJJUIxCjBGKaOk8lirkCARpk323gelqBAFPSXiklM8ouZsmpFBi40jRkhZ3vjyQmirkKeVgoj0a25DmpK0iNmwzQ6wLNrfdOsTGaBNjDUjKTZ0E5ANRLyUxkECDy0GWDhQ9Ri3y4CSDyOQApxq6LXVOkMc9YLDo0CO8sPanBQpgNoRZbZFc+F0lMAXjKspk6vVfpZ4E5JzX+3h0LhSwxZUvo/Qs2iKyyc/3IR/fKyzGaUIReQeYc6qR+DerTAFCbW9tu9CihQQZegfX3LZt3lDSq0g2IaQCPxQ3z5NFU5rHCVDdPmUvDI3ApcgLdUGRbACpza9sFj+ClqV++SDWVVZWSmSgD0ABgUJrpWZ1VMLpJ3gwsL10UNibA7Ior8PbKywbZoPUeOMZVAJt75WVzr7zsJQ+OixAozJxmRYQ7AQc+wFYSuTfeIpAM6oQPwrU33isvR0httEZ+dCqE0alpDI+NY3hsvOOz1vlHfHx7jLN3xzg9OsAvZ2e6W9QBpObWtg0X0pglmx5gv60wii5GmggAzVIyE+xFncFYEiiioQublyKVD0jgxmdu40ZoFkPDrsNWfDh8jfcHr3Gy/0r38ZO5te10l3YyRvbewCW5u2WnznYgBhn7UWdejot2zQ0DsldeLsgMZnQqhFt35jE6Nd2TQzr/cII3L3d1YO4AiDk5H7J7cUGgxGmeYTdpYQeItAqm8raU55aZNK5o1MeWC5QA+vx+BObvYWx6tq8xzNm7YzR3f8THt8eegBRmC5q5PiklM2kmWDEpOD4NI/JCkZX05YeMo5PBdNwLgCMTk5hZ+qbvAAKA/+YkQgv3MT5zm19eBGDslZeDDjHkjri2wtQ4zSTWZELl6J03GesbpU6q7PWEYqeaDYAdJMSN0CxCC/c92T3PbMrwhZRPfBmWQFqaHGLJoyQsVfGSoU7AjTpz0W7STQwveSSL/55xCfziq6+vNUVp7v4o7eTG3Nq2J6dIJEqFpHXVKq+WYpFnXw6QgS0w46ucSoGxIhLAIGNIMDw2jtDC/a7B+OXsDD6/d+kNzN9D6/wM7w9eq0uP9srLlbm17ZqNV1ask8qKJBMFPjetOpMHesouqRDnOTrpd7uW5qTs9G+jXavwyf4rHNd/7noBAvP3ZLxptxVgkgCtUFZWJgmMsjnv6O7h09iIlADykUy1HKSwHZ/dujMP/83JrkFQocv5h5OebCR3GGRqdLbRZE5UtXUmhTvkmRtaEKlaIau2PjVAKhv5xC7o5BmAz++XBt6zFCrw3rzc7fo+o1PTGJ0KyQjEysnkcbENWxcpbQeAiWIuRSz/pWNhFQsqbDGIg1O2oeFmD2KvvNzet7h1Zx637sx3Pfn953/pkMCZpT9eSQXdttOjQxz89Dd+acnKNoogXLE8m6VkZoiYrIpKeRXnqEDUeeUXbO9BbS5FcbkFIAHkgTl+df9PPdnC5u6PHdfGZ25L1fTU/vuPv/JA3DItJCxqZCMrpWSmQQKVJXu4KPNpP2MuuFfOAqjSavDdu6YNdxjjMWEv8aBOfU/2X+HWnfmupXF85tf4+PbnK2O1aMoP5IlDMAR11kFS+0gsC8IGrhNfKLc/8y6os54yEjtH0ottHJue6QjAbbKYvLCHm6TW6yKdTF/xzuRMNgQoHMAdBwZnkRtzryTC6dEB3v6nbgvUyf4rvHm5i9OjA5kjOzYNvRa1cC4GZWQyNeREcIeXvsLiSONJnqpgB6DMUOb+8GfLwPlk/99onZ+1OcGzd8fopV2AcwP+m5Pw+UcwPnPbUuUPfvo7To8OXGUw5AeygjeN6xysn6oY1OZ7oZTMmFQdsEGGtZYo5iJkG0wn6mtkYtJRXXsFTkrxhSQfYmjYj7HpWQyPWY+NgehEjVVKyUyUhCoKoKwAJF5BZXBxH+n3CmUnJqtLMeh9BRcbVI9hTf9HLgPcEcsB+vx+hBbu98whWklkaOG+7SIKZ2fFBzTIsTyn0C/IClVV8dQmOeJAKZkxfBpDyiXNEFxbzQlEp6aAFJRVzzTYF1997agFbsZM0UeTU2msWCsvPPRTAPCRZ+Z8WpgkU27mVG2oL89bl4H5e30BUvGIXZAUps1nUrDSLGrhGVyWe+eYg0eqw742pasipV6B7AFAWxDJiVYtsFDMd7v+26+ISQBp2ldOkxSGmcimAcQTxVzEaaPKyXDrgFQOZ9AAnh4duuEQVXYWp3krPqDJnK9hyScSsmnyzlEmxgapdtWNJLbOzzxlLOMztz2DeCM061kCRRBvpT1RcixKmJRgxSiWhi7EMZnUbTF70MBlfXXATgXm1rYbe+XlurrP6dGBp6zFjYToJd49wdE6P3MLYoPZwme4qDs3WQydRWfFxl2fYGpXWdAcQefmtpPta4s4Y5O7kRCXv3nv6ftiTPW5tW3TaR6MOovQ3GvorNiolpIZU4U4O5oEfEWkRnVoqHFd5x8OvYHoNYXrBngxJsPGqdSE2YqS4/1OCFRTmTufRVE6l8x2ykPOxQrIioqvLtI79zbOKoMZHhu3DczdOrHzDydSEgsWTkU51zgTrAD0++3t0mnunWOk8yqdiZKNU0WQaRLlpo1drKhY6s3LXVfhi04Kh8fGcevOfPv3p0cHRDwcXvmtYK3dsD91m1qdGAlOjDmVVZqzIqgrMl7Weec88WgpAFnKH9Ms0LSr4Mqq751/OMHJ/itHILlaDg37MRX53ZXfjE6FEFoI4fToAM3df7Z/40al1TjEGK1akGUq+VIy09Y8K8/Mme24sH8mof4CF9WkNQaebYUUr3rw+f2YWfrGNtx583IXb/9Tx8SXYdycC7sKWxQlNjx2w3E7VjA39bm17YhNjChLSu7isiK4IcjcBu3JtCUxiqu7ejtMlbn0VWhDK2jBcrdDgF/OznD4rxpCC7+3IUtnXYPH48rxmduONlFxj6xZbQkESQoliCm6HsfVIyVVFQ76WJqzoyFZF0XKo/JFw8o4U+iQ5cZf7pdIeqrLtM3WHipp5WTq3Nq2FY2XZiGMTPcC0J/JSV1htklUdQXfnN1WqdAigBVxupQDmQfbbtBtPA2yafrbccj9VfBcoP+bmrnze8W4FvqZU2mo/BiXBehK1Vcpcm+fQmKfGTarG1VMkDLuvezYdQlgExfVs3ZM0yL7m2LzajBqsIGLuqSa1rE4JOSq2FMdt+C28wEuCj0bFk7myhGxkYlJBH8T7XrXzi6tOzJ/lp64iYv6RKv6myBtibaErUuRU3V15s9qj4VLoonL47YVJonNUjKjmN6C8lRugPT5/bg5F8bEl+G+lNop+ydCHicAlbRF0VnIVcXlyf4s88juJJEdpIYmQg+zv4oiM0kybcMeGfpIMO02l+wk7/3Bax14bbvlskK2SrZw02auvG1IOlAniQWNN4LGO0UEw+N4gp2qJAq6gH1kYhJj07MYmZjE8Nj4lUKoiw2p9zg9OsDZu2M7ksOxDlGc41PxYAHOFW/aoiatTaTgOw/9ueUwgDUSby61GzSQoEMFbVCQnf1qTwFkbdgZBZ5KKvjYH9LYD5lnlmRD3oqQtnUsZB8jFJ3XaBC8AFIOpF0M6nSumcBUOXm35WNNGkfeDjwGoMHiv+dCAExS6SW1Tczn7smxuFjFBg1gQ3jqJVzWNVdLyUzMLRJ75WVFN3Hiwwo0tYiGm0M/bPx55hT5WJUAPKa/BjyeV3SSRJ20NAlIdW5YnXNJCclcUixxtwcoCdygF7A044+QZPHHFWyQlK2zOYHNi0t51umkmBOIujMeuvYtqYO0kWoRUr0+NqULAKMsNU1b2O8XLm7leFbH6bxzCtZnf5uw3rjiGU0Al8Xz1wWgKr5fxNVnQXDaq0ket27jjR3PbdtGuiwVlEe3DFaXomKshyK24iocIG8fI7XKd3tG0AY4FVGkyLYuCmoPGqrPVCELzTHGOMWaW+3p+pEujAUPUucrzEYqm5gXsdcDplZV9Ol0vnAaG2w8ShiGmE2sM8a+nR/38pQUf5eqkrcIyNvHXpkxl+qt2gqlVek+SCAnRRpi4ZTTUFsXYUH1AcCjRDFXxUUptWcwvT4XJ0Kr5xSCrFDwW0HnWbgHmrTybi+PPxD75ro+NphzUXvpizbj9+wEvT7mqkEGu6npfIPCiRh5a1UIX9cYawgesxeTIhe0JsaVpng2T142iqvHLMCkdbCSKCYQYzbHYKqeJbUNalb8Ln1WtkvoPY6BS90TXDLv8vlhJr3y7AlTUeFIurLPfXuSJ02oYpEPV1m4U6XVVnbMU3Yj+syyrGmLNGWdvbeKcR9aUXfdNF8fAXxmAeBTAilCarQiHEGEHmQZ8eLcqE8O/ioB+ITsrHpIpa497ufDe/siiRaZTZ2MtEFqk9dQTerJngEBesqinxTj/biU6yoU0uxRXHl08dSAT6HOivUAZz5sDlzz589EcHliy7Q6gMmkzyQbVtPEiR3pqHg40pXxfTaS6BBT1jQe1PLEZg99WZHJS4N+3OCgH1ae1QD4tN8AUoSQojBLhl+FQefq/gHfv0CqF2TplTmozkrJTJZVdSnVNQYN4v8AvJLIQm5au+sAAAAASUVORK5CYII="
 }
-, function(t, e) {
-    t.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAlCAYAAACtbaI7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAvUlEQVRIx+3WsQ3CMBCF4T8nJJeMAiNkE8wG1KlC45pscGzACLABbELKVKFJJBfIZxdQ+ZXn56+wdJKbeZ5JZfLdHlBgBwxOwwkjTQpdwDuwjcZXp8GnUCkEAQ6T77QYTYBZsGSAx+h4AF4WLBboNMQX30BrwVIAAuA0mLCUgLmwlII5sAB9KWjArQA3YCwFv8CPBX821poub76Wzk5Db/WFH6SiFa1oRSta0Yr+Cx2jX5+ZTSbaAt5puOSUP7f7auwNnUUAAAAAAElFTkSuQmCC"
-}
-, function(t, e) {
-    t.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAmCAYAAAAr+dCVAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA6ElEQVRIx+3Xyw2CQBCA4V/iHUqwA+hAKoCzNxsAKUWpQC9w1Q7oQFuwBCsYL6NBw2NAjzvJhrDMfhtms8kuIsJYS6osSqpsb8kVETxs0QC7tM4LS7IV9fUZ/BOdFA51qEMd6lCHOvTXWKZ1HgFHYHvZlLc5SFrnAXDWc0HsAXsgBBqdYA7YAGt1Ig8ogIeeQibBLTDUrtNlUzae/nI8Fe4Bt++FmgoPgR+rb4XHQICFiHwPinSQrxPEwFU/H/S9F+xEe2C/owqdYC/aAZvBwR31VWMzOLpNW/D9VdMxEADr5SCpspU19wk2XdzAdczruQAAAABJRU5ErkJggg=="
-}
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(122),
-        i(123)
+        i(125),
+        i(126)
     }
     var n = i(40)
-      , s = i(124)
+      , s = i(127)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, null, null);
@@ -3062,7 +3540,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             staticClass: "share__title"
         }, [a("p", [t._v(t._s(t.mySchool.school) + "战队")]), t._v(" "), a("img", {
             attrs: {
-                src: i(125),
+                src: i(128),
                 alt: ""
             }
         })]), t._v(" "), a("div", {
@@ -3217,10 +3695,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 }
 , function(t, e, i) {
     var a = i(4)
-      , n = i(6)
-      , s = i(63)
-      , o = i(127)
-      , r = i(9).f;
+      , n = i(7)
+      , s = i(68)
+      , o = i(130)
+      , r = i(11).f;
     t.exports = function(t) {
         var e = n.Symbol || (n.Symbol = s ? {} : a.Symbol || {});
         "_" == t.charAt(0) || t in e || r(e, t, {
@@ -3231,26 +3709,26 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(130)
+        i(133)
     }
     var n = i(41)
-      , s = i(165)
+      , s = i(176)
       , o = i(0)
       , r = a
-      , c = o(n.a, s.a, !1, r, "data-v-6a34efaf", null);
+      , c = o(n.a, s.a, !1, r, "data-v-035ba32b", null);
     e.a = c.exports
 }
 , function(t, e) {}
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(132)
+        i(135)
     }
     var n = i(42)
-      , s = i(133)
+      , s = i(136)
       , o = i(0)
       , r = a
-      , c = o(n.a, s.a, !1, r, "data-v-efe72f10", null);
+      , c = o(n.a, s.a, !1, r, "data-v-63d1baa0", null);
     e.a = c.exports
 }
 , function(t, e) {}
@@ -3291,7 +3769,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                 staticClass: "item__name font-fangzheng"
             }, [a("img", {
                 attrs: {
-                    src: i(134)
+                    src: i(137)
                 }
             }), t._v(" "), a("span", [t._v(t._s(e.name) + "×" + t._s(e.count))])])])
         }) : [a("p", {
@@ -3310,7 +3788,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         }, [t._v(t._s(t.data.prize.name) + "×" + t._s(t.data.prize.count))])]), t._v(" "), a("div", {
             staticClass: "prize__btn",
             class: {
-                prize__disabled: t.exchangeStatus && 1 != t.exchangeStatus.type
+                prize__disabled: t.exchangeStatus
             },
             on: {
                 click: function(e) {
@@ -3324,7 +3802,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                 exchanging: t.loading
             },
             attrs: {
-                src: i(135)
+                src: i(138)
             }
         })]), t._v(" "), t.visible.qrcode ? a("div", {
             staticClass: "prize__qrcode",
@@ -3357,7 +3835,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             }
         })]), t._v(" "), a("div", {
             staticClass: "qrcode__tip"
-        }, [t._v("\n                请保存当前二维码, 在微信内长按识别后领取, 请确认保存后再关闭改弹窗\n            ")])])]) : t._e()], 2)
+        }, [t._v("\n                请截屏保存当前二维码, 在微信内长按识别后领取, 请确认保存后再关闭改弹窗\n            ")])])]) : t._e()], 2)
     }
       , n = [function() {
         var t = this
@@ -3368,7 +3846,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         }, [a("img", {
             staticClass: "equal",
             attrs: {
-                src: i(136)
+                src: i(139)
             }
         })])
     }
@@ -3391,7 +3869,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     var a = i(43)
-      , n = i(146)
+      , n = i(157)
       , s = i(0)
       , o = s(a.a, n.a, !1, null, null, null);
     e.a = o.exports
@@ -3399,13 +3877,13 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(139)
+        i(142)
     }
     var n = i(44)
-      , s = i(140)
+      , s = i(143)
       , o = i(0)
       , r = a
-      , c = o(n.a, s.a, !1, r, "data-v-4c64cc13", null);
+      , c = o(n.a, s.a, !1, r, "data-v-ea0776d0", null);
     e.a = c.exports
 }
 , function(t, e) {}
@@ -3434,54 +3912,187 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             staticClass: "OneMore__tip font-fangzheng"
         }, [t._v("\n            \b您可通过以下方式获取额外卡片\n        ")]), t._v(" "), i("div", {
             staticClass: "OneMore__btns"
-        }, [i("div", {
+        }, [t.enable.signin && t.isSignTime ? i("div", {
+            staticClass: "OneMore__btn",
+            on: {
+                click: t.handleGetSigninZodiacCard
+            }
+        }, [t._m(0), t._v(" "), i("p", {
+            staticClass: "OneMore__status"
+        }, [t.enable.signin ? i("span", {
+            staticClass: "status__no"
+        }, [t._v("点此领取")]) : i("span", {
+            staticClass: "status__yes"
+        }, [t._v("本日已领")]), t._v(" "), i("span", {
+            staticClass: "status__arrow"
+        })])]) : t._e(), t._v(" "), i("div", {
             staticClass: "OneMore__btn",
             on: {
                 click: function(e) {
                     t.chooseOne("aYearCard")
                 }
             }
-        }, [i("img", {
-            staticClass: "icon",
-            attrs: {
-                src: "http://oss.pocketuniversity.cn/media/2018-01-20/5a62c05a3207d.png",
-                alt: ""
-            }
-        }), t._v(" "), i("span", {
-            staticClass: "label font-fangzheng"
-        }, [t._v("\n                    回顾2017\n                ")])]), t._v(" "), t.isWeixin ? i("div", {
+        }, [t._m(1), t._v(" "), i("p", {
+            staticClass: "OneMore__status"
+        }, [t.enable.aYearCard ? i("span", {
+            staticClass: "status__no"
+        }, [t._v("本日未领")]) : i("span", {
+            staticClass: "status__yes"
+        }, [t._v("本日已领")]), t._v(" "), i("span", {
+            staticClass: "status__arrow"
+        })])]), t._v(" "), i("div", {
             staticClass: "OneMore__btn",
             on: {
-                click: function(e) {
-                    t.chooseOne("secret")
-                }
+                click: t.handleChooseSecret
             }
-        }, [i("img", {
-            staticClass: "icon",
-            attrs: {
-                src: "http://oss.pocketuniversity.cn/media/2018-01-20/5a62c05a3214b.png",
-                alt: ""
-            }
-        }), t._v(" "), i("span", {
-            staticClass: "label font-fangzheng"
-        }, [t._v("\n                    暗号获得\n                ")])]) : t._e(), t._v(" "), i("div", {
+        }, [t._m(2), t._v(" "), i("p", {
+            staticClass: "OneMore__status"
+        }, [t.enable.secret ? i("span", {
+            staticClass: "status__no"
+        }, [t._v("点此领取")]) : i("span", {
+            staticClass: "status__yes"
+        }, [t._v("已经领取")]), t._v(" "), i("span", {
+            staticClass: "status__arrow"
+        })])]), t._v(" "), i("div", {
             staticClass: "OneMore__btn",
             on: {
                 click: function(e) {
                     t.chooseOne("invite")
                 }
             }
+        }, [t._m(3), t._v(" "), i("p", {
+            staticClass: "OneMore__status"
+        }, [t.enable.invite ? i("span", {
+            staticClass: "status__arrow"
+        }, [t._v("进入领取")]) : i("span", {
+            staticClass: "status__no"
+        }, [t._v("继续领取")]), t._v(" "), i("span", {
+            staticClass: "status__arrow"
+        })])]), t._v(" "), t._$IS_WEIXIN ? i("div", {
+            staticClass: "OneMore__btn OneMore__btn_small",
+            on: {
+                click: function(e) {
+                    t.chooseOne("miniapp")
+                }
+            }
+        }, [t._m(4), t._v(" "), i("p", {
+            staticClass: "OneMore__status"
+        }, [t.enable.miniapp ? i("span", {
+            staticClass: "status__no"
+        }, [t._v("本日未领")]) : i("span", {
+            staticClass: "status__yes"
+        }, [t._v("已经领取")]), t._v(" "), i("span", {
+            staticClass: "status__arrow"
+        })])]) : t._e()])]), t._v(" "), t.visible.newCard ? i("CnZodiacPopup", {
+            attrs: {
+                type: t.newCardType
+            },
+            on: {
+                close: function(e) {
+                    t.visible.newCard = !1
+                }
+            }
+        }) : t._e()], 1)
+    }
+      , n = [function() {
+        var t = this
+          , e = t.$createElement
+          , i = t._self._c || e;
+        return i("p", {
+            staticClass: "OneMore__btn_inner"
         }, [i("img", {
             staticClass: "icon",
             attrs: {
-                src: "http://oss.pocketuniversity.cn/media/2018-01-20/5a62c05a3ea1a.png",
+                src: "http://oss.pocketuniversity.cn/media/2018-01-18/5a608a069655b.png",
                 alt: ""
             }
         }), t._v(" "), i("span", {
             staticClass: "label font-fangzheng"
-        }, [t._v("\n                    邀请码\n                ")])])])])])
+        }, [t._v("\n                        早起生肖卡\n                    ")])])
     }
-      , n = []
+    , function() {
+        var t = this
+          , e = t.$createElement
+          , i = t._self._c || e;
+        return i("p", {
+            staticClass: "OneMore__btn_inner"
+        }, [i("img", {
+            staticClass: "icon",
+            attrs: {
+                src: "http://oss.pocketuniversity.cn/media/2018-01-24/5a675fc2d2fce.png",
+                alt: ""
+            }
+        }), t._v(" "), i("span", {
+            staticClass: "label font-fangzheng"
+        }, [t._v("                            \n                        回顾2017\n                    ")])])
+    }
+    , function() {
+        var t = this
+          , e = t.$createElement
+          , i = t._self._c || e;
+        return i("p", {
+            staticClass: "OneMore__btn_inner"
+        }, [i("img", {
+            staticClass: "icon",
+            attrs: {
+                src: "http://oss.pocketuniversity.cn/media/2018-01-24/5a675fc2d324b.png",
+                alt: ""
+            }
+        }), t._v(" "), i("span", {
+            staticClass: "label font-fangzheng"
+        }, [t._v("\n                        暗号获得\n                    ")])])
+    }
+    , function() {
+        var t = this
+          , e = t.$createElement
+          , i = t._self._c || e;
+        return i("p", {
+            staticClass: "OneMore__btn_inner"
+        }, [i("img", {
+            staticClass: "icon",
+            attrs: {
+                src: "http://oss.pocketuniversity.cn/media/2018-01-24/5a675fc2d2eb9.png",
+                alt: ""
+            }
+        }), t._v(" "), i("span", {
+            staticClass: "label font-fangzheng"
+        }, [t._v("\n                        邀请码\n                    ")])])
+    }
+    , function() {
+        var t = this
+          , e = t.$createElement
+          , i = t._self._c || e;
+        return i("div", {
+            staticClass: "OneMore__btn_inner"
+        }, [i("img", {
+            staticClass: "icon",
+            attrs: {
+                src: "http://oss.pocketuniversity.cn/media/2018-01-23/5a6737524dc9c.png",
+                alt: ""
+            }
+        }), t._v(" "), i("p", {
+            staticStyle: {
+                "text-align": "left",
+                "line-height": "1.2"
+            }
+        }, [i("span", {
+            staticClass: "label font-fangzheng"
+        }, [t._v("『我们的2017』")]), t._v(" "), i("img", {
+            staticStyle: {
+                width: "20px"
+            },
+            attrs: {
+                src: "http://oss.pocketuniversity.cn/media/2018-01-25/5a69835babee7.gif",
+                alt: ""
+            }
+        }), t._v(" "), i("br"), t._v(" "), i("span", {
+            staticClass: "sublabel",
+            staticStyle: {
+                "font-size": "12px"
+            }
+        }, [t._v("记录你的2017,赢千元现金大奖")])])])
+    }
+    ]
       , s = {
         render: a,
         staticRenderFns: n
@@ -3537,10 +4148,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(144)
+        i(147)
     }
     var n = i(47)
-      , s = i(145)
+      , s = i(148)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, "data-v-a417cf4c", null);
@@ -3647,6 +4258,144 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 }
 , function(t, e, i) {
     "use strict";
+    function a(t) {
+        i(150)
+    }
+    var n = i(48)
+      , s = i(151)
+      , o = i(0)
+      , r = a
+      , c = o(n.a, s.a, !1, r, "data-v-79d07d6b", null);
+    e.a = c.exports
+}
+, function(t, e) {}
+, function(t, e, i) {
+    "use strict";
+    var a = function() {
+        var t = this
+          , e = t.$createElement
+          , i = t._self._c || e;
+        return i("div", {
+            staticClass: "QRCodeSecret"
+        }, [i("div", {
+            staticClass: "QRCodeSecret__mask modal__mask",
+            class: {
+                QRCodeSecret__mask_cover: t.isFromApp
+            },
+            on: {
+                click: t.close
+            }
+        }), t._v(" "), i("div", {
+            staticClass: "QRCodeSecret__container modal__container"
+        }, [i("div", {
+            staticClass: "QRCodeSecret__hd font-fangzheng"
+        }, [!t.hasScan || t.reachLimit ? i("span", [t._v(t._s(t.title))]) : i("span", [t._v("领取成功")])]), t._v(" "), !t.hasScan || t.reachLimit ? i("div", {
+            staticClass: "QRCodeSecret__tip MiniAppQrcode__tip font-fangzheng"
+        }, [t._v("\n            " + t._s(t.tip) + "\n        ")]) : t._e(), t._v(" "), i("div", {
+            staticClass: "QRCodeSecret__qrcode"
+        }, [t.reachLimit ? i("img", {
+            staticClass: "qrcode",
+            attrs: {
+                src: "http://www.pocketuniversity.cn/static/EveryDay/miniappqrcode/100.jpg"
+            }
+        }) : t.hasScan ? i("p", {
+            staticClass: "Qrcode__success font-fangzheng"
+        }, [t._v("请点击下方按钮继续领卡")]) : i("img", {
+            staticClass: "qrcode",
+            attrs: {
+                src: t.qrcodeUrl
+            }
+        })]), t._v(" "), t.reachLimit || !t.hasScan ? i("p", {
+            directives: [{
+                name: "show",
+                rawName: "v-show",
+                value: t.operation,
+                expression: "operation"
+            }],
+            staticClass: "daylimit-tip"
+        }, [i("span", [t._v("(" + t._s(t.operation) + ")")])]) : t._e(), t._v(" "), i("div", {
+            staticClass: "QRCodeSecret__btnarea"
+        }, [t.reachLimit ? i("button", {
+            staticClass: "QRCodeSecret__btn disabled modal__btn"
+        }, [t._v("\n                已领取\n            ")]) : t.hasScan ? i("button", {
+            staticClass: "QRCodeSecret__btn modal__btn",
+            on: {
+                click: t.handleGetCard
+            }
+        }, [t._v("\n                点此领卡\n            ")]) : i("button", {
+            staticClass: "QRCodeSecret__btn modal__btn",
+            on: {
+                click: t.getScanStatus
+            }
+        }, [t._v("\n                刷新领卡\n            ")])])]), t._v(" "), t.visible.newcard ? i("CnZodiacPopup", {
+            attrs: {
+                type: t.newCardType
+            },
+            on: {
+                close: function(e) {
+                    t.visible.newcard = !1
+                }
+            }
+        }) : t._e()], 1)
+    }
+      , n = []
+      , s = {
+        render: a,
+        staticRenderFns: n
+    };
+    e.a = s
+}
+, function(t, e, i) {
+    "use strict";
+    function a(t) {
+        i(398)
+    }
+    var n = i(49)
+      , s = i(399)
+      , o = i(0)
+      , r = a
+      , c = o(n.a, s.a, !1, r, "data-v-74a98afc", null);
+    e.a = c.exports
+}
+, , function(t, e) {}
+, function(t, e, i) {
+    "use strict";
+    var a = function() {
+        var t = this
+          , e = t.$createElement
+          , i = t._self._c || e;
+        return i("div", {
+            staticClass: "Modal"
+        }, [i("div", {
+            staticClass: "Modal__mask",
+            class: {
+                Modal__mask_cover: t.cover
+            },
+            on: {
+                click: t.close
+            }
+        }), t._v(" "), i("div", {
+            staticClass: "Modal__container",
+            style: {
+                "background-color": t.backgroundColor
+            }
+        }, [i("div", {
+            staticClass: "Modal__hd"
+        }, [t._t("title")], 2), t._v(" "), i("div", {
+            staticClass: "Modal__tip"
+        }, [t._t("tip")], 2), t._v(" "), i("div", {
+            staticClass: "Modal__main"
+        }, [t._t("main")], 2)])])
+    }
+      , n = []
+      , s = {
+        render: a,
+        staticRenderFns: n
+    };
+    e.a = s
+}
+, , function(t, e, i) {
+    "use strict";
     var a = function() {
         var t = this
           , e = t.$createElement
@@ -3656,7 +4405,8 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         }, ["oneMore" == t.type ? i("OneMore", {
             on: {
                 choose: t.handleChoose,
-                close: t.close
+                close: t.close,
+                new: t.handleNew
             }
         }) : t._e(), t._v(" "), "aYearCard" == t.type ? i("AYearCard", {
             on: {
@@ -3666,7 +4416,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             attrs: {
                 title: "暗号获得",
                 tip: "长按在公众号回复暗号领取",
-                secret: t._$DKKEY
+                secret: t.secret
             },
             on: {
                 close: t.handleComponentClose
@@ -3674,6 +4424,20 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         }) : t._e(), t._v(" "), "invite" == t.type ? i("InviteCode", {
             on: {
                 success: t.handleGetOneMoreSuccess,
+                close: t.handleComponentClose
+            }
+        }) : t._e(), t._v(" "), "miniapp" == t.type ? i("MiniAppQrcode", {
+            attrs: {
+                title: t.miniAppTitle,
+                tip: t.miniAppTip,
+                operation: t.miniAppOperation
+            },
+            on: {
+                success: t.handleGetOneMoreSuccess,
+                close: t.handleComponentClose
+            }
+        }) : t._e(), t._v(" "), "appsecret" == t.type ? i("GetPublicFans", {
+            on: {
                 close: t.handleComponentClose
             }
         }) : t._e()], 1)
@@ -3688,22 +4452,23 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(379)
+        i(159)
     }
-    var n = i(48)
-      , s = i(380)
+    var n = i(52)
+      , s = i(165)
       , o = i(0)
       , r = a
-      , c = o(n.a, s.a, !1, r, "data-v-a05be3b0", null);
+      , c = o(n.a, s.a, !1, r, "data-v-61c2a9ae", null);
     e.a = c.exports
 }
-, , function(t, e, i) {
+, function(t, e) {}
+, function(t, e, i) {
     "use strict";
     function a(t) {
-        i(150)
+        i(161)
     }
-    var n = i(49)
-      , s = i(151)
+    var n = i(53)
+      , s = i(162)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, "data-v-481e9fbf", null);
@@ -3829,16 +4594,138 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
     };
     e.a = s
 }
-, , function(t, e, i) {
+, function(t, e, i) {
+    "use strict";
+    var a = function() {
+        var t = this
+          , e = t.$createElement
+          , i = t._self._c || e;
+        return i("div", {
+            staticClass: "ZodiacCards"
+        }, [i("div", {
+            staticClass: "ZodiacCards__container"
+        }, ["choose" == t.mode ? i("div", {
+            staticClass: "choose__tip"
+        }, [i("span", [t._v(t._s(t.tip))])]) : t._e(), t._v(" "), t._l(t.zodiacListLines, function(e, a) {
+            return i("div", {
+                key: a,
+                staticClass: "cards__line"
+            }, t._l(e, function(e, a) {
+                return i("div", {
+                    key: a,
+                    staticClass: "card__wrapper",
+                    class: {
+                        card__wrapper_active: t.isActiveCard(e.type)
+                    },
+                    on: {
+                        click: function(i) {
+                            t.chooseTheSendCard(i, e)
+                        }
+                    }
+                }, [i("div", {
+                    key: e.name,
+                    staticClass: "card__card card-animation"
+                }, [i("CnZodiac", {
+                    staticClass: "card__zodiac",
+                    attrs: {
+                        type: e.type,
+                        active: e.count
+                    }
+                })], 1), t._v(" "), i("p", {
+                    staticClass: "card__name font-fangzheng"
+                }, [t._v(t._s(e.name) + "×" + t._s(e.count))])])
+            }))
+        }), t._v(" "), "choose" == t.mode ? i("div", {
+            staticClass: "choose__btn zodiac-btn zodiac-btn_primary font-fangzheng",
+            on: {
+                click: t.handleConfirmChoose
+            }
+        }, [t._v("\n            确定选择\n        ")]) : t._e()], 2), t._v(" "), t.visible.preview ? i("div", {
+            staticClass: "newcard__mask modal__mask",
+            staticStyle: {
+                "z-index": "1005"
+            }
+        }) : t._e(), t._v(" "), "choose" == t.mode ? i("div", {
+            staticClass: "newcard__mask modal__mask"
+        }) : t._e(), t._v(" "), t.visible.preview || "choose" == t.mode ? i("div", {
+            staticClass: "newcard__btn_close",
+            on: {
+                click: t.resetViewMode
+            }
+        }, [i("i", {
+            staticClass: "icon weui-icon-cancel"
+        })]) : t._e(), t._v(" "), t.visible.preview ? i("div", {
+            staticClass: "iWantHome__newcard",
+            class: {
+                zodiac_active: t.previewZodiac.count
+            }
+        }, [i("div", {
+            staticClass: "newcard__container modal__container"
+        }, [i("div", {
+            staticClass: "newcard__card animated bounceIn"
+        }, [i("CnZodiac", {
+            attrs: {
+                type: t.previewZodiac.type,
+                active: t.previewZodiac.count
+            }
+        }), t._v(" "), i("p", {
+            staticClass: "preview__count font-fangzheng"
+        }, [t.previewZodiac.count ? i("span", {
+            staticClass: "yes"
+        }, [t._v("已收集此卡" + t._s(t.previewZodiac.count) + "张")]) : i("span", {
+            staticClass: "no"
+        }, [t._v("暂未获得此卡")])])], 1), t._v(" "), i("div", {
+            staticClass: "newcard__btn_collect"
+        }, [t.previewZodiac.count ? i("a", {
+            staticClass: "zodiac-btn zodiac-btn_primary font-fangzheng",
+            on: {
+                click: t.setSendCard
+            }
+        }, [t._v("\n                    赠送此卡给好友\n                ")]) : t._e()])])]) : t._e(), t._v(" "), t.visible.prompt ? i("Prompt", {
+            attrs: {
+                loading: !1
+            },
+            on: {
+                confirm: t.handleSendCard,
+                close: t.resetSendingStatus
+            }
+        }) : t._e(), t._v(" "), t.visible.newCard ? i("CnZodiacPopup", {
+            attrs: {
+                type: t.newCardType
+            },
+            on: {
+                close: function(e) {
+                    t.visible.newCard = !1
+                }
+            }
+        }) : t._e(), t._v(" "), t.visible.share ? i("ShareMask", {
+            attrs: {
+                tip: "点击又上角分享出去, 赠送卡片给好友"
+            },
+            on: {
+                close: function(e) {
+                    t.visible.share = !1
+                }
+            }
+        }) : t._e()], 1)
+    }
+      , n = []
+      , s = {
+        render: a,
+        staticRenderFns: n
+    };
+    e.a = s
+}
+, function(t, e, i) {
     "use strict";
     function a(t) {
-        i(156)
+        i(167)
     }
-    var n = i(52)
-      , s = i(157)
+    var n = i(56)
+      , s = i(168)
       , o = i(0)
       , r = a
-      , c = o(n.a, s.a, !1, r, "data-v-06ae96bb", null);
+      , c = o(n.a, s.a, !1, r, "data-v-5323d686", null);
     e.a = c.exports
 }
 , function(t, e) {}
@@ -3867,25 +4754,25 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         }, [a("p", [a("span", [t._v("恭喜获得" + t._s(t.currentRedBag.name) + "一个")])]), t._v(" "), t._m(0)])]), t._v(" "), 1 == t.currentRedBag.type ? a("img", {
             staticClass: "redbag-img",
             attrs: {
-                src: i(158),
+                src: i(169),
                 alt: ""
             }
         }) : t._e(), t._v(" "), 2 == t.currentRedBag.type ? a("img", {
             staticClass: "redbag-img",
             attrs: {
-                src: i(159),
+                src: i(170),
                 alt: ""
             }
         }) : t._e(), t._v(" "), 3 == t.currentRedBag.type ? a("img", {
             staticClass: "redbag-img",
             attrs: {
-                src: i(160),
+                src: i(171),
                 alt: ""
             }
         }) : t._e(), t._v(" "), 4 == t.currentRedBag.type ? a("img", {
             staticClass: "redbag-img",
             attrs: {
-                src: i(161),
+                src: i(172),
                 alt: ""
             }
         }) : t._e()]) : t._e(), t._v(" "), 2 == t.step ? a("div", {
@@ -3905,8 +4792,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         }, [a("img", {
             staticClass: "avatar",
             attrs: {
-                src: t.userInfo.headimgurl,
-                alt: ""
+                src: t.userInfo.headimgurl
             }
         })])]), t._v(" "), a("div", {
             staticClass: "money__info"
@@ -3918,7 +4804,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             staticClass: "money__money"
         }, [a("p", [t._v(t._s(t.money) + "元")]), t._v(" "), a("p", {
             staticClass: "tip"
-        }, [t._v("红包到账稍有延迟, 一小时之内将会到达您的钱包")])]), t._v(" "), a("div", {
+        }, [t._v("红包到账稍有延迟, 一个工作日之内将会到达您的钱包")])]), t._v(" "), a("div", {
             staticClass: "money__btn-area"
         }, [a("a", {
             staticClass: "money__btn",
@@ -3960,10 +4846,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(163)
+        i(174)
     }
-    var n = i(54)
-      , s = i(164)
+    var n = i(58)
+      , s = i(175)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, null, null);
@@ -4021,6 +4907,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
           , e = t.$createElement
           , i = t._self._c || e;
         return i("div", {
+            ref: "iWantHome",
             staticClass: "iWantHome"
         }, [i("div", {
             staticClass: "iWantHome__nav"
@@ -4039,7 +4926,20 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             attrs: {
                 id: "iWantHomeHeader"
             }
-        }, [t._m(0), t._v(" "), t.isShare ? i("div", {
+        }, [t._m(0), t._v(" "), t.isShare ? t._e() : i("div", {
+            staticClass: "iWantHome__onemore animated pulse infinite",
+            on: {
+                click: function(e) {
+                    t.visible.oneMore = !0
+                }
+            }
+        }, [i("span", {
+            staticClass: "icon-fangzheng"
+        }, [t._v("再来一张")]), t._v(" "), i("span", {
+            staticClass: "newcount"
+        }, [t._v(t._s(t.enableCount + 1))])]), t._v(" "), t.isShare ? t._e() : i("div", {
+            staticClass: "iWantHome__tip_redbag"
+        }, [t._v("\n            (每日5-9点, 高几率掉稀有卡)\n        ")]), t._v(" "), t.isShare ? i("div", {
             staticClass: "iWantHome__onemore",
             on: {
                 click: function(e) {
@@ -4048,16 +4948,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             }
         }, [i("span", {
             staticClass: "icon-fangzheng"
-        }, [t._v("\b点此打卡, 获得卡片")])]) : i("div", {
-            staticClass: "iWantHome__onemore",
-            on: {
-                click: function(e) {
-                    t.visible.oneMore = !0
-                }
-            }
-        }, [i("span", {
-            staticClass: "icon-fangzheng"
-        }, [t._v("再来一张")])])]), t._v(" "), t.visible.shareSign ? i("QRCodeSecret", {
+        }, [t._v("\b点此打卡, 获得卡片")])]) : t._e()]), t._v(" "), t.visible.shareSign ? i("QRCodeSecret", {
             attrs: {
                 title: "按提示进行打卡",
                 tip: "长按在公众号回复暗号打卡",
@@ -4083,7 +4974,21 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                     t.cardsMode = "view"
                 }
             }
-        })], 1), t._v(" "), i("div", {
+        })], 1), t._v(" "), i("p", {
+            staticClass: "iWantHome__group",
+            on: {
+                click: function(e) {
+                    t.visible.group = !0
+                }
+            }
+        }, [i("a", {
+            staticClass: "group",
+            attrs: {
+                href: "http://mp.weixin.qq.com/s/OadP1QsqERDk2d57pKuuDg"
+            }
+        }, [t._v("换卡教程指引")]), t._v(" "), i("span", {
+            staticClass: "group"
+        }, [t._v("生肖卡互助互换")])]), t._v(" "), i("div", {
             staticClass: "iWantHome__happy"
         }, [t.exchageList.length ? i("Marquee", {
             attrs: {
@@ -4094,13 +4999,6 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         }, [t._v("\n            暂时没有小伙伴兑换哦~\n        ")])], 1), t._v(" "), t._m(1), t._v(" "), i("div", {
             staticClass: "iWantHome__prize-area"
         }, [t._m(2), t._v(" "), i("div", {
-            staticClass: "prize__redbag"
-        }, [i("a", {
-            staticClass: "btn_redbag",
-            attrs: {
-                href: t.walletLink
-            }
-        }, [t._v("红包提现")])]), t._v(" "), i("div", {
             staticClass: "iWantHome__prize-redbag"
         }, t._l(t.prizeDataRedbag, function(e, a) {
             return i("Prize", {
@@ -4119,7 +5017,14 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                     choose: t.handleChooseCards
                 }
             })
-        }))]), t._v(" "), i("div", {
+        }))]), t._v(" "), t._$IS_WEIXIN ? i("div", {
+            staticClass: "prize__redbag"
+        }, [t._$IS_WEIXIN ? i("a", {
+            staticClass: "btn_redbag",
+            attrs: {
+                href: t.walletLink
+            }
+        }, [t._v("红包提现")]) : t._e()]) : t._e(), t._v(" "), i("div", {
             staticClass: "iWantHome__prize-area"
         }, [t._m(3), t._v(" "), i("div", {
             staticClass: "iWantHome__prize"
@@ -4158,7 +5063,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             attrs: {
                 src: "http://oss.pocketuniversity.cn/media/2018-01-22/5a64ea9d191ad.png"
             }
-        })]), t._v(" "), t._e(), t._v(" "), t.visible.newcard ? i("div", {
+        })]), t._v(" "), t._m(4), t._v(" "), t._e(), t._v(" "), t.visible.newcard ? i("div", {
             staticClass: "iWantHome__newcard"
         }, [i("div", {
             staticClass: "newcard__mask modal__mask"
@@ -4184,7 +5089,15 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             on: {
                 click: t.handleNewCardClose
             }
-        }, [t._v("\n                    收藏此卡\n                ")])])])]) : t._e(), t._v(" "), t.visible.tip ? i("div", {
+        }, [t._v("\n                    收藏此卡\n                ")])])])]) : t._e(), t._v(" "), t.visible.newcardSystem ? i("CnZodiacPopup", {
+            attrs: {
+                type: t.newCardType,
+                btnText: "收藏此卡2"
+            },
+            on: {
+                close: t.handleZodiacClose
+            }
+        }) : t._e(), t._v(" "), t.visible.tip ? i("div", {
             staticClass: "iWantHome__sendtip"
         }, [i("div", {
             staticClass: "modal__mask",
@@ -4237,13 +5150,37 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         }, [i("i", {
             staticClass: "icon weui-icon-cancel"
         })])]) : t._e(), t._v(" "), t.visible.oneMore ? i("OneMoreWrapper", {
+            attrs: {
+                "component-type": t.oneMoreType
+            },
             on: {
                 close: function(e) {
                     t.visible.oneMore = !1
                 },
-                success: t.handleGetOneMoreSuccess
+                success: t.handleGetOneMoreSuccess,
+                new: t.handleNew
             }
-        }) : t._e()], 1)
+        }) : t._e(), t._v(" "), t.visible.group ? i("Modal", {
+            attrs: {
+                "background-color": "transparent"
+            },
+            on: {
+                close: function(e) {
+                    t.visible.group = !1
+                }
+            }
+        }, [i("div", {
+            staticClass: "IWantHome__group_modal",
+            attrs: {
+                slot: "main"
+            },
+            slot: "main"
+        }, [i("img", {
+            staticClass: "group",
+            attrs: {
+                src: t.qunUrl
+            }
+        })])]) : t._e()], 1)
     }
       , n = [function() {
         var t = this
@@ -4257,7 +5194,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         }, [a("img", {
             staticClass: "bz bz1",
             attrs: {
-                src: i(166),
+                src: i(177),
                 alt: ""
             }
         }), t._v(" "), a("div", {
@@ -4269,10 +5206,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             }
         }), t._v(" "), a("p", {
             staticClass: "text"
-        }, [t._v("集生肖卡兑换“新年”好礼")])]), t._v(" "), a("img", {
+        }, [t._v("领生肖卡兑换“新年”好礼")])]), t._v(" "), a("img", {
             staticClass: "bz bz2",
             attrs: {
-                src: i(167),
+                src: i(178),
                 alt: ""
             }
         })])
@@ -4286,13 +5223,13 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         }, [a("img", {
             staticClass: "image",
             attrs: {
-                src: i(168),
+                src: i(179),
                 alt: ""
             }
         }), t._v(" "), a("img", {
             staticClass: "image-text",
             attrs: {
-                src: i(169),
+                src: i(180),
                 alt: ""
             }
         })])
@@ -4307,9 +5244,13 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             staticClass: "text"
         }, [i("span", {
             staticClass: "inner"
-        }, [t._v("微信现金红包")])]), t._v(" "), i("p", {
+        }, [t._v("微信现金红包")])]), t._v(" "), i("div", {
             staticClass: "sub"
-        }, [t._v("\n                ( 每日5点, 准时刷新现金红包 )\n            ")])])
+        }, [t._v("\n                ( 每日5点, 准时刷新现金红包 )\n            ")]), t._v(" "), i("div", {
+            staticClass: "sub sub-large"
+        }, [i("p", [t._v("今日新赠3000元现金红包,9-24点整点随机放出")]), t._v(" "), i("a", {
+            staticClass: "btn_ynjy"
+        }, [t._v('\n                    新增红包由"忆年共享相册"赞助提供\n                ')])])])
     }
     , function() {
         var t = this
@@ -4324,6 +5265,14 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         }, [t._v("组合赢奖品")])]), t._v(" "), i("p", {
             staticClass: "sub"
         }, [t._v("\n                ( 本活动奖品由乐视体育, 顺丰快递, PU口袋校园赞助提供 )\n            ")])])
+    }
+    , function() {
+        var t = this
+          , e = t.$createElement
+          , i = t._self._c || e;
+        return i("div", {
+            staticClass: "iWantHome__tip"
+        }, [i("p", [t._v("奖品兑奖时间为:2018-01-21至2018-02-18")]), t._v(" "), i("p", [t._v("本活动最终解释权归活动主办方口袋高校所有")])])
     }
     ]
       , s = {
@@ -4382,25 +5331,27 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 }
 , , , , function(t, e, i) {
     "use strict";
-    var a = i(15)
+    var a = i(66)
       , n = i.n(a)
-      , s = i(2)
+      , s = i(9)
       , o = i.n(s)
-      , r = i(250)
-      , c = i(257)
-      , d = i(65)
-      , l = i(260)
-      , u = i(263)
-      , h = i(66)
-      , p = i(276)
-      , m = i(283)
-      , f = i(21)
-      , v = i(292)
-      , g = i(295)
-      , b = i(67)
-      , A = i(194)
-      , y = i(1)
-      , w = (i(302),
+      , r = i(2)
+      , c = i.n(r)
+      , d = i(262)
+      , l = i(269)
+      , u = i(70)
+      , h = i(272)
+      , p = i(275)
+      , m = i(71)
+      , f = i(288)
+      , v = i(295)
+      , g = i(6)
+      , b = i(304)
+      , A = i(307)
+      , y = i(72)
+      , w = i(205)
+      , C = i(1)
+      , _ = (i(314),
     i(3));
     e.a = {
         data: function() {
@@ -4430,7 +5381,8 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                 isTest: !1,
                 hiddenAYearCard: !1,
                 lastMediaId: "",
-                lastMediaInfo: {}
+                lastMediaInfo: {},
+                ZodiacPopupBtnText: "收藏此卡"
             }
         },
         watch: {
@@ -4438,7 +5390,6 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                 this.dkInfo.count && this.wxShare()
             },
             passPercent: function(t) {
-                console.error(t),
                 this.wxShare()
             }
         },
@@ -4448,10 +5399,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             window.addEventListener("scroll", function(e) {
                 t.visible.invite = document.body.scrollTop > 50
             }),
-            window.energyEventHub = new w.a({})
+            window.energyEventHub = new _.a({})
         },
         activated: function() {},
-        computed: o()({}, Object(y.d)(["totalSignPeople"]), Object(y.d)(["mySchool"]), Object(y.d)("habit", ["myHabit"]), {
+        computed: c()({}, Object(C.d)(["totalSignPeople"]), Object(C.d)(["mySchool"]), Object(C.d)("habit", ["myHabit"]), {
             passPercent: function() {
                 return this.totalSignPeople && this.dkInfo.ranking ? (100 * (1 - Number(this.dkInfo.ranking) / Number(this.totalSignPeople))).toFixed(2) : 0
             },
@@ -4463,42 +5414,58 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                 return (this.isCet = 1 == _kd.parseQueryString().cet) ? "/home/cet" : "/home/rank"
             }
         }),
-        methods: o()({}, Object(y.c)(["save_user", "save_sign_info"]), Object(y.b)(["fetch_my_school", "fetch_user_info", "fetch_zodiac_card", "fetch_media_info"]), {
+        methods: c()({}, Object(C.c)(["save_user", "save_sign_info"]), Object(C.b)(["fetch_my_school", "fetch_user_info", "fetch_zodiac_card", "fetch_media_info"]), Object(C.c)("cache", ["clearPocketCacheAfterSign"]), {
             showEnergy: function() {
                 this.visible.cards = !1
             },
             checkIsNewPublic: function() {
                 var t = this;
-                return new n.a(function(e, i) {
+                return new o.a(function(e, i) {
+                    var a = Cookies.getJSON("pocket_cache_sign_user_info")
+                      , s = Cookies.getJSON("pocket_cache_sign_state");
+                    if (s && a && a.data.sign_info && 3 == s.data.state) {
+                        if (new Date(1e3 * a.data.sign_info.timestamp).getDate() == (new Date).getDate())
+                            return void t.handleGetSignStateSuccess(s)
+                    }
                     axios.get("http://www.pocketuniversity.cn/index.php/Signin/activity/getSigninState", {
                         params: {
                             media_id: _kd.parseQueryString().media_id
                         }
                     }).then(function(e) {
                         var i = e.data;
-                        t.dkState = i.data.state,
-                        t.lastMediaId = i.data.last_media_id,
-                        2 == i.data.state ? t.getMediaInfo().then(function() {
-                            t.lastMediaId != _kd.parseQueryString().media_id ? (t.fetch_media_info({
-                                media_id: t.lastMediaId
-                            }).then(function(e) {
-                                t.lastMediaInfo = e
-                            }),
-                            t.isNotMyPublic().then(function() {
-                                t.fetchUser("sign")
-                            }).catch(function() {
-                                location.replace(location.protocol + "//" + location.host + location.pathname + "?media_id=" + t.lastMediaId)
-                            })) : t.fetchUser("sign")
-                        }).catch(function(t) {
-                            weui.alert(t)
-                        }) : 3 == i.data.state ? t.fetchUser("hasSign") : t.fetchUser("outTime")
+                        Cookies.set("pocket_cache_sign_state", n()(i), {
+                            expires: 1 / 24
+                        }),
+                        t.handleGetSignStateSuccess(i)
                     })
                 }
                 )
             },
+            handleGetSignStateSuccess: function(t) {
+                var e = this;
+                this.dkState = t.data.state,
+                this.lastMediaId = t.data.last_media_id,
+                2 == t.data.state ? this.getMediaInfo().then(function() {
+                    e.lastMediaId && e.lastMediaId != _kd.parseQueryString().media_id ? e.fetch_media_info({
+                        media_id: e.lastMediaId
+                    }).then(function(t) {
+                        e.lastMediaInfo = t,
+                        e.isNotMyPublic(e.lastMediaInfo.name).then(function() {
+                            e.fetchUser("sign")
+                        }).catch(function() {
+                            location.replace(location.protocol + "//" + location.host + location.pathname + "?media_id=" + e.lastMediaId)
+                        })
+                    }) : e.fetchUser("sign")
+                }).catch(function(t) {
+                    weui.alert(t)
+                }) : 3 == t.data.state ? this.fetchUser("hasSign") : this.fetchUser("outTime")
+            },
+            startPuPublicFans: function() {
+                _kd.parseQueryString().action
+            },
             getMediaInfo: function() {
                 var t = _kd.parseQueryString().media_id;
-                return new n.a(function(e, i) {
+                return new o.a(function(e, i) {
                     t || (weui.alert("\b公众号参数错误"),
                     i("\b公众号参数错误")),
                     axios.get("http://www.pocketuniversity.cn/index.php/signin/common/getMediaInfo", {
@@ -4534,19 +5501,20 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                 var i = this;
                 this.appLoaded = !0;
                 var a = t;
-                this.dkInfo = o()({}, a, a.sign_info),
+                this.dkInfo = c()({}, a, a.sign_info),
                 this.save_user({
                     data: this.dkInfo
                 }),
                 1 == this.dkState ? weui.alert("请早上5点后再来打卡哦~", function() {
                     i.hideCards()
                 }) : 2 == this.dkState ? (this.visible.cards = !0,
+                this.clearPocketCacheAfterSign(),
                 this.wxShare(),
                 setTimeout(function() {
                     i.dnyAnimation = "achieve",
                     i.dkState = 3,
                     setTimeout(function() {
-                        i.visible.cards && i.hideCards()
+                        i.visible.cards && i.hideCards("e", !0)
                     }, 2e3)
                 }, 1500)) : this.visible.cards = !0
             },
@@ -4572,17 +5540,19 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                 this.visible.aYearCard = !1,
                 this.hiddenAYearCard = !0
             },
-            hideCards: function(t) {
-                var e = this;
-                t && "copyBtn" == t.target.id || (3 != this.dkState && 2 != this.dkState || this.fetch_zodiac_card({
+            hideCards: function(t, e) {
+                var i = this;
+                t && t.target && "copyBtn" == t.target.id || (e && this.fetch_zodiac_card({
                     type: "normal"
                 }).then(function(t) {
-                    e.visible.zodiac = !0,
-                    e.zodiacType = t.type,
+                    i.ZodiacPopupBtnText = "再来一张",
+                    i.visible.zodiac = !0,
+                    i.zodiacType = t.type,
                     weui.toast("打卡成功, 恭喜获得一张生肖卡", {
                         duration: 1e3
                     })
                 }).catch(function(t) {}),
+                this.startPuPublicFans(),
                 this.visible.habitCardVisible = !0,
                 this.visible.cards = !1,
                 this.showtime = !0,
@@ -4590,14 +5560,19 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             },
             handleNewCardClose: function() {
                 this.visible.zodiac = !1,
-                this.$router.push("/iwanthome")
+                this.$router.push({
+                    path: "/iwanthome",
+                    query: {
+                        action: "getOneMore"
+                    }
+                })
             },
             handleShare: function() {
                 this.$isWeixin ? this.visible.share = !0 : this.puShare()
             },
             fetch_secret_sign_card: function() {
                 var t = this;
-                _kd.parseQueryString().key == this._$DKKEY && this.fetch_zodiac_card({
+                _kd.parseQueryString().key && this.fetch_zodiac_card({
                     type: "secret"
                 }).then(function(e) {
                     weui.toast("恭喜获得生肖卡一张", {
@@ -4609,19 +5584,18 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                     weui.alert(t)
                 })
             },
-            isNotMyPublic: function() {
-                var t = this;
-                return new n.a(function(e, i) {
-                    weui.confirm("您现在打卡所在的平台与上一次不同，上一次打卡的平台为[" + (t.lastMediaInfo.name || "") + "]是否为您切换到当前平台打卡？（切换后将清空之前的打卡活动数据）", {
+            isNotMyPublic: function(t) {
+                return new o.a(function(e, i) {
+                    weui.confirm("您现在打卡所在的平台与上一次不同，上一次打卡的平台为[" + (t || "") + "]是否为您切换到当前平台打卡？（切换后将清空之前的活动打卡数据）", {
                         title: "请确认",
                         buttons: [{
-                            label: "是",
+                            label: "我要换",
                             type: "default",
                             onClick: function() {
                                 e()
                             }
                         }, {
-                            label: "否",
+                            label: "我不换",
                             type: "primary",
                             onClick: function() {
                                 i()
@@ -4633,7 +5607,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             },
             puShare: function() {
                 try {
-                    Android.sharePU("我是全国第" + this.dkInfo.ranking + "个早起的人,超越了全国xx%的人, 获得" + this.dkInfo.score + "元气值", '加入"全国高校早起打卡计划", 2018迎接全新的自己', "http://" + location.host + location.pathname + "?media_id=" + mediaId + "&key=" + this.dkInfo.id, "http://oss.pocketuniversity.cn/media/2018-01-18/5a608a069655b.png", "2")
+                    Android.sharePU("我是全国第" + this.dkInfo.ranking + "个早起的人,超越了全国" + this.passPercent + "%的人, 获得" + this.dkInfo.dayscore + "元气值", '加入"全国高校早起打卡计划", 2018迎接全新的自己', "http://" + location.host + location.pathname + "?media_id=" + mediaId + "&share_key=" + this.dkInfo.id, "http://oss.pocketuniversity.cn/media/2018-01-18/5a608a069655b.png", "2")
                 } catch (t) {
                     console.log(t)
                 }
@@ -4649,7 +5623,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                     var e = _kd.parseQueryString().media_id;
                     _kd.wxShare({
                         title: "我是全国第" + t.dkInfo.ranking + "个早起的人,超越了全国" + t.passPercent + "%的人, 获得" + t.dkInfo.dayscore + "元气值",
-                        link: "http://" + location.host + location.pathname + "?media_id=" + e + "&key=" + t.dkInfo.id,
+                        link: "http://" + location.host + location.pathname + "?media_id=" + e + "&share_key=" + t.dkInfo.id,
                         desc: '加入"全国高校早起打卡计划", 2018迎接全新的自己',
                         imgUrl: "http://oss.pocketuniversity.cn/media/2018-01-18/5a608a069655b.png",
                         success: function() {
@@ -4660,25 +5634,25 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             }
         }),
         components: {
-            Dk: r.a,
-            Footprint: c.a,
-            AppLoading: d.a,
-            AchievementCard: l.a,
-            QuickCard: u.a,
-            SuperRank: p.a,
-            QRCodeCard: h.a,
-            HabitCard: m.a,
-            ZhiKouLing: v.a,
-            InnerSlider: g.a,
-            AYearCard: b.a,
-            CnZodiacPopup: f.a,
-            Map: A.a
+            Dk: d.a,
+            Footprint: l.a,
+            AppLoading: u.a,
+            AchievementCard: h.a,
+            QuickCard: p.a,
+            SuperRank: f.a,
+            QRCodeCard: m.a,
+            HabitCard: v.a,
+            ZhiKouLing: b.a,
+            InnerSlider: A.a,
+            AYearCard: y.a,
+            CnZodiacPopup: g.a,
+            Map: w.a
         }
     }
 }
 , , , , , , , , , , , , function(t, e, i) {
     "use strict";
-    var a = i(252);
+    var a = i(264);
     e.a = {
         data: function() {
             return {
@@ -4787,9 +5761,11 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 }
 , function(t, e, i) {
     "use strict";
-    var a = i(2)
+    var a = i(66)
       , n = i.n(a)
-      , s = i(1);
+      , s = i(2)
+      , o = i.n(s)
+      , r = i(1);
     e.a = {
         data: function() {
             return {
@@ -4813,7 +5789,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                 required: !0
             }
         },
-        computed: n()({}, Object(s.d)(["userInfo"]), Object(s.d)("habit", ["myHabit"]), {
+        computed: o()({}, Object(r.d)(["userInfo"]), Object(r.d)("habit", ["myHabit"]), {
             moodDiaryLink: function() {
                 return "http://www.pocketuniversity.cn/index.php/Signin/Mood/index?media_id=" + this.mediaId + "&act=" + (1 - this.isWeixin) + "&cet=" + this.isCet
             }
@@ -4837,17 +5813,32 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                 location.assign("http://www.pocketuniversity.cn/index.php/Signin/shop")
             },
             fetchDays: function() {
-                var t = this;
-                axios.get("/signin/api/summer21").then(function(e) {
-                    for (var i = e.data, a = 21 - i.errmsg.data.length, n = 0; n < a; n++)
-                        i.errmsg.data.push(null);
-                    t.moods = i.errmsg.data.map(function(t) {
-                        return t ? 7 == new Date(1e3 * t).getMonth() && "15" == new Date(1e3 * t).getDate() ? "early" : new Date(1e3 * t).getHours() >= 9 ? "late" : "early" : t
+                var t = this
+                  , e = null;
+                try {
+                    e = Cookies.getJSON("pocket_cache_21days")
+                } catch (t) {}
+                if (e) {
+                    var i = e;
+                    return void this.handleFetchDaysSuccess(i)
+                }
+                axios.get("http://www.pocketuniversity.cn/index.php/Signin/activity/get21Days").then(function(e) {
+                    var i = e.data;
+                    Cookies.set("pocket_cache_21days", n()(i), {
+                        expires: 1 / 24
                     }),
-                    t.count = i.errmsg.count;
-                    var s = i.errmsg.data[0] ? new Date(1e3 * i.errmsg.data[0]) : new Date;
-                    i.errmsg.data.length < 21 ? t.curDate = t.createDays(new Date) : t.curDate = t.createDays(s)
+                    t.handleFetchDaysSuccess(i)
                 })
+            },
+            handleFetchDaysSuccess: function(t) {
+                for (var e = 21 - t.data.length, i = 0; i < e; i++)
+                    t.data.push(null);
+                this.moods = t.data.map(function(t) {
+                    return t ? 7 == new Date(1e3 * t).getMonth() && "15" == new Date(1e3 * t).getDate() ? "early" : new Date(1e3 * t).getHours() >= 9 ? "late" : "early" : t
+                }),
+                this.count = t.count;
+                var a = t.data[0] ? new Date(1e3 * t.data[0]) : new Date;
+                t.data.length < 21 ? this.curDate = this.createDays(new Date) : this.curDate = this.createDays(a)
             },
             createDays: function(t) {
                 var e = t.getDate()
@@ -4861,14 +5852,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                     for (var r = (new Date(a,i,0),
                     21 - s.length), c = 0; c < r; c++)
                         s.push(c + 1)
-                } else {
+                } else
                     for (var d = 0; d < 21; d++)
                         s.push(e + d);
-                    console.log(3)
-                }
-                return console.log(n, e, t),
-                console.log(s),
-                s
+                return s
             },
             updateHabbit: function() {
                 var t = this;
@@ -4911,7 +5898,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
     var a = i(2)
       , n = i.n(a)
       , s = i(1)
-      , o = i(10);
+      , o = i(12);
     e.a = {
         data: function() {
             return {
@@ -4995,10 +5982,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
     var a = i(2)
       , n = i.n(a)
       , s = i(1)
-      , o = i(7)
+      , o = i(8)
       , r = i.n(o)
-      , c = i(194)
-      , d = (i(11),
+      , c = i(205)
+      , d = (i(13),
     null);
     e.a = {
         data: function() {
@@ -5018,8 +6005,6 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         },
         created: function() {
             var t = this;
-            this.fetchEnergyInfo(),
-            this.fetchSuperRank(),
             window.energyEventHub.$on("show", function() {
                 t.showEnergyShop()
             }),
@@ -5133,10 +6118,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(280)
+        i(292)
     }
-    var n = i(195)
-      , s = i(281)
+    var n = i(206)
+      , s = i(293)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, null, null);
@@ -5144,7 +6129,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 }
 , function(t, e, i) {
     "use strict";
-    var a = i(15)
+    var a = i(9)
       , n = i.n(a)
       , s = i(2)
       , o = i.n(s)
@@ -5276,9 +6261,11 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         watch: {},
         mounted: function() {
             var t = this;
-            this.fetchMapData().then(function() {
-                t.createChart()
-            })
+            setTimeout(function() {
+                t.fetchMapData().then(function() {
+                    t.createChart()
+                })
+            }, 2e3)
         },
         methods: o()({}, Object(r.c)(["save_total_sign_people"]), {
             fetchMapData: function() {
@@ -5287,9 +6274,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                     axios.get("http://www.pocketuniversity.cn/index.php/Signin/activity/getMap").then(function(i) {
                         var a = i.data;
                         t.provinceData = a.data || [],
-                        t.provinceData.forEach(function(e) {
-                            t.total += Number(e.count)
-                        }),
+                        t.total += Number(a.number),
                         t.save_total_sign_people(t.total),
                         e()
                     })
@@ -5399,13 +6384,15 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 }
 , function(t, e, i) {
     "use strict";
-    var a = i(2)
+    var a = i(66)
       , n = i.n(a)
-      , s = i(11)
-      , o = i(197)
-      , r = i(1)
-      , c = i(285)
-      , d = i.n(c);
+      , s = i(2)
+      , o = i.n(s)
+      , r = i(13)
+      , c = i(208)
+      , d = i(1)
+      , l = i(297)
+      , u = i.n(l);
     e.a = {
         props: {
             isShow: {
@@ -5425,7 +6412,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                 isFocus: !1
             }
         },
-        computed: n()({}, Object(r.d)("habit", []), Object(r.d)(["userInfo"]), {
+        computed: o()({}, Object(d.d)("habit", []), Object(d.d)(["userInfo"]), {
             canIWriteHabitMood: function() {
                 return this.hasSetHabit && !this.hasWriteMood && !this.updating
             }
@@ -5442,25 +6429,39 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             this.fetchHabit()
         },
         mounted: function() {
-            d()(document.querySelector("#habitInput"))
+            u()(document.querySelector("#habitInput"))
         },
-        methods: n()({}, Object(r.c)("habit", ["save_my_habit", "update_my_habit"]), {
+        methods: o()({}, Object(d.c)("habit", ["save_my_habit", "update_my_habit"]), {
             fetchHabit: function() {
-                var t = this;
-                axios.get(s.b).then(function(e) {
+                var t = this
+                  , e = null;
+                try {
+                    e = Cookies.getJSON("pocket_cache_my_habit")
+                } catch (t) {}
+                if (e) {
+                    var i = e;
+                    return void this.handleFetchHabitSuccess(i)
+                }
+                axios.get(r.b).then(function(e) {
                     var i = e.data;
-                    if (!i.errmsg)
-                        return void t.$emit("ready");
-                    t.habitData = i.errmsg,
-                    t.habit = i.errmsg.habit,
-                    t.sourceHabit = i.errmsg.habit,
-                    t.checkTodayHabitMood(),
-                    t.habitData.habit ? t.hasSetHabit = !0 : t.$emit("ready"),
-                    t.save_my_habit(i.errmsg),
-                    t.$nextTick(function() {
-                        d()(document.querySelector("#habitInput")),
-                        d.a.update(document.querySelector("#habitInput"))
-                    })
+                    Cookies.set("pocket_cache_my_habit", n()(i), {
+                        expires: 1 / 24
+                    }),
+                    t.handleFetchHabitSuccess(i)
+                })
+            },
+            handleFetchHabitSuccess: function(t) {
+                if (!t.errmsg)
+                    return void this.$emit("ready");
+                this.habitData = t.errmsg,
+                this.habit = t.errmsg.habit,
+                this.sourceHabit = t.errmsg.habit,
+                this.checkTodayHabitMood(),
+                this.habitData.habit ? this.hasSetHabit = !0 : this.$emit("ready"),
+                this.save_my_habit(t.errmsg),
+                this.$nextTick(function() {
+                    u()(document.querySelector("#habitInput")),
+                    u.a.update(document.querySelector("#habitInput"))
                 })
             },
             beforeSetHabit: function() {
@@ -5481,7 +6482,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             },
             setHabit: function() {
                 var t = this;
-                axios.post(s.f, {
+                axios.post(r.f, {
                     habit: this.habit
                 }).then(function(e) {
                     var i = e.data;
@@ -5501,7 +6502,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                         key: "habit_id",
                         value: i.errmsg
                     }),
-                    o.a.$emit("update"),
+                    c.a.$emit("update"),
                     weui.toast("设置成功", {
                         duration: 1500,
                         callback: function() {
@@ -5526,7 +6527,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             },
             checkTodayHabitMood: function() {
                 var t = this;
-                axios.get(s.e).then(function(e) {
+                axios.get(r.e).then(function(e) {
                     0 != e.data.msg ? t.hasWriteMood = !0 : (t.hasWriteMood = !1,
                     t.habitData.habit_id && t.$emit("ready"))
                 })
@@ -5547,7 +6548,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 }
 , function(t, e, i) {
     "use strict";
-    var a = i(7)
+    var a = i(8)
       , n = i.n(a);
     e.a = {
         data: function() {
@@ -5571,18 +6572,30 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 }
 , function(t, e, i) {
     "use strict";
-    var a = i(297);
+    var a = i(309);
     e.a = {
         data: function() {
             var t = this;
             return {
                 slideItem: [{
-                    order: 1,
+                    order: 2,
                     type: "action",
                     callback: function() {
                         t.$router.push("/iwanthome")
                     },
                     imgUrl: "http://oss.pocketuniversity.cn/media/2018-01-22/5a650492d74e9.png"
+                }, {
+                    order: 1,
+                    type: "action",
+                    callback: function() {
+                        t.$router.push({
+                            path: "/iwanthome",
+                            query: {
+                                action: "getOneMore"
+                            }
+                        })
+                    },
+                    imgUrl: "http://oss.pocketuniversity.cn/media/2018-01-24/5a6849b41055d.jpg"
                 }]
             }
         },
@@ -5594,7 +6607,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 }
 , function(t, e, i) {
     "use strict";
-    var a = i(299);
+    var a = i(311);
     e.a = {
         props: {
             datas: {
@@ -5607,7 +6620,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                 slider: null,
                 loop: !1,
                 autoPlay: !0,
-                interval: 1500,
+                interval: 2e3,
                 click: !0,
                 showDots: !1,
                 currentPageIndex: 0,
@@ -5691,9 +6704,9 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 }
 , function(t, e, i) {
     "use strict";
-    var a = i(8)
+    var a = i(10)
       , n = i(22)
-      , s = i(10);
+      , s = i(12);
     e.a = {
         data: function() {
             return {
@@ -5748,10 +6761,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
     "use strict";
     var a = i(2)
       , n = i.n(a)
-      , s = i(206)
+      , s = i(217)
       , o = i(1)
-      , r = i(197)
-      , c = i(11)
+      , r = i(208)
+      , c = i(13)
       , d = {
         0: {
             habit_id: 1457,
@@ -7210,7 +8223,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         return a
     });
     var n = i(3)
-      , s = i(317)
+      , s = i(329)
       , o = n.a.extend(s.a)
       , r = null
 }
@@ -7232,9 +8245,9 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 }
 , function(t, e, i) {
     "use strict";
-    var a = i(324)
-      , n = i(11)
-      , s = i(206);
+    var a = i(336)
+      , n = i(13)
+      , s = i(217);
     e.a = {
         data: function() {
             return {
@@ -7306,11 +8319,11 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 }
 , function(t, e, i) {
     "use strict";
-    var a = i(212)
+    var a = i(223)
       , n = i.n(a)
-      , s = i(8)
+      , s = i(10)
       , o = i(22)
-      , r = i(10);
+      , r = i(12);
     e.a = {
         data: function() {
             return {
@@ -7373,9 +8386,9 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         }
     }
     e.__esModule = !0;
-    var n = i(330)
+    var n = i(342)
       , s = a(n)
-      , o = i(332)
+      , o = i(344)
       , r = a(o)
       , c = "function" == typeof r.default && "symbol" == typeof s.default ? function(t) {
         return typeof t
@@ -7392,16 +8405,16 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
     }
 }
 , function(t, e, i) {
-    var a = i(174)
-      , n = i(77).concat("length", "prototype");
+    var a = i(185)
+      , n = i(82).concat("length", "prototype");
     e.f = Object.getOwnPropertyNames || function(t) {
         return a(t, n)
     }
 }
 , function(t, e, i) {
     "use strict";
-    var a = i(8)
-      , n = i(10);
+    var a = i(10)
+      , n = i(12);
     i(1);
     e.a = {
         data: function() {
@@ -7440,13 +8453,13 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 }
 , function(t, e, i) {
     "use strict";
-    var a = i(15)
+    var a = i(9)
       , n = i.n(a)
       , s = i(2)
       , o = i.n(s)
       , r = i(1)
-      , c = (i(348),
-    i(21));
+      , c = (i(360),
+    i(6));
     i(29);
     e.a = {
         name: "Write",
@@ -7517,12 +8530,9 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                     if (!t.mood)
                         return weui.alert("心情不能为空哦~ 请选择上面的心情图标~"),
                         i();
-                    var a = new Date
-                      , n = new Date(a.getFullYear(),a.getMonth(),a.getDate(),5,0,0);
+                    var a = new Date;
+                    new Date(a.getFullYear(),a.getMonth(),a.getDate(),5,0,0),
                     new Date(a.getFullYear(),a.getMonth(),a.getDate(),12,0,0);
-                    if (a.getTime() < n.getTime())
-                        return weui.alert("打卡时间为每天5:00之后"),
-                        i();
                     e()
                 }
                 )
@@ -7600,16 +8610,16 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
     });
     var a = i(3)
       , n = (i(1),
-    i(55),
-    i(222))
-      , s = i(79)
+    i(59),
+    i(233))
+      , s = i(84)
       , o = (i.n(s),
-    i(80),
-    i(81))
+    i(85),
+    i(86))
       , r = (i.n(o),
-    i(82),
-    i(230))
-      , c = i(170);
+    i(87),
+    i(241))
+      , c = i(181);
     try {
         var d;
         d = Android.getUid(),
@@ -7629,6 +8639,17 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         return Qs.stringify(t)
     }
     ],
+    axios.defaults.transformResponse = [function(t) {
+        var e = JSON.parse(t);
+        if (-301 == (e.errcode || e.code))
+            try {
+                Android ? location.replace("http://auth.pocketuniversity.cn/login/puapp?redirect_url=" + encodeURIComponent(location.href)) : location.replace("http://auth.pocketuniversity.cn/login/kdgx?redirect_url=" + encodeURIComponent(location.href))
+            } catch (t) {
+                location.replace("http://auth.pocketuniversity.cn/login/kdgx?redirect_url=" + encodeURIComponent(location.href))
+            }
+        return e
+    }
+    ],
     new a.a({
         el: "#app",
         router: r.a,
@@ -7636,16 +8657,15 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         render: function(t) {
             return t(n.a)
         }
-    }),
-    "gh_bcc64f2e1a74" == _kd.parseQueryString().media_id && (window.isYou = !0)
+    })
 }
 , , , , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(223)
+        i(234)
     }
-    var n = i(172)
-      , s = i(229)
+    var n = i(183)
+      , s = i(240)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, null, null);
@@ -7678,22 +8698,22 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     var a = i(3)
-      , n = i(55)
-      , s = i(231)
-      , o = i(304)
-      , r = i(68)
-      , c = i(307)
-      , d = i(69)
-      , l = i(70)
-      , u = (i(310),
-    i(121))
-      , h = i(312)
-      , p = i(315)
-      , m = i(322)
-      , f = i(328)
-      , v = i(343)
-      , g = i(129)
-      , b = i(346);
+      , n = i(59)
+      , s = i(242)
+      , o = i(316)
+      , r = i(73)
+      , c = i(319)
+      , d = i(74)
+      , l = i(75)
+      , u = (i(322),
+    i(124))
+      , h = i(324)
+      , p = i(327)
+      , m = i(334)
+      , f = i(340)
+      , v = i(355)
+      , g = i(132)
+      , b = i(358);
     a.a.use(n.a);
     var A = [{
         path: "/home",
@@ -7758,23 +8778,23 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(232)
+        i(243)
     }
-    var n = i(176)
-      , s = i(303)
+    var n = i(187)
+      , s = i(315)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, null, null);
     e.a = c.exports
 }
 , function(t, e) {}
-, , , , , , , , , , , , , , , , , , function(t, e, i) {
+, , , , , , , , , , , , , , , , , , , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(251)
+        i(263)
     }
-    var n = i(188)
-      , s = i(255)
+    var n = i(199)
+      , s = i(267)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, null, null);
@@ -7784,10 +8804,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(253)
+        i(265)
     }
-    var n = i(189)
-      , s = i(254)
+    var n = i(200)
+      , s = i(266)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, null, null);
@@ -7941,7 +8961,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             staticClass: "mark-button"
         }, [a("img", {
             attrs: {
-                src: i(256),
+                src: i(268),
                 alt: "早起签到",
                 width: "120",
                 height: "auto"
@@ -7961,10 +8981,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(258)
+        i(270)
     }
-    var n = i(190)
-      , s = i(259)
+    var n = i(201)
+      , s = i(271)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, null, null);
@@ -8058,13 +9078,13 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(261)
+        i(273)
     }
-    var n = i(191)
-      , s = i(262)
+    var n = i(202)
+      , s = i(274)
       , o = i(0)
       , r = a
-      , c = o(n.a, s.a, !1, r, "data-v-9ee4a5ba", null);
+      , c = o(n.a, s.a, !1, r, "data-v-19295a16", null);
     e.a = c.exports
 }
 , function(t, e) {}
@@ -8114,7 +9134,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                     t.goUpdateSchool(e)
                 }
             }
-        }, [t._v("\n                    修改学校\n                ")]) : i("span", {
+        }, [t._v("\n                    修改信息\n                ")]) : i("span", {
             staticClass: "achieve__btn_school",
             on: {
                 click: function(e) {
@@ -8197,10 +9217,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(264)
+        i(276)
     }
-    var n = i(192)
-      , s = i(265)
+    var n = i(203)
+      , s = i(277)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, null, null);
@@ -8221,12 +9241,12 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             staticClass: "quick__state"
         }, [t.early ? a("img", {
             attrs: {
-                src: i(266),
+                src: i(278),
                 alt: ""
             }
         }) : a("img", {
             attrs: {
-                src: i(267),
+                src: i(279),
                 alt: ""
             }
         })]), t._v(" "), t._m(1)]), t._v(" "), t._m(2), t._v(" "), a("div", {
@@ -8241,7 +9261,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             staticClass: "quick__hd"
         }, [a("img", {
             attrs: {
-                src: i(268),
+                src: i(280),
                 alt: ""
             }
         })])
@@ -8283,12 +9303,12 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , , , , , , , , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(277),
-        i(278),
-        i(279)
+        i(289),
+        i(290),
+        i(291)
     }
-    var n = i(193)
-      , s = i(282)
+    var n = i(204)
+      , s = i(294)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, null, null);
@@ -8399,13 +9419,17 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         }, [t._m(0), t._v(" "), t._m(1), t._v(" "), t._m(2)]), t._v(" "), i("p", {
             staticClass: "rule",
             class: {
-                rule_pu: !t.isWeixin
+                rule_pu: !0
             }
         }, [i("a", {
             attrs: {
                 href: "https://mp.weixin.qq.com/s/xPjuvtQrHoeoiiEY_8nNMA"
             }
-        }, [t._v("\n            元气值积分规则\n        ")])]), t._v(" "), t.visible.shopGuide ? i("div", {
+        }, [t._v("\n            元气值积分规则\n        ")]), t._v(" "), i("a", {
+            attrs: {
+                href: "http://mp.weixin.qq.com/s/VNbEELV39L5z0Mpt-QJdfw"
+            }
+        }, [t._v("\n            生肖卡玩法\n        ")])]), t._v(" "), t.visible.shopGuide ? i("div", {
             staticClass: "shop-guide"
         }, [i("div", {
             staticClass: "shop-mask",
@@ -8426,7 +9450,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             }
         }, [i("span", {
             staticClass: "shop-guide__energy"
-        }, [t._v("\n                " + t._s(t.energyInfo.energy_coin) + "\n            ")]), t._v(" "), i("img", {
+        }, [t._v("\n                " + t._s(t.userInfo.score) + "\n            ")]), t._v(" "), i("img", {
             attrs: {
                 src: "http://oss.pocketuniversity.cn/public/common/2017-09-26/6a0044479ecf352ddb1edabb89109d09.png"
             }
@@ -8517,10 +9541,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(284)
+        i(296)
     }
-    var n = i(196)
-      , s = i(286)
+    var n = i(207)
+      , s = i(298)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, null, null);
@@ -8738,11 +9762,11 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             staticClass: "HabitCard__title"
         }, [t.hasSetHabit && !t.updating ? a("img", {
             attrs: {
-                src: i(287)
+                src: i(299)
             }
         }) : a("img", {
             attrs: {
-                src: i(288)
+                src: i(300)
             }
         })])]), t._v(" "), a("section", {
             staticClass: "HabitCard__bd"
@@ -8786,7 +9810,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             }
         }, [a("span", [t._v("记录今日改变")]), t._v(" "), a("img", {
             attrs: {
-                src: i(289)
+                src: i(301)
             }
         })]) : a("a", {
             staticClass: "HabitCard__btn HabitCard__btn_notyet",
@@ -8803,7 +9827,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             staticClass: "HabitCard__quote HabitCard__quote_before"
         }, [a("img", {
             attrs: {
-                src: i(290),
+                src: i(302),
                 alt: ""
             }
         })])
@@ -8816,7 +9840,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             staticClass: "HabitCard__quote HabitCard__quote_after"
         }, [a("img", {
             attrs: {
-                src: i(291)
+                src: i(303)
             }
         })])
     }
@@ -8845,10 +9869,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(293)
+        i(305)
     }
-    var n = i(198)
-      , s = i(294)
+    var n = i(209)
+      , s = i(306)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, null, null);
@@ -8915,10 +9939,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(296)
+        i(308)
     }
-    var n = i(199)
-      , s = i(301)
+    var n = i(210)
+      , s = i(313)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, "data-v-613881d2", null);
@@ -8928,10 +9952,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(298)
+        i(310)
     }
-    var n = i(200)
-      , s = i(300)
+    var n = i(211)
+      , s = i(312)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, "data-v-400b4bbf", null);
@@ -8941,7 +9965,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        return !1 !== k && ("standard" === k ? t : k + t.charAt(0).toUpperCase() + t.substr(1))
+        return !1 !== _ && ("standard" === _ ? t : _ + t.charAt(0).toUpperCase() + t.substr(1))
     }
     function n(t, e, i, a) {
         t.addEventListener(e, i, {
@@ -9124,7 +10148,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         return Array.from(t)
     }
       , C = document.createElement("div").style
-      , k = function() {
+      , _ = function() {
         var t = {
             webkit: "webkitTransform",
             Moz: "MozTransform",
@@ -9137,13 +10161,13 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                 return e;
         return !1
     }()
-      , _ = a("transform")
+      , k = a("transform")
       , S = a("perspective")in C
       , x = "ontouchstart"in window
-      , I = !1 !== _
+      , I = !1 !== k
       , M = a("transition")in C
       , R = {
-        transform: _,
+        transform: k,
         transitionTimingFunction: a("transitionTimingFunction"),
         transitionDuration: a("transitionDuration"),
         transitionProperty: a("transitionProperty"),
@@ -9152,7 +10176,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         transitionEnd: a("transitionEnd")
     }
       , z = 1
-      , D = {
+      , T = {
         touchstart: z,
         touchmove: z,
         touchend: z,
@@ -9160,7 +10184,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         mousemove: 2,
         mouseup: 2
     }
-      , T = {
+      , D = {
         startX: 0,
         startY: 0,
         scrollX: !1,
@@ -9198,7 +10222,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         pullDownRefresh: !1,
         pullUpLoad: !1
     }
-      , B = {
+      , E = {
         swipe: {
             style: "cubic-bezier(0.23, 1, 0.32, 1)",
             fn: function(t) {
@@ -9218,7 +10242,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             }
         }
     }
-      , E = function() {
+      , B = function() {
         return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || function(t) {
             return window.setTimeout(t, (t.interval || 100 / 60) / 2)
         }
@@ -9330,7 +10354,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         }
         ,
         t.prototype._handleOptions = function(t) {
-            this.options = m({}, T, t),
+            this.options = m({}, D, t),
             this.translateZ = this.options.HWCompositing && S ? " translateZ(0)" : "",
             this.options.useTransition = this.options.useTransition && M,
             this.options.useTransform = this.options.useTransform && I,
@@ -9462,7 +10486,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
     }(A),
     function(t) {
         t.prototype._start = function(t) {
-            var e = D[t.type];
+            var e = T[t.type];
             if ((e === z || 0 === t.button) && !(!this.enabled || this.destroyed || this.initiated && this.initiated !== e)) {
                 this.initiated = e,
                 this.options.preventDefault && !c(t.target, this.options.preventDefaultException) && t.preventDefault(),
@@ -9490,7 +10514,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         }
         ,
         t.prototype._move = function(t) {
-            if (this.enabled && !this.destroyed && D[t.type] === this.initiated) {
+            if (this.enabled && !this.destroyed && T[t.type] === this.initiated) {
                 this.options.preventDefault && t.preventDefault();
                 var e = t.touches ? t.touches[0] : t
                   , i = e.pageX - this.pointX
@@ -9549,7 +10573,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         }
         ,
         t.prototype._end = function(t) {
-            if (this.enabled && !this.destroyed && D[t.type] === this.initiated) {
+            if (this.enabled && !this.destroyed && T[t.type] === this.initiated) {
                 this.initiated = !1,
                 this.options.preventDefault && !c(t.target, this.options.preventDefaultException) && t.preventDefault(),
                 this.trigger("touchEnd", {
@@ -9558,7 +10582,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                 });
                 var e = this.stopFromTransition;
                 if (this.stopFromTransition = !1,
-                !(this.options.pullDownRefresh && this._checkPullDown() || this.resetPosition(this.options.bounceTime, B.bounce))) {
+                !(this.options.pullDownRefresh && this._checkPullDown() || this.resetPosition(this.options.bounceTime, E.bounce))) {
                     this.isInTransition = !1;
                     var i = Math.round(this.x)
                       , a = Math.round(this.y);
@@ -9569,7 +10593,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                                   , s = Math.round((this.pointY + o(this.target).top - this.itemHeight / 2) / this.itemHeight);
                                 this.target = this.items[n + s]
                             }
-                            this.scrollToElement(this.target, this.options.wheel.adjustTime || 400, !0, !0, B.swipe)
+                            this.scrollToElement(this.target, this.options.wheel.adjustTime || 400, !0, !0, E.swipe)
                         } else
                             e || (this.options.tap && d(t, this.options.tap),
                             this.options.click && l(t));
@@ -9603,7 +10627,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                     } else
                         this.options.wheel && (a = Math.round(a / this.itemHeight) * this.itemHeight,
                         g = this.options.wheel.adjustTime || 400);
-                    var y = B.swipe;
+                    var y = E.swipe;
                     if (this.options.snap) {
                         var w = this._nearestSnap(i, a);
                         this.currentPage = w,
@@ -9612,10 +10636,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                         a = w.y,
                         this.directionX = 0,
                         this.directionY = 0,
-                        y = B.bounce
+                        y = E.bounce
                     }
                     if (i !== this.x || a !== this.y)
-                        return (i > 0 || i < this.maxScrollX || a > 0 || a < this.maxScrollY) && (y = B.swipeBounce),
+                        return (i > 0 || i < this.maxScrollX || a > 0 || a < this.maxScrollY) && (y = E.swipeBounce),
                         void this.scrollTo(i, a, g, y);
                     this.options.wheel && (this.selectedIndex = Math.round(Math.abs(this.y / this.itemHeight))),
                     this.trigger("scrollEnd", {
@@ -9639,11 +10663,11 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                 if (e.isInTransition) {
                     var i = e.getComputedPosition();
                     e.trigger("scroll", i),
-                    e.probeTimer = E(t)
+                    e.probeTimer = B(t)
                 }
             }
             O(this.probeTimer),
-            this.probeTimer = E(t);
+            this.probeTimer = B(t);
             var e = this
         }
         ,
@@ -9675,7 +10699,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         ,
         t.prototype._transitionEnd = function(t) {
             t.target === this.scroller && this.isInTransition && (this._transitionTime(),
-            this.pulling || this.resetPosition(this.options.bounceTime, B.bounce) || (this.isInTransition = !1,
+            this.pulling || this.resetPosition(this.options.bounceTime, E.bounce) || (this.isInTransition = !1,
             this.trigger("scrollEnd", {
                 x: this.x,
                 y: this.y
@@ -9714,7 +10738,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                   , h = (t - o) * u + o
                   , m = (e - r) * u + r;
                 s._translate(h, m),
-                s.isAnimating && (s.animateTimer = E(n)),
+                s.isAnimating && (s.animateTimer = B(n)),
                 3 === s.options.probeType && s.trigger("scroll", {
                     x: s.x,
                     y: s.y
@@ -9732,7 +10756,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         ,
         t.prototype.scrollBy = function(t, e) {
             var i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 0
-              , a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : B.bounce;
+              , a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : E.bounce;
             t = this.x + t,
             e = this.y + e,
             this.scrollTo(t, e, i, a)
@@ -9740,7 +10764,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         ,
         t.prototype.scrollTo = function(t, e) {
             var i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 0
-              , a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : B.bounce;
+              , a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : E.bounce;
             this.isInTransition = this.options.useTransition && i > 0 && (t !== this.x || e !== this.y),
             !i || this.options.useTransition ? (this._transitionProperty(),
             this._transitionTimingFunction(a.style),
@@ -9769,7 +10793,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         ,
         t.prototype.resetPosition = function() {
             var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0
-              , e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : B.bounce
+              , e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : E.bounce
               , i = this.x;
             !this.hasHorizontalScroll || i > 0 ? i = 0 : i < this.maxScrollX && (i = this.maxScrollX);
             var a = this.y;
@@ -9979,7 +11003,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         }
         ,
         t.prototype.goToPage = function(t, e, i) {
-            var a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : B.bounce
+            var a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : E.bounce
               , n = this.options.snap;
             t >= this.pages.length ? t = this.pages.length - 1 : t < 0 && (t = 0),
             e >= this.pages[t].length ? e = this.pages[t].length - 1 : e < 0 && (e = 0);
@@ -10100,13 +11124,13 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
               , n = void 0 === a ? 40 : a;
             return this.y > i && (this.pulling || (this.pulling = !0,
             this.trigger("pullingDown")),
-            this.scrollTo(this.x, n, this.options.bounceTime, B.bounce)),
+            this.scrollTo(this.x, n, this.options.bounceTime, E.bounce)),
             this.pulling
         }
         ,
         t.prototype.finishPullDown = function() {
             this.pulling = !1,
-            this.resetPosition(this.options.bounceTime, B.bounce)
+            this.resetPosition(this.options.bounceTime, E.bounce)
         }
     }(A),
     function(t) {
@@ -10217,7 +11241,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 }
 , function(t, e, i) {
     "use strict";
-    var a = i(15);
+    var a = i(9);
     i.n(a)
 }
 , function(t, e, i) {
@@ -10228,12 +11252,9 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
           , i = t._self._c || e;
         return i("div", {
             staticClass: "home"
-        }, [i("section", [i("SuperRank")], 1), t._v(" "), i("div", {
-            staticClass: "home__slider block",
-            staticStyle: {
-                "box-shadow": "0 0 4px 1px rgba(0, 0, 0, .3)"
-            }
-        }, [i("InnerSlider")], 1), t._v(" "), i("div", [i("Footprint", {
+        }, [i("section", [t.appLoaded ? i("SuperRank") : t._e()], 1), t._v(" "), i("div", {
+            staticClass: "home__slider block"
+        }, [i("InnerSlider")], 1), t._v(" "), i("div", [t.appLoaded ? i("Footprint", {
             attrs: {
                 showtime: t.showtime,
                 data: t.mediaInfo,
@@ -10244,7 +11265,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                     t.visible.habitCard = !0
                 }
             }
-        })], 1), t._v(" "), i("div", {
+        }) : t._e()], 1), t._v(" "), i("div", {
             staticClass: "home__items home__list totalRank"
         }, [i("div", {
             staticClass: "list__hd"
@@ -10276,13 +11297,13 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             attrs: {
                 name: "fade2"
             }
-        }, [i("keep-alive", [i("router-view", {
+        }, [t.appLoaded ? i("keep-alive", [i("router-view", {
             on: {
                 showHabit: function(e) {
                     t.visible.habitCard = !0
                 }
             }
-        })], 1)], 1)], 1), t._v(" "), i("transition", {
+        })], 1) : t._e()], 1)], 1), t._v(" "), i("transition", {
             attrs: {
                 name: "invite-fade"
             }
@@ -10317,7 +11338,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                 value: t.visible.cards,
                 expression: "visible.cards"
             }],
-            staticClass: "home__card"
+            staticClass: "home__card",
+            on: {
+                click: t.hideCards
+            }
         }, [i("transition", {
             attrs: {
                 name: t.dnyAnimation
@@ -10367,7 +11391,8 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             }
         }, [t.appLoaded ? t._e() : i("AppLoading")], 1), t._v(" "), t.visible.zodiac ? i("CnZodiacPopup", {
             attrs: {
-                type: t.zodiacType
+                type: t.zodiacType,
+                btnText: t.ZodiacPopupBtnText
             },
             on: {
                 close: t.handleNewCardClose
@@ -10398,10 +11423,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(305)
+        i(317)
     }
-    var n = i(201)
-      , s = i(306)
+    var n = i(212)
+      , s = i(318)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, null, null);
@@ -10611,7 +11636,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             staticStyle: {
                 "font-size": "10px"
             }
-        }, [t._v(" (排行前100可入)")])])
+        })])
     }
     ]
       , s = {
@@ -10623,11 +11648,11 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(308)
+        i(320)
     }
-    var n = i(202)
+    var n = i(213)
       , s = i.n(n)
-      , o = i(309)
+      , o = i(321)
       , r = i(0)
       , c = a
       , d = r(s.a, o.a, !1, c, "data-v-beb7ab68", null);
@@ -10678,9 +11703,9 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 }
 , function(t, e, i) {
     "use strict";
-    var a = i(203)
+    var a = i(214)
       , n = i.n(a)
-      , s = i(311)
+      , s = i(323)
       , o = i(0)
       , r = o(n.a, s.a, !1, null, null, null);
     r.exports
@@ -10705,10 +11730,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(313)
+        i(325)
     }
-    var n = i(204)
-      , s = i(314)
+    var n = i(215)
+      , s = i(326)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, null, null);
@@ -10747,10 +11772,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(316)
+        i(328)
     }
-    var n = i(205)
-      , s = i(320)
+    var n = i(216)
+      , s = i(332)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, null, null);
@@ -10760,10 +11785,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(318)
+        i(330)
     }
-    var n = i(207)
-      , s = i(319)
+    var n = i(218)
+      , s = i(331)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, null, null);
@@ -10847,7 +11872,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         }, [t._v("您还没设置养成的习惯，快来添加吧～")]), t._v(" "), a("img", {
             staticClass: "icon-add",
             attrs: {
-                src: i(321),
+                src: i(333),
                 alt: ""
             }
         })]), t._v(" "), a("ul", {
@@ -10866,7 +11891,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         }, [a("span", [t._v("习惯积分")]), t._v(" "), a("img", {
             staticClass: "helper",
             attrs: {
-                src: i(208),
+                src: i(219),
                 alt: ""
             }
         })])]), t._v(" "), t.myHabitData && t.myHabitData.habit_id ? a("li", {
@@ -10898,7 +11923,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         }, [t._v("「" + t._s(t.myHabitData.habit) + "」")]), t._v(" "), a("img", {
             staticClass: "item__icon",
             attrs: {
-                src: i(126),
+                src: i(129),
                 alt: ""
             }
         })])], 1), t._v(" "), a("div", {
@@ -10939,7 +11964,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             }, [t._v("「" + t._s(e.habit) + "」")]), t._v(" "), a("img", {
                 staticClass: "item__icon",
                 attrs: {
-                    src: i(126),
+                    src: i(129),
                     alt: ""
                 }
             })])], 1), t._v(" "), a("div", {
@@ -10975,10 +12000,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(323)
+        i(335)
     }
-    var n = i(209)
-      , s = i(327)
+    var n = i(220)
+      , s = i(339)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, null, null);
@@ -10988,10 +12013,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(325)
+        i(337)
     }
-    var n = i(210)
-      , s = i(326)
+    var n = i(221)
+      , s = i(338)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, null, null);
@@ -11018,7 +12043,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             staticClass: "habit"
         }, [t._v(t._s(t.data.habit))]), t._v(" "), a("img", {
             attrs: {
-                src: i(126)
+                src: i(129)
             }
         })]), t._v(" "), a("div", {
             staticClass: "HabitItem__time"
@@ -11060,7 +12085,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         }, [a("span", [t._v("已经达成" + t._s(t.habits.length) + "个习惯成就")]), t._v(" "), a("img", {
             staticClass: "helper",
             attrs: {
-                src: i(208)
+                src: i(219)
             }
         })])])]), t._v(" "), a("section", {
             directives: [{
@@ -11099,10 +12124,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(329)
+        i(341)
     }
-    var n = i(211)
-      , s = i(342)
+    var n = i(222)
+      , s = i(354)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, null, null);
@@ -11111,73 +12136,73 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e) {}
 , function(t, e, i) {
     t.exports = {
-        default: i(331),
+        default: i(343),
         __esModule: !0
     }
 }
 , function(t, e, i) {
-    i(62),
-    i(182),
-    t.exports = i(127).f("iterator")
+    i(67),
+    i(193),
+    t.exports = i(130).f("iterator")
 }
 , function(t, e, i) {
     t.exports = {
-        default: i(333),
+        default: i(345),
         __esModule: !0
     }
 }
 , function(t, e, i) {
-    i(334),
-    i(177),
-    i(340),
-    i(341),
-    t.exports = i(6).Symbol
+    i(346),
+    i(188),
+    i(352),
+    i(353),
+    t.exports = i(7).Symbol
 }
 , function(t, e, i) {
     "use strict";
     var a = i(4)
-      , n = i(20)
-      , s = i(19)
-      , o = i(13)
-      , r = i(179)
-      , c = i(335).KEY
+      , n = i(21)
+      , s = i(20)
+      , o = i(15)
+      , r = i(190)
+      , c = i(347).KEY
       , d = i(27)
-      , l = i(76)
-      , u = i(64)
-      , h = i(59)
+      , l = i(81)
+      , u = i(69)
+      , h = i(63)
       , p = i(5)
-      , m = i(127)
-      , f = i(128)
-      , v = i(336)
-      , g = i(337)
-      , b = i(14)
-      , A = i(18)
+      , m = i(130)
+      , f = i(131)
+      , v = i(348)
+      , g = i(349)
+      , b = i(16)
+      , A = i(19)
       , y = i(25)
-      , w = i(72)
+      , w = i(77)
       , C = i(24)
-      , k = i(180)
-      , _ = i(338)
-      , S = i(339)
-      , x = i(9)
-      , I = i(57)
+      , _ = i(191)
+      , k = i(350)
+      , S = i(351)
+      , x = i(11)
+      , I = i(61)
       , M = S.f
       , R = x.f
-      , z = _.f
-      , D = a.Symbol
-      , T = a.JSON
-      , B = T && T.stringify
-      , E = p("_hidden")
+      , z = k.f
+      , T = a.Symbol
+      , D = a.JSON
+      , E = D && D.stringify
+      , B = p("_hidden")
       , O = p("toPrimitive")
-      , N = {}.propertyIsEnumerable
+      , L = {}.propertyIsEnumerable
       , U = l("symbol-registry")
-      , L = l("symbols")
-      , H = l("op-symbols")
-      , P = Object.prototype
-      , j = "function" == typeof D
+      , N = l("symbols")
+      , P = l("op-symbols")
+      , j = Object.prototype
+      , H = "function" == typeof T
       , F = a.QObject
       , G = !F || !F.prototype || !F.prototype.findChild
       , W = s && d(function() {
-        return 7 != k(R({}, "a", {
+        return 7 != _(R({}, "a", {
             get: function() {
                 return R(this, "a", {
                     value: 7
@@ -11185,33 +12210,33 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             }
         })).a
     }) ? function(t, e, i) {
-        var a = M(P, e);
-        a && delete P[e],
+        var a = M(j, e);
+        a && delete j[e],
         R(t, e, i),
-        a && t !== P && R(P, e, a)
+        a && t !== j && R(j, e, a)
     }
     : R
-      , Y = function(t) {
-        var e = L[t] = k(D.prototype);
+      , Q = function(t) {
+        var e = N[t] = _(T.prototype);
         return e._k = t,
         e
     }
-      , Q = j && "symbol" == typeof D.iterator ? function(t) {
+      , Y = H && "symbol" == typeof T.iterator ? function(t) {
         return "symbol" == typeof t
     }
     : function(t) {
-        return t instanceof D
+        return t instanceof T
     }
       , Z = function(t, e, i) {
-        return t === P && Z(H, e, i),
+        return t === j && Z(P, e, i),
         b(t),
         e = w(e, !0),
         b(i),
-        n(L, e) ? (i.enumerable ? (n(t, E) && t[E][e] && (t[E][e] = !1),
-        i = k(i, {
+        n(N, e) ? (i.enumerable ? (n(t, B) && t[B][e] && (t[B][e] = !1),
+        i = _(i, {
             enumerable: C(0, !1)
-        })) : (n(t, E) || R(t, E, C(1, {})),
-        t[E][e] = !0),
+        })) : (n(t, B) || R(t, B, C(1, {})),
+        t[B][e] = !0),
         W(t, e, i)) : R(t, e, i)
     }
       , X = function(t, e) {
@@ -11221,73 +12246,73 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         return t
     }
       , V = function(t, e) {
-        return void 0 === e ? k(t) : X(k(t), e)
+        return void 0 === e ? _(t) : X(_(t), e)
     }
       , J = function(t) {
-        var e = N.call(this, t = w(t, !0));
-        return !(this === P && n(L, t) && !n(H, t)) && (!(e || !n(this, t) || !n(L, t) || n(this, E) && this[E][t]) || e)
+        var e = L.call(this, t = w(t, !0));
+        return !(this === j && n(N, t) && !n(P, t)) && (!(e || !n(this, t) || !n(N, t) || n(this, B) && this[B][t]) || e)
     }
       , q = function(t, e) {
         if (t = y(t),
         e = w(e, !0),
-        t !== P || !n(L, e) || n(H, e)) {
+        t !== j || !n(N, e) || n(P, e)) {
             var i = M(t, e);
-            return !i || !n(L, e) || n(t, E) && t[E][e] || (i.enumerable = !0),
+            return !i || !n(N, e) || n(t, B) && t[B][e] || (i.enumerable = !0),
             i
         }
     }
       , K = function(t) {
         for (var e, i = z(y(t)), a = [], s = 0; i.length > s; )
-            n(L, e = i[s++]) || e == E || e == c || a.push(e);
+            n(N, e = i[s++]) || e == B || e == c || a.push(e);
         return a
     }
       , $ = function(t) {
-        for (var e, i = t === P, a = z(i ? H : y(t)), s = [], o = 0; a.length > o; )
-            !n(L, e = a[o++]) || i && !n(P, e) || s.push(L[e]);
+        for (var e, i = t === j, a = z(i ? P : y(t)), s = [], o = 0; a.length > o; )
+            !n(N, e = a[o++]) || i && !n(j, e) || s.push(N[e]);
         return s
     };
-    j || (D = function() {
-        if (this instanceof D)
+    H || (T = function() {
+        if (this instanceof T)
             throw TypeError("Symbol is not a constructor!");
         var t = h(arguments.length > 0 ? arguments[0] : void 0)
           , e = function(i) {
-            this === P && e.call(H, i),
-            n(this, E) && n(this[E], t) && (this[E][t] = !1),
+            this === j && e.call(P, i),
+            n(this, B) && n(this[B], t) && (this[B][t] = !1),
             W(this, t, C(1, i))
         };
-        return s && G && W(P, t, {
+        return s && G && W(j, t, {
             configurable: !0,
             set: e
         }),
-        Y(t)
+        Q(t)
     }
     ,
-    r(D.prototype, "toString", function() {
+    r(T.prototype, "toString", function() {
         return this._k
     }),
     S.f = q,
     x.f = Z,
-    i(213).f = _.f = K,
-    i(60).f = J,
-    i(78).f = $,
-    s && !i(63) && r(P, "propertyIsEnumerable", J, !0),
+    i(224).f = k.f = K,
+    i(64).f = J,
+    i(83).f = $,
+    s && !i(68) && r(j, "propertyIsEnumerable", J, !0),
     m.f = function(t) {
-        return Y(p(t))
+        return Q(p(t))
     }
     ),
-    o(o.G + o.W + o.F * !j, {
-        Symbol: D
+    o(o.G + o.W + o.F * !H, {
+        Symbol: T
     });
     for (var tt = "hasInstance,isConcatSpreadable,iterator,match,replace,search,species,split,toPrimitive,toStringTag,unscopables".split(","), et = 0; tt.length > et; )
         p(tt[et++]);
     for (var it = I(p.store), at = 0; it.length > at; )
         f(it[at++]);
-    o(o.S + o.F * !j, "Symbol", {
+    o(o.S + o.F * !H, "Symbol", {
         for: function(t) {
-            return n(U, t += "") ? U[t] : U[t] = D(t)
+            return n(U, t += "") ? U[t] : U[t] = T(t)
         },
         keyFor: function(t) {
-            if (!Q(t))
+            if (!Y(t))
                 throw TypeError(t + " is not a symbol!");
             for (var e in U)
                 if (U[e] === t)
@@ -11300,7 +12325,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             G = !1
         }
     }),
-    o(o.S + o.F * !j, "Object", {
+    o(o.S + o.F * !H, "Object", {
         create: V,
         defineProperty: Z,
         defineProperties: X,
@@ -11308,37 +12333,37 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         getOwnPropertyNames: K,
         getOwnPropertySymbols: $
     }),
-    T && o(o.S + o.F * (!j || d(function() {
-        var t = D();
-        return "[null]" != B([t]) || "{}" != B({
+    D && o(o.S + o.F * (!H || d(function() {
+        var t = T();
+        return "[null]" != E([t]) || "{}" != E({
             a: t
-        }) || "{}" != B(Object(t))
+        }) || "{}" != E(Object(t))
     })), "JSON", {
         stringify: function(t) {
             for (var e, i, a = [t], n = 1; arguments.length > n; )
                 a.push(arguments[n++]);
             if (i = e = a[1],
-            (A(e) || void 0 !== t) && !Q(t))
+            (A(e) || void 0 !== t) && !Y(t))
                 return g(e) || (e = function(t, e) {
                     if ("function" == typeof i && (e = i.call(this, t, e)),
-                    !Q(e))
+                    !Y(e))
                         return e
                 }
                 ),
                 a[1] = e,
-                B.apply(T, a)
+                E.apply(D, a)
         }
     }),
-    D.prototype[O] || i(17)(D.prototype, O, D.prototype.valueOf),
-    u(D, "Symbol"),
+    T.prototype[O] || i(18)(T.prototype, O, T.prototype.valueOf),
+    u(T, "Symbol"),
     u(Math, "Math", !0),
     u(a.JSON, "JSON", !0)
 }
 , function(t, e, i) {
-    var a = i(59)("meta")
-      , n = i(18)
-      , s = i(20)
-      , o = i(9).f
+    var a = i(63)("meta")
+      , n = i(19)
+      , s = i(21)
+      , o = i(11).f
       , r = 0
       , c = Object.isExtensible || function() {
         return !0
@@ -11389,9 +12414,9 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
     }
 }
 , function(t, e, i) {
-    var a = i(57)
-      , n = i(78)
-      , s = i(60);
+    var a = i(61)
+      , n = i(83)
+      , s = i(64);
     t.exports = function(t) {
         var e = a(t)
           , i = n.f;
@@ -11409,7 +12434,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 }
 , function(t, e, i) {
     var a = i(25)
-      , n = i(213).f
+      , n = i(224).f
       , s = {}.toString
       , o = "object" == typeof window && window && Object.getOwnPropertyNames ? Object.getOwnPropertyNames(window) : []
       , r = function(t) {
@@ -11424,14 +12449,14 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
     }
 }
 , function(t, e, i) {
-    var a = i(60)
+    var a = i(64)
       , n = i(24)
       , s = i(25)
-      , o = i(72)
-      , r = i(20)
-      , c = i(173)
+      , o = i(77)
+      , r = i(21)
+      , c = i(184)
       , d = Object.getOwnPropertyDescriptor;
-    e.f = i(19) ? d : function(t, e) {
+    e.f = i(20) ? d : function(t, e) {
         if (t = s(t),
         e = o(e, !0),
         c)
@@ -11443,10 +12468,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
     }
 }
 , function(t, e, i) {
-    i(128)("asyncIterator")
+    i(131)("asyncIterator")
 }
 , function(t, e, i) {
-    i(128)("observable")
+    i(131)("observable")
 }
 , function(t, e, i) {
     "use strict";
@@ -11565,10 +12590,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(344)
+        i(356)
     }
-    var n = i(214)
-      , s = i(345)
+    var n = i(225)
+      , s = i(357)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, null, null);
@@ -11633,10 +12658,10 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     function a(t) {
-        i(347)
+        i(359)
     }
-    var n = i(215)
-      , s = i(351)
+    var n = i(226)
+      , s = i(363)
       , o = i(0)
       , r = a
       , c = o(n.a, s.a, !1, r, "data-v-1e2093b2", null);
@@ -11646,12 +12671,12 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e, i) {
     "use strict";
     (function(t) {
-        var e = i(212)
+        var e = i(223)
           , a = i.n(e);
         !function(e, n) {
             if ("object" == ("undefined" == typeof exports ? "undefined" : a()(exports)) && "object" == a()(t))
                 t.exports = n();
-            else if ("function" == typeof define && i(350))
+            else if ("function" == typeof define && i(362))
                 define([], n);
             else {
                 var s = n();
@@ -12790,19 +13815,19 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                 function i(t) {
                     function e(t) {
                         for (var e = [16, 11, 10, 16, 24, 40, 51, 61, 12, 12, 14, 19, 26, 58, 60, 55, 14, 13, 16, 24, 40, 57, 69, 56, 14, 17, 22, 29, 51, 87, 80, 62, 18, 22, 37, 56, 68, 109, 103, 77, 24, 35, 55, 64, 81, 104, 113, 92, 49, 64, 78, 87, 103, 121, 120, 101, 72, 92, 95, 98, 112, 100, 103, 99], i = 0; 64 > i; i++) {
-                            var a = k((e[i] * t + 50) / 100);
+                            var a = _((e[i] * t + 50) / 100);
                             1 > a ? a = 1 : a > 255 && (a = 255),
-                            _[P[i]] = a
+                            k[j[i]] = a
                         }
                         for (var n = [17, 18, 24, 47, 99, 99, 99, 99, 18, 21, 26, 66, 99, 99, 99, 99, 24, 26, 56, 99, 99, 99, 99, 99, 47, 66, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99], s = 0; 64 > s; s++) {
-                            var o = k((n[s] * t + 50) / 100);
+                            var o = _((n[s] * t + 50) / 100);
                             1 > o ? o = 1 : o > 255 && (o = 255),
-                            S[P[s]] = o
+                            S[j[s]] = o
                         }
                         for (var r = [1, 1.387039845, 1.306562965, 1.175875602, 1, .785694958, .5411961, .275899379], c = 0, d = 0; 8 > d; d++)
                             for (var l = 0; 8 > l; l++)
-                                x[c] = 1 / (_[P[c]] * r[d] * r[l] * 8),
-                                I[c] = 1 / (S[P[c]] * r[d] * r[l] * 8),
+                                x[c] = 1 / (k[j[c]] * r[d] * r[l] * 8),
+                                I[c] = 1 / (S[j[c]] * r[d] * r[l] * 8),
                                 c++
                     }
                     function i(t, e) {
@@ -12818,8 +13843,8 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                         return n
                     }
                     function a() {
-                        b = i(j, F),
-                        A = i(Y, Q),
+                        b = i(H, F),
+                        A = i(Q, Y),
                         y = i(G, W),
                         w = i(Z, X)
                     }
@@ -12841,26 +13866,26 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                     }
                     function s() {
                         for (var t = 0; 256 > t; t++)
-                            H[t] = 19595 * t,
-                            H[t + 256 >> 0] = 38470 * t,
-                            H[t + 512 >> 0] = 7471 * t + 32768,
-                            H[t + 768 >> 0] = -11059 * t,
-                            H[t + 1024 >> 0] = -21709 * t,
-                            H[t + 1280 >> 0] = 32768 * t + 8421375,
-                            H[t + 1536 >> 0] = -27439 * t,
-                            H[t + 1792 >> 0] = -5329 * t
+                            P[t] = 19595 * t,
+                            P[t + 256 >> 0] = 38470 * t,
+                            P[t + 512 >> 0] = 7471 * t + 32768,
+                            P[t + 768 >> 0] = -11059 * t,
+                            P[t + 1024 >> 0] = -21709 * t,
+                            P[t + 1280 >> 0] = 32768 * t + 8421375,
+                            P[t + 1536 >> 0] = -27439 * t,
+                            P[t + 1792 >> 0] = -5329 * t
                     }
                     function o(t) {
                         for (var e = t[0], i = t[1] - 1; i >= 0; )
-                            e & 1 << i && (B |= 1 << E),
+                            e & 1 << i && (E |= 1 << B),
                             i--,
-                            0 > --E && (255 == B ? (r(255),
-                            r(0)) : r(B),
-                            E = 7,
-                            B = 0)
+                            0 > --B && (255 == E ? (r(255),
+                            r(0)) : r(E),
+                            B = 7,
+                            E = 0)
                     }
                     function r(t) {
-                        T.push(L[t])
+                        D.push(N[t])
                     }
                     function c(t) {
                         r(t >> 8 & 255),
@@ -12888,23 +13913,23 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                               , y = h + b
                               , w = h - b
                               , C = m + v
-                              , k = m - v;
+                              , _ = m - v;
                             t[u] = y + C,
                             t[u + 4] = y - C;
-                            var _ = .707106781 * (k + w);
-                            t[u + 2] = w + _,
-                            t[u + 6] = w - _,
+                            var k = .707106781 * (_ + w);
+                            t[u + 2] = w + k,
+                            t[u + 6] = w - k,
                             y = A + g,
                             C = g + f,
-                            k = f + p;
-                            var S = .382683433 * (y - k)
+                            _ = f + p;
+                            var S = .382683433 * (y - _)
                               , x = .5411961 * y + S
-                              , I = 1.306562965 * k + S
+                              , I = 1.306562965 * _ + S
                               , M = .707106781 * C
                               , R = p + M
-                              , D = p - M;
-                            t[u + 5] = D + x,
-                            t[u + 3] = D - x,
+                              , T = p - M;
+                            t[u + 5] = T + x,
+                            t[u + 3] = T - x,
                             t[u + 1] = R + I,
                             t[u + 7] = R - I,
                             u += 8
@@ -12919,34 +13944,34 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                             r = t[u + 40],
                             c = t[u + 48],
                             d = t[u + 56];
-                            var T = i + d
-                              , B = i - d
-                              , E = a + c
+                            var D = i + d
+                              , E = i - d
+                              , B = a + c
                               , O = a - c
-                              , N = n + r
+                              , L = n + r
                               , U = n - r
-                              , L = s + o
-                              , H = s - o
-                              , P = T + L
-                              , j = T - L
-                              , F = E + N
-                              , G = E - N;
-                            t[u] = P + F,
-                            t[u + 32] = P - F;
-                            var W = .707106781 * (G + j);
-                            t[u + 16] = j + W,
-                            t[u + 48] = j - W,
-                            P = H + U,
+                              , N = s + o
+                              , P = s - o
+                              , j = D + N
+                              , H = D - N
+                              , F = B + L
+                              , G = B - L;
+                            t[u] = j + F,
+                            t[u + 32] = j - F;
+                            var W = .707106781 * (G + H);
+                            t[u + 16] = H + W,
+                            t[u + 48] = H - W,
+                            j = P + U,
                             F = U + O,
-                            G = O + B;
-                            var Y = .382683433 * (P - G)
-                              , Q = .5411961 * P + Y
-                              , Z = 1.306562965 * G + Y
+                            G = O + E;
+                            var Q = .382683433 * (j - G)
+                              , Y = .5411961 * j + Q
+                              , Z = 1.306562965 * G + Q
                               , X = .707106781 * F
-                              , V = B + X
-                              , J = B - X;
-                            t[u + 40] = J + Q,
-                            t[u + 24] = J - Q,
+                              , V = E + X
+                              , J = E - X;
+                            t[u + 40] = J + Y,
+                            t[u + 24] = J - Y,
                             t[u + 8] = V + Z,
                             t[u + 56] = V - Z,
                             u++
@@ -12995,7 +14020,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                         c(132),
                         r(0);
                         for (var t = 0; 64 > t; t++)
-                            r(_[t]);
+                            r(k[t]);
                         r(1);
                         for (var e = 0; 64 > e; e++)
                             r(S[e])
@@ -13005,7 +14030,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                         c(418),
                         r(0);
                         for (var t = 0; 16 > t; t++)
-                            r(j[t + 1]);
+                            r(H[t + 1]);
                         for (var e = 0; 11 >= e; e++)
                             r(F[e]);
                         r(16);
@@ -13015,9 +14040,9 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                             r(W[a]);
                         r(1);
                         for (var n = 0; 16 > n; n++)
-                            r(Y[n + 1]);
+                            r(Q[n + 1]);
                         for (var s = 0; 11 >= s; s++)
-                            r(Q[s]);
+                            r(Y[s]);
                         r(17);
                         for (var o = 0; 16 > o; o++)
                             r(Z[o + 1]);
@@ -13040,19 +14065,19 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                     }
                     function f(t, e, i, a, n) {
                         for (var s, r = n[0], c = n[240], l = d(t, e), u = 0; 64 > u; ++u)
-                            D[P[u]] = l[u];
-                        var h = D[0] - i;
-                        i = D[0],
+                            T[j[u]] = l[u];
+                        var h = T[0] - i;
+                        i = T[0],
                         0 == h ? o(a[0]) : (s = 32767 + h,
                         o(a[R[s]]),
                         o(M[s]));
-                        for (var p = 63; p > 0 && 0 == D[p]; p--)
+                        for (var p = 63; p > 0 && 0 == T[p]; p--)
                             ;
                         if (0 == p)
                             return o(r),
                             i;
                         for (var m, f = 1; p >= f; ) {
-                            for (var v = f; 0 == D[f] && p >= f; ++f)
+                            for (var v = f; 0 == T[f] && p >= f; ++f)
                                 ;
                             var g = f - v;
                             if (g >= 16) {
@@ -13061,7 +14086,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                                     o(c);
                                 g &= 15
                             }
-                            s = 32767 + D[f],
+                            s = 32767 + T[f],
                             o(n[(g << 4) + R[s]]),
                             o(M[s]),
                             f++
@@ -13071,7 +14096,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                     }
                     function v() {
                         for (var t = String.fromCharCode, e = 0; 256 > e; e++)
-                            L[e] = t(e)
+                            N[e] = t(e)
                     }
                     function g(t) {
                         if (0 >= t && (t = 1),
@@ -13083,14 +14108,14 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                             C = t
                         }
                     }
-                    var b, A, y, w, C, k = (Math.round,
-                    Math.floor), _ = new Array(64), S = new Array(64), x = new Array(64), I = new Array(64), M = new Array(65535), R = new Array(65535), z = new Array(64), D = new Array(64), T = [], B = 0, E = 7, O = new Array(64), N = new Array(64), U = new Array(64), L = new Array(256), H = new Array(2048), P = [0, 1, 5, 6, 14, 15, 27, 28, 2, 4, 7, 13, 16, 26, 29, 42, 3, 8, 12, 17, 25, 30, 41, 43, 9, 11, 18, 24, 31, 40, 44, 53, 10, 19, 23, 32, 39, 45, 52, 54, 20, 22, 33, 38, 46, 51, 55, 60, 21, 34, 37, 47, 50, 56, 59, 61, 35, 36, 48, 49, 57, 58, 62, 63], j = [0, 0, 1, 5, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0], F = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], G = [0, 0, 2, 1, 3, 3, 2, 4, 3, 5, 5, 4, 4, 0, 0, 1, 125], W = [1, 2, 3, 0, 4, 17, 5, 18, 33, 49, 65, 6, 19, 81, 97, 7, 34, 113, 20, 50, 129, 145, 161, 8, 35, 66, 177, 193, 21, 82, 209, 240, 36, 51, 98, 114, 130, 9, 10, 22, 23, 24, 25, 26, 37, 38, 39, 40, 41, 42, 52, 53, 54, 55, 56, 57, 58, 67, 68, 69, 70, 71, 72, 73, 74, 83, 84, 85, 86, 87, 88, 89, 90, 99, 100, 101, 102, 103, 104, 105, 106, 115, 116, 117, 118, 119, 120, 121, 122, 131, 132, 133, 134, 135, 136, 137, 138, 146, 147, 148, 149, 150, 151, 152, 153, 154, 162, 163, 164, 165, 166, 167, 168, 169, 170, 178, 179, 180, 181, 182, 183, 184, 185, 186, 194, 195, 196, 197, 198, 199, 200, 201, 202, 210, 211, 212, 213, 214, 215, 216, 217, 218, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250], Y = [0, 0, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0], Q = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], Z = [0, 0, 2, 1, 2, 4, 4, 3, 4, 7, 5, 4, 4, 0, 1, 2, 119], X = [0, 1, 2, 3, 17, 4, 5, 33, 49, 6, 18, 65, 81, 7, 97, 113, 19, 34, 50, 129, 8, 20, 66, 145, 161, 177, 193, 9, 35, 51, 82, 240, 21, 98, 114, 209, 10, 22, 36, 52, 225, 37, 241, 23, 24, 25, 26, 38, 39, 40, 41, 42, 53, 54, 55, 56, 57, 58, 67, 68, 69, 70, 71, 72, 73, 74, 83, 84, 85, 86, 87, 88, 89, 90, 99, 100, 101, 102, 103, 104, 105, 106, 115, 116, 117, 118, 119, 120, 121, 122, 130, 131, 132, 133, 134, 135, 136, 137, 138, 146, 147, 148, 149, 150, 151, 152, 153, 154, 162, 163, 164, 165, 166, 167, 168, 169, 170, 178, 179, 180, 181, 182, 183, 184, 185, 186, 194, 195, 196, 197, 198, 199, 200, 201, 202, 210, 211, 212, 213, 214, 215, 216, 217, 218, 226, 227, 228, 229, 230, 231, 232, 233, 234, 242, 243, 244, 245, 246, 247, 248, 249, 250];
+                    var b, A, y, w, C, _ = (Math.round,
+                    Math.floor), k = new Array(64), S = new Array(64), x = new Array(64), I = new Array(64), M = new Array(65535), R = new Array(65535), z = new Array(64), T = new Array(64), D = [], E = 0, B = 7, O = new Array(64), L = new Array(64), U = new Array(64), N = new Array(256), P = new Array(2048), j = [0, 1, 5, 6, 14, 15, 27, 28, 2, 4, 7, 13, 16, 26, 29, 42, 3, 8, 12, 17, 25, 30, 41, 43, 9, 11, 18, 24, 31, 40, 44, 53, 10, 19, 23, 32, 39, 45, 52, 54, 20, 22, 33, 38, 46, 51, 55, 60, 21, 34, 37, 47, 50, 56, 59, 61, 35, 36, 48, 49, 57, 58, 62, 63], H = [0, 0, 1, 5, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0], F = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], G = [0, 0, 2, 1, 3, 3, 2, 4, 3, 5, 5, 4, 4, 0, 0, 1, 125], W = [1, 2, 3, 0, 4, 17, 5, 18, 33, 49, 65, 6, 19, 81, 97, 7, 34, 113, 20, 50, 129, 145, 161, 8, 35, 66, 177, 193, 21, 82, 209, 240, 36, 51, 98, 114, 130, 9, 10, 22, 23, 24, 25, 26, 37, 38, 39, 40, 41, 42, 52, 53, 54, 55, 56, 57, 58, 67, 68, 69, 70, 71, 72, 73, 74, 83, 84, 85, 86, 87, 88, 89, 90, 99, 100, 101, 102, 103, 104, 105, 106, 115, 116, 117, 118, 119, 120, 121, 122, 131, 132, 133, 134, 135, 136, 137, 138, 146, 147, 148, 149, 150, 151, 152, 153, 154, 162, 163, 164, 165, 166, 167, 168, 169, 170, 178, 179, 180, 181, 182, 183, 184, 185, 186, 194, 195, 196, 197, 198, 199, 200, 201, 202, 210, 211, 212, 213, 214, 215, 216, 217, 218, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250], Q = [0, 0, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0], Y = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], Z = [0, 0, 2, 1, 2, 4, 4, 3, 4, 7, 5, 4, 4, 0, 1, 2, 119], X = [0, 1, 2, 3, 17, 4, 5, 33, 49, 6, 18, 65, 81, 7, 97, 113, 19, 34, 50, 129, 8, 20, 66, 145, 161, 177, 193, 9, 35, 51, 82, 240, 21, 98, 114, 209, 10, 22, 36, 52, 225, 37, 241, 23, 24, 25, 26, 38, 39, 40, 41, 42, 53, 54, 55, 56, 57, 58, 67, 68, 69, 70, 71, 72, 73, 74, 83, 84, 85, 86, 87, 88, 89, 90, 99, 100, 101, 102, 103, 104, 105, 106, 115, 116, 117, 118, 119, 120, 121, 122, 130, 131, 132, 133, 134, 135, 136, 137, 138, 146, 147, 148, 149, 150, 151, 152, 153, 154, 162, 163, 164, 165, 166, 167, 168, 169, 170, 178, 179, 180, 181, 182, 183, 184, 185, 186, 194, 195, 196, 197, 198, 199, 200, 201, 202, 210, 211, 212, 213, 214, 215, 216, 217, 218, 226, 227, 228, 229, 230, 231, 232, 233, 234, 242, 243, 244, 245, 246, 247, 248, 249, 250];
                     this.encode = function(t, e, i) {
                         (new Date).getTime();
                         e && g(e),
-                        T = new Array,
-                        B = 0,
-                        E = 7,
+                        D = new Array,
+                        E = 0,
+                        B = 7,
                         c(65496),
                         l(),
                         h(),
@@ -13100,52 +14125,52 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
                         var a = 0
                           , n = 0
                           , s = 0;
-                        B = 0,
-                        E = 7,
+                        E = 0,
+                        B = 7,
                         this.encode.displayName = "_encode_";
-                        for (var r, d, v, C, k, _, S, M, R, z = t.data, D = t.width, L = t.height, P = 4 * D, j = 0; L > j; ) {
-                            for (r = 0; P > r; ) {
-                                for (k = P * j + r,
-                                _ = k,
+                        for (var r, d, v, C, _, k, S, M, R, z = t.data, T = t.width, N = t.height, j = 4 * T, H = 0; N > H; ) {
+                            for (r = 0; j > r; ) {
+                                for (_ = j * H + r,
+                                k = _,
                                 S = -1,
                                 M = 0,
                                 R = 0; 64 > R; R++)
                                     M = R >> 3,
                                     S = 4 * (7 & R),
-                                    _ = k + M * P + S,
-                                    j + M >= L && (_ -= P * (j + 1 + M - L)),
-                                    r + S >= P && (_ -= r + S - P + 4),
-                                    d = z[_++],
-                                    v = z[_++],
-                                    C = z[_++],
-                                    O[R] = (H[d] + H[v + 256 >> 0] + H[C + 512 >> 0] >> 16) - 128,
-                                    N[R] = (H[d + 768 >> 0] + H[v + 1024 >> 0] + H[C + 1280 >> 0] >> 16) - 128,
-                                    U[R] = (H[d + 1280 >> 0] + H[v + 1536 >> 0] + H[C + 1792 >> 0] >> 16) - 128;
+                                    k = _ + M * j + S,
+                                    H + M >= N && (k -= j * (H + 1 + M - N)),
+                                    r + S >= j && (k -= r + S - j + 4),
+                                    d = z[k++],
+                                    v = z[k++],
+                                    C = z[k++],
+                                    O[R] = (P[d] + P[v + 256 >> 0] + P[C + 512 >> 0] >> 16) - 128,
+                                    L[R] = (P[d + 768 >> 0] + P[v + 1024 >> 0] + P[C + 1280 >> 0] >> 16) - 128,
+                                    U[R] = (P[d + 1280 >> 0] + P[v + 1536 >> 0] + P[C + 1792 >> 0] >> 16) - 128;
                                 a = f(O, x, a, b, y),
-                                n = f(N, I, n, A, w),
+                                n = f(L, I, n, A, w),
                                 s = f(U, I, s, A, w),
                                 r += 32
                             }
-                            j += 8
+                            H += 8
                         }
-                        if (E >= 0) {
+                        if (B >= 0) {
                             var F = [];
-                            F[1] = E + 1,
-                            F[0] = (1 << E + 1) - 1,
+                            F[1] = B + 1,
+                            F[0] = (1 << B + 1) - 1,
                             o(F)
                         }
                         if (c(65497),
                         i) {
-                            for (var G = T.length, W = new Uint8Array(G), Y = 0; G > Y; Y++)
-                                W[Y] = T[Y].charCodeAt();
-                            return T = [],
+                            for (var G = D.length, W = new Uint8Array(G), Q = 0; G > Q; Q++)
+                                W[Q] = D[Q].charCodeAt();
+                            return D = [],
                             (new Date).getTime(),
                             W
                         }
-                        var Q = "data:image/jpeg;base64," + btoa(T.join(""));
-                        return T = [],
+                        var Y = "data:image/jpeg;base64," + btoa(D.join(""));
+                        return D = [],
                         (new Date).getTime(),
-                        Q
+                        Y
                     }
                     ,
                     function() {
@@ -13405,7 +14430,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
             ])
         })
     }
-    ).call(e, i(349)(t))
+    ).call(e, i(361)(t))
 }
 , function(t, e) {
     t.exports = function(t) {
@@ -13486,12 +14511,12 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         }, [1 == t.mood ? a("img", {
             staticClass: "mood-icon",
             attrs: {
-                src: i(352)
+                src: i(364)
             }
         }) : a("img", {
             staticClass: "mood-icon",
             attrs: {
-                src: i(353)
+                src: i(365)
             }
         })]), t._v(" "), a("div", {
             staticClass: "mood__item",
@@ -13504,12 +14529,12 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         }, [2 == t.mood ? a("img", {
             staticClass: "mood-icon",
             attrs: {
-                src: i(354)
+                src: i(366)
             }
         }) : a("img", {
             staticClass: "mood-icon",
             attrs: {
-                src: i(355)
+                src: i(367)
             }
         })]), t._v(" "), a("div", {
             staticClass: "mood__item",
@@ -13522,12 +14547,12 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         }, [3 == t.mood ? a("img", {
             staticClass: "mood-icon",
             attrs: {
-                src: i(356)
+                src: i(368)
             }
         }) : a("img", {
             staticClass: "mood-icon",
             attrs: {
-                src: i(357)
+                src: i(369)
             }
         })]), t._v(" "), a("div", {
             staticClass: "mood__item",
@@ -13540,12 +14565,12 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         }, [4 == t.mood ? a("img", {
             staticClass: "mood-icon",
             attrs: {
-                src: i(358)
+                src: i(370)
             }
         }) : a("img", {
             staticClass: "mood-icon",
             attrs: {
-                src: i(359)
+                src: i(371)
             }
         })])]), t._v(" "), t.hasPicture ? a("div", {
             staticClass: "write__show"
@@ -13564,7 +14589,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         }, [a("img", {
             staticClass: "add",
             attrs: {
-                src: i(360)
+                src: i(372)
             }
         }), t._v(" "), a("form", {
             staticClass: "for-reset",
@@ -13654,7 +14679,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
         }, [a("img", {
             staticClass: "quote",
             attrs: {
-                src: i(361)
+                src: i(373)
             }
         })])
     }
@@ -13703,7 +14728,7 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
 , function(t, e) {
     t.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAABaCAMAAACmAnmkAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkU3N0Y1OTA3RDhBNjExRTZBRkNDOEQwNDM3NzkyQjlFIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkU3N0Y1OTA4RDhBNjExRTZBRkNDOEQwNDM3NzkyQjlFIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RTc3RjU5MDVEOEE2MTFFNkFGQ0M4RDA0Mzc3OTJCOUUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RTc3RjU5MDZEOEE2MTFFNkFGQ0M4RDA0Mzc3OTJCOUUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7e2Vc3AAABYlBMVEX+/v6ioqKfn5/5+fmQkJDm5ub7+/uurq719fWPj4/9/f20tLSKiorq6urGxsbAwMCLi4va2trU1NTNzc2YmJjBwcGlpaXHx8e5ubnw8PC1tbXg4OC4uLjExMSkpKSqqqqmpqbY2NiWlpbl5eWbm5unp6erq6v4+Pjh4eHf39+9vb3x8fHS0tKXl5fV1dWysrKzs7OpqanKysrb29vPz8/s7OyMjIyVlZWNjY2RkZHz8/OgoKD6+vrn5+fFxcXIyMjd3d26urqoqKjMzMyvr6/T09Pp6emenp7Ozs7c3Ny/v7+Ojo6tra309PSampqUlJSdnZ2wsLCTk5O+vr6ZmZmcnJySkpL8/Pze3t68vLzJycnZ2dnLy8vv7++3t7fW1tbj4+Pk5OSjo6Pr6+vt7e3o6OjQ0NDCwsK7u7vR0dHi4uLu7u729vby8vLDw8PX19exsbGsrKz39/e2traJiYn////2+263AAAAdnRSTlP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAWKpRwAABJxJREFUeNqsmmdbIksQhZtFkYyCgjmnFSMq5pzzGtawa9ic98aZ/39hrsikruk6cj7pw1PnZZianuqqFnpJ7b6hrnn9eVo92cz1XHEiROmPrFZUfWQqJnB+a9Ej356oC7L5Oa2kqo744CLGn3kyOY5MfRQcvk8zKwrdjGqLR+FCllv8ivys5hT7ZjQ4PaILa6NNCvyc5i7WzXglMZk5zVWHab5Pk6twM96q4O8ID202nbiW84MarX4V/q6HSaucn/QIXVXhb3qYxOT8cTryQulRmqNNOuX3X5zRobcql7/kcfldcr5H6MGACn+FNpkJy/lxfuI4NUGbLBPPX5qfOA5dzZIetUdyfiDPTxyvxdeucWL9eQ8kjkMp2qSH4K8AiePQGGmyQK3/h0DiOHRBmgxT/EsgceyiV/C5AMH/hCSOXZOkSYJ6/yaRxLHrK2nSRPHPkcSxq4YyOSTrjwkkceyqp0xekvwTJHFs8lP4XrL++gUlDmf12yD5g1Di2DRMeIT8JH8DShybbgiTNbr+bYUSh/Hynab5nVDi2DQiN+nz2H+cQIljVYC4/Dqa78cSx6qY3KRb0PwlLHGseis3yXjs/0axxLFKXkDmgx78NixxrGqWmkS89r+tWOKoPn7VXvwOIv+6X7X3jzUmMqnk5I/tJmIX8NrTpCGzO7r3LpYdsPN3NHWZv5DlwkIMk6qRnfTf42vGF9oW+pyGaV317UepWQTQ0BsTfxo1eSN+oqFfTPwW1ORaVKOh5rrwT9QkK67RUPPaPAV6hHTxAIZ2m9M/A5p80EUKDO0w8/dBk3tdxMHQfTP/HjS51cU5GLrF6TzJyyvRDIZalr8+0OQI51tKk07MY66w/tdgofWWt8gLzCSN8w8rwW8s8MGfLqFa/VJK4fxkJfiDBT74021b+FWYSRDmRwMV4J/pMP9YrwC/D+fXVIL/rcj3QaF/WPlnkMlUkY8tnQ+M5otU73V4/bF1pLGbWCzFRQSJrLW1ZNOIyYxR/w8hoa85zTeZJgz+ChJ6auM3IiZDBn8LCW2z8dsQE6OzKKDS3T6O/A4X8KIJCbU3BgbhCkaI2uenv/4bwI887n97+aEvHPvvWb5J/yP/lB/qHAkAq/j+Ix/YAMTdD14gFYzQ9/ihddzhl5s+P/KD/NA77vDPTYul/ucxN3LW2VEMH3BNLp76r+wdiNtIZh2sYAp89grs1tJb5po0PPHn2U0b/vTXqdHy/IdbPey59REvsQJeuB/bIeU6k2HWMdGrMn+JFxoC5p8O9ZrnvxesUJ/7BOIASf//+cOcHqz2r+T4B+tF1mY9fzOw2pDOK4bmpCPwunNfVNGky37+rfALvsv0q2xkyJnYYkvbusqd+OjkG//Gdse6PUI9z+WFl243zxQrGLfhUDbZSPTzq9QmEp++NxMvlh2d4Bf1z+T+B/fKrF19KnLUdbPgnhB/efGNhPgR7wi5NW048r/82ueszpZV+Mbnn1On1gHlhs5WuOdNzaV7BaN0vvJu6778cLeAZ2Onv0TK2+SfLL7l4Q7quOYfvhkvu7xg80sPd/0zjygbS115Cf9PgAEA2MunduSf7GkAAAAASUVORK5CYII="
 }
-, , , , , , , , , , , , , , , , , , function(t, e) {}
+, , , , , , , , , , , , , , , , , , , , , , , , , function(t, e) {}
 , function(t, e, i) {
     "use strict";
     var a = function() {
@@ -13711,108 +14736,34 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
           , e = t.$createElement
           , i = t._self._c || e;
         return i("div", {
-            staticClass: "ZodiacCards"
-        }, [i("div", {
-            staticClass: "ZodiacCards__container"
-        }, ["choose" == t.mode ? i("div", {
-            staticClass: "choose__tip"
-        }, [i("span", [t._v(t._s(t.tip))])]) : t._e(), t._v(" "), t._l(t.zodiacListLines, function(e, a) {
-            return i("div", {
-                key: a,
-                staticClass: "cards__line"
-            }, t._l(e, function(e, a) {
-                return i("div", {
-                    key: a,
-                    staticClass: "card__wrapper",
-                    class: {
-                        card__wrapper_active: t.isActiveCard(e.type)
-                    },
-                    on: {
-                        click: function(i) {
-                            t.chooseTheSendCard(i, e)
-                        }
-                    }
-                }, [i("div", {
-                    key: e.name,
-                    staticClass: "card__card card-animation"
-                }, [i("CnZodiac", {
-                    staticClass: "card__zodiac",
-                    attrs: {
-                        type: e.type,
-                        active: e.count
-                    }
-                })], 1), t._v(" "), i("p", {
-                    staticClass: "card__name font-fangzheng"
-                }, [t._v(t._s(e.name) + "×" + t._s(e.count))])])
-            }))
-        }), t._v(" "), "choose" == t.mode ? i("div", {
-            staticClass: "choose__btn zodiac-btn zodiac-btn_primary font-fangzheng",
-            on: {
-                click: t.handleConfirmChoose
-            }
-        }, [t._v("\n               确定选择\n           ")]) : t._e()], 2), t._v(" "), t.visible.preview ? i("div", {
-            staticClass: "newcard__mask modal__mask",
-            staticStyle: {
-                "z-index": "1005"
-            }
-        }) : t._e(), t._v(" "), "choose" == t.mode ? i("div", {
-            staticClass: "newcard__mask modal__mask"
-        }) : t._e(), t._v(" "), t.visible.preview || "choose" == t.mode ? i("div", {
-            staticClass: "newcard__btn_close",
-            on: {
-                click: t.resetViewMode
-            }
-        }, [i("i", {
-            staticClass: "icon weui-icon-cancel"
-        })]) : t._e(), t._v(" "), t.visible.preview ? i("div", {
-            staticClass: "iWantHome__newcard",
-            class: {
-                zodiac_active: t.previewZodiac.count
-            }
-        }, [i("div", {
-            staticClass: "newcard__container modal__container"
-        }, [i("div", {
-            staticClass: "newcard__card animated bounceIn"
-        }, [i("CnZodiac", {
+            staticClass: "GetPublicFans"
+        }, [i("Modal", {
             attrs: {
-                type: t.previewZodiac.type,
-                active: t.previewZodiac.count
-            }
-        }), t._v(" "), i("p", {
-            staticClass: "preview__count font-fangzheng"
-        }, [t.previewZodiac.count ? i("span", {
-            staticClass: "yes"
-        }, [t._v("已收集此卡" + t._s(t.previewZodiac.count) + "张")]) : i("span", {
-            staticClass: "no"
-        }, [t._v("暂未获得此卡")])])], 1), t._v(" "), i("div", {
-            staticClass: "newcard__btn_collect"
-        }, [t.previewZodiac.count && !t._$IS_WEIXIN ? i("a", {
-            staticClass: "zodiac-btn zodiac-btn_primary font-fangzheng",
-            on: {
-                click: t.setSendCard
-            }
-        }, [t._v("\n                       赠送此卡给好友\n                   ")]) : t._e()])])]) : t._e(), t._v(" "), t.visible.prompt ? i("Prompt", {
-            attrs: {
-                loading: !1
+                cover: t.isCover
             },
             on: {
-                confirm: t.handleSendCard,
-                close: t.resetSendingStatus
+                close: t.close
             }
-        }) : t._e(), t._v(" "), t.visible.newCard ? i("CnZodiacPopup", {
+        }, [i("p", {
+            staticClass: "title font-fangzheng",
             attrs: {
-                type: t.newCardType
-            }
-        }) : t._e(), t._v(" "), t.visible.share ? i("ShareMask", {
-            attrs: {
-                tip: "点击又上角分享出去, 赠送卡片给好友"
+                slot: "title"
             },
-            on: {
-                close: function(e) {
-                    t.visible.share = !1
-                }
-            }
-        }) : t._e()], 1)
+            slot: "title"
+        }, [t._v("\n            " + t._s(t.title) + "\n        ")]), t._v(" "), i("p", {
+            staticClass: "tip",
+            attrs: {
+                slot: "tip"
+            },
+            slot: "tip"
+        }, [t._v(t._s(t.tip))]), t._v(" "), i("img", {
+            staticClass: "main",
+            attrs: {
+                slot: "main",
+                src: t.QRCodeUrl
+            },
+            slot: "main"
+        })])], 1)
     }
       , n = []
       , s = {
@@ -13821,4 +14772,4 @@ webpackJsonp([0], [, , , , , , , , function(t, e, i) {
     };
     e.a = s
 }
-], [218]);
+], [229]);
