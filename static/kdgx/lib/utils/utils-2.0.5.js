@@ -157,7 +157,7 @@ window._kd = (function() {
         }
 
         var str = "魔羯水瓶双鱼白羊金牛双子巨蟹狮子处女天秤天蝎射手魔羯"
-        var arr = [20, 19, 21, 21, 21, 22, 23, 23, 23, 23, 22, 22]
+        var arr = [20, 19, 21, 21, 21, 21, 23, 23, 23, 23, 22, 22]
         return str.substr(month * 2 - (day < arr[month] ? 2 : 0), 2) + '座'
     }
 
@@ -172,7 +172,7 @@ window._kd = (function() {
         }
 
         var str = "魔羯水瓶双鱼白羊金牛双子巨蟹狮子处女天秤天蝎射手魔羯"
-        var arr = [20, 19, 21, 21, 21, 22, 23, 23, 23, 23, 22, 22]
+        var arr = [20, 19, 21, 21, 21, 21, 22, 23, 23, 23, 22, 22]
         return str.substr(month * 2 - (day < arr[month] ? 2 : 0), 2) + '座'
     }
 
@@ -282,7 +282,7 @@ window._kd = (function() {
      * @param  {String} url 获取配置的url
      * @param  {Array} jsApiList 用到的api list
      */
-    Utils.insertWxConfig = function(url, jsApiList, debug) {
+    Utils.insertWxConfig = function(url, jsApiList) {
         this.mAjax({
             url: url,
             method: 'POST',
@@ -291,7 +291,7 @@ window._kd = (function() {
             },
             success: function(res) {
                 wx.config({
-                    debug: debug ? true : false,
+                    debug: false,
                     appId: res.appId,
                     timestamp: res.timestamp,
                     nonceStr: res.nonceStr,
