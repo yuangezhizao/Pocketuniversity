@@ -1,4 +1,4 @@
-webpackJsonp([0], [function(t, e) {
+webpackJsonp([2], [function(t, e) {
     t.exports = function(t, e, n, i, r, o) {
         var a, s = t = t || {}, c = typeof t.default;
         "object" !== c && "function" !== c || (a = t,
@@ -20,13 +20,13 @@ webpackJsonp([0], [function(t, e) {
         u._ssrRegister = l) : i && (l = i),
         l) {
             var d = u.functional
-              , p = d ? u.render : u.beforeCreate;
+              , f = d ? u.render : u.beforeCreate;
             d ? (u._injectStyles = l,
             u.render = function(t, e) {
                 return l.call(e),
-                p(t, e)
+                f(t, e)
             }
-            ) : u.beforeCreate = p ? [].concat(p, l) : [l]
+            ) : u.beforeCreate = f ? [].concat(f, l) : [l]
         }
         return {
             esModule: a,
@@ -128,7 +128,7 @@ webpackJsonp([0], [function(t, e) {
                 O.set(s, c, i.state)
             })
         }
-        var u = i.context = p(t, a, n);
+        var u = i.context = f(t, a, n);
         i.forEachMutation(function(e, n) {
             h(t, a + n, e, u)
         }),
@@ -144,7 +144,7 @@ webpackJsonp([0], [function(t, e) {
             d(t, e, n.concat(o), i, r)
         })
     }
-    function p(t, e, n) {
+    function f(t, e, n) {
         var i = "" === e
           , r = {
             dispatch: i ? t.dispatch : function(n, i, r) {
@@ -171,7 +171,7 @@ webpackJsonp([0], [function(t, e) {
                     return t.getters
                 }
                 : function() {
-                    return f(t, e)
+                    return p(t, e)
                 }
             },
             state: {
@@ -182,7 +182,7 @@ webpackJsonp([0], [function(t, e) {
         }),
         r
     }
-    function f(t, e) {
+    function p(t, e) {
         var n = {}
           , i = e.length;
         return Object.keys(t.getters).forEach(function(r) {
@@ -646,7 +646,7 @@ webpackJsonp([0], [function(t, e) {
 , function(t, e, n) {
     "use strict";
     e.__esModule = !0;
-    var i = n(15)
+    var i = n(12)
       , r = function(t) {
         return t && t.__esModule ? t : {
             default: t
@@ -663,7 +663,7 @@ webpackJsonp([0], [function(t, e) {
 }
 , function(t, e, n) {
     t.exports = {
-        default: n(301),
+        default: n(348),
         __esModule: !0
     }
 }
@@ -689,19 +689,19 @@ webpackJsonp([0], [function(t, e) {
             return null !== t && "object" == typeof t
         }
         function u(t) {
-            return "[object Object]" === fi.call(t)
+            return "[object Object]" === pi.call(t)
         }
         function l(t) {
-            return "[object RegExp]" === fi.call(t)
+            return "[object RegExp]" === pi.call(t)
         }
         function d(t) {
             var e = parseFloat(String(t));
             return e >= 0 && Math.floor(e) === e && isFinite(t)
         }
-        function p(t) {
+        function f(t) {
             return null == t ? "" : "object" == typeof t ? JSON.stringify(t, null, 2) : String(t)
         }
-        function f(t) {
+        function p(t) {
             var e = parseFloat(t);
             return isNaN(e) ? t : e
         }
@@ -1193,7 +1193,7 @@ webpackJsonp([0], [function(t, e) {
             s.merged = !0,
             t[e] = s
         }
-        function pt(t, e, n) {
+        function ft(t, e, n) {
             var o = e.options.props;
             if (!i(o)) {
                 var a = {}
@@ -1202,12 +1202,12 @@ webpackJsonp([0], [function(t, e) {
                 if (r(s) || r(c))
                     for (var u in o) {
                         var l = bi(u);
-                        ft(a, c, u, l, !0) || ft(a, s, u, l, !1)
+                        pt(a, c, u, l, !0) || pt(a, s, u, l, !1)
                     }
                 return a
             }
         }
-        function ft(t, e, n, i, o) {
+        function pt(t, e, n, i, o) {
             if (r(e)) {
                 if (m(e, n))
                     return t[n] = e[n],
@@ -1282,17 +1282,17 @@ webpackJsonp([0], [function(t, e) {
                     r(t.errorComp) && (t.error = !0,
                     u())
                 })
-                  , p = t(l, d);
-                return c(p) && ("function" == typeof p.then ? i(t.resolved) && p.then(l, d) : r(p.component) && "function" == typeof p.component.then && (p.component.then(l, d),
-                r(p.error) && (t.errorComp = yt(p.error, e)),
-                r(p.loading) && (t.loadingComp = yt(p.loading, e),
-                0 === p.delay ? t.loading = !0 : setTimeout(function() {
+                  , f = t(l, d);
+                return c(f) && ("function" == typeof f.then ? i(t.resolved) && f.then(l, d) : r(f.component) && "function" == typeof f.component.then && (f.component.then(l, d),
+                r(f.error) && (t.errorComp = yt(f.error, e)),
+                r(f.loading) && (t.loadingComp = yt(f.loading, e),
+                0 === f.delay ? t.loading = !0 : setTimeout(function() {
                     i(t.resolved) && i(t.error) && (t.loading = !0,
                     u())
-                }, p.delay || 200)),
-                r(p.timeout) && setTimeout(function() {
+                }, f.delay || 200)),
+                r(f.timeout) && setTimeout(function() {
                     i(t.resolved) && d(null)
-                }, p.timeout))),
+                }, f.timeout))),
                 s = !1,
                 t.loading ? t.loadingComp : t.resolved
             }
@@ -1390,13 +1390,13 @@ webpackJsonp([0], [function(t, e) {
             t
         }
         function Rt(t, e, n, i, r) {
-            var o = !!(r || t.$options._renderChildren || i.data.scopedSlots || t.$scopedSlots !== pi);
+            var o = !!(r || t.$options._renderChildren || i.data.scopedSlots || t.$scopedSlots !== fi);
             if (t.$options._parentVnode = i,
             t.$vnode = i,
             t._vnode && (t._vnode.parent = i),
             t.$options._renderChildren = r,
-            t.$attrs = i.data && i.data.attrs || pi,
-            t.$listeners = n || pi,
+            t.$attrs = i.data && i.data.attrs || fi,
+            t.$listeners = n || fi,
             e && t.$options.props) {
                 nr.shouldConvert = !1;
                 for (var a = t._props, s = t.$options._propKeys || [], c = 0; c < s.length; c++) {
@@ -1730,7 +1730,7 @@ webpackJsonp([0], [function(t, e) {
             t.key = e,
             t.isOnce = n
         }
-        function pe(t, e) {
+        function fe(t, e) {
             if (e)
                 if (u(e)) {
                     var n = t.on = t.on ? b({}, t.on) : {};
@@ -1742,10 +1742,10 @@ webpackJsonp([0], [function(t, e) {
                 } else
                     ;return t
         }
-        function fe(t) {
+        function pe(t) {
             t._o = ue,
-            t._n = f,
-            t._s = p,
+            t._n = p,
+            t._s = f,
             t._l = ie,
             t._t = re,
             t._q = A,
@@ -1757,7 +1757,7 @@ webpackJsonp([0], [function(t, e) {
             t._v = R,
             t._e = Xi,
             t._u = Ot,
-            t._g = pe
+            t._g = fe
         }
         function he(t, e, n, i, r) {
             var a = r.options;
@@ -1765,7 +1765,7 @@ webpackJsonp([0], [function(t, e) {
             this.props = e,
             this.children = n,
             this.parent = i,
-            this.listeners = t.on || pi,
+            this.listeners = t.on || fi,
             this.injections = ne(a.inject, i),
             this.slots = function() {
                 return It(n, i)
@@ -1776,7 +1776,7 @@ webpackJsonp([0], [function(t, e) {
               , u = !c;
             c && (this.$options = a,
             this.$slots = this.slots(),
-            this.$scopedSlots = t.scopedSlots || pi),
+            this.$scopedSlots = t.scopedSlots || fi),
             a._scopeId ? this._c = function(t, e, n, r) {
                 var o = we(s, t, e, n, r, u);
                 return o && (o.fnScopeId = a._scopeId,
@@ -1793,7 +1793,7 @@ webpackJsonp([0], [function(t, e) {
               , c = a.props;
             if (r(c))
                 for (var u in c)
-                    s[u] = K(u, c, e || pi);
+                    s[u] = K(u, c, e || fi);
             else
                 r(n.attrs) && me(s, n.attrs),
                 r(n.props) && me(s, n.props);
@@ -1820,22 +1820,22 @@ webpackJsonp([0], [function(t, e) {
                     e = e || {},
                     Ie(t),
                     r(e.model) && Ce(t.options, e);
-                    var d = pt(e, t, s);
+                    var d = ft(e, t, s);
                     if (o(t.options.functional))
                         return ve(t, d, e, n, a);
-                    var p = e.on;
+                    var f = e.on;
                     if (e.on = e.nativeOn,
                     o(t.options.abstract)) {
-                        var f = e.slot;
+                        var p = e.slot;
                         e = {},
-                        f && (e.slot = f)
+                        p && (e.slot = p)
                     }
                     _e(e);
                     var h = t.options.name || s;
                     return new Ji("vue-component-" + t.cid + (h ? "-" + h : ""),e,void 0,void 0,void 0,n,{
                         Ctor: t,
                         propsData: d,
-                        listeners: p,
+                        listeners: f,
                         tag: s,
                         children: a
                     },l)
@@ -1923,7 +1923,7 @@ webpackJsonp([0], [function(t, e) {
               , n = t.$vnode = e._parentVnode
               , i = n && n.context;
             t.$slots = It(e._renderChildren, i),
-            t.$scopedSlots = pi,
+            t.$scopedSlots = fi,
             t._c = function(e, n, i, r) {
                 return we(t, e, n, i, r, !1)
             }
@@ -1933,8 +1933,8 @@ webpackJsonp([0], [function(t, e) {
             }
             ;
             var r = n && n.data;
-            D(t, "$attrs", r && r.attrs || pi, null, !0),
-            D(t, "$listeners", e._parentListeners || pi, null, !0)
+            D(t, "$attrs", r && r.attrs || fi, null, !0),
+            D(t, "$listeners", e._parentListeners || fi, null, !0)
         }
         function Se(t, e) {
             var n = t.$options = Object.create(t.constructor.options)
@@ -2191,15 +2191,15 @@ webpackJsonp([0], [function(t, e) {
             }
         }
         function dn(t, e) {
-            return t.key === e.key && (t.tag === e.tag && t.isComment === e.isComment && r(t.data) === r(e.data) && pn(t, e) || o(t.isAsyncPlaceholder) && t.asyncFactory === e.asyncFactory && i(e.asyncFactory.error))
+            return t.key === e.key && (t.tag === e.tag && t.isComment === e.isComment && r(t.data) === r(e.data) && fn(t, e) || o(t.isAsyncPlaceholder) && t.asyncFactory === e.asyncFactory && i(e.asyncFactory.error))
         }
-        function pn(t, e) {
+        function fn(t, e) {
             if ("input" !== t.tag)
                 return !0;
             var n, i = r(n = t.data) && r(n = n.attrs) && n.type, o = r(n = e.data) && r(n = n.attrs) && n.type;
             return i === o || Xr(i) && Xr(o)
         }
-        function fn(t, e, n) {
+        function pn(t, e, n) {
             var i, o, a = {};
             for (i = e; i <= n; ++i)
                 o = t[i].key,
@@ -2380,7 +2380,7 @@ webpackJsonp([0], [function(t, e) {
                 if (i.lazy)
                     return !1;
                 if (i.number)
-                    return f(n) !== f(e);
+                    return p(n) !== p(e);
                 if (i.trim)
                     return n.trim() !== e.trim()
             }
@@ -2391,7 +2391,7 @@ webpackJsonp([0], [function(t, e) {
             return t.staticStyle ? b(t.staticStyle, e) : e
         }
         function Rn(t) {
-            return Array.isArray(t) ? C(t) : "string" == typeof t ? fo(t) : t
+            return Array.isArray(t) ? C(t) : "string" == typeof t ? po(t) : t
         }
         function Bn(t, e) {
             var n, i = {};
@@ -2407,13 +2407,13 @@ webpackJsonp([0], [function(t, e) {
             var n = e.data
               , o = t.data;
             if (!(i(n.staticStyle) && i(n.style) && i(o.staticStyle) && i(o.style))) {
-                var a, s, c = e.elm, u = o.staticStyle, l = o.normalizedStyle || o.style || {}, d = u || l, p = Rn(e.data.style) || {};
-                e.data.normalizedStyle = r(p.__ob__) ? b({}, p) : p;
-                var f = Bn(e, !0);
+                var a, s, c = e.elm, u = o.staticStyle, l = o.normalizedStyle || o.style || {}, d = u || l, f = Rn(e.data.style) || {};
+                e.data.normalizedStyle = r(f.__ob__) ? b({}, f) : f;
+                var p = Bn(e, !0);
                 for (s in d)
-                    i(f[s]) && mo(c, s, "");
-                for (s in f)
-                    (a = f[s]) !== d[s] && mo(c, s, null == a ? "" : a)
+                    i(p[s]) && mo(c, s, "");
+                for (s in p)
+                    (a = p[s]) !== d[s] && mo(c, s, null == a ? "" : a)
             }
         }
         function jn(t, e) {
@@ -2519,19 +2519,19 @@ webpackJsonp([0], [function(t, e) {
             n._leaveCb());
             var o = Nn(t.data.transition);
             if (!i(o) && !r(n._enterCb) && 1 === n.nodeType) {
-                for (var a = o.css, s = o.type, u = o.enterClass, l = o.enterToClass, d = o.enterActiveClass, p = o.appearClass, h = o.appearToClass, v = o.appearActiveClass, m = o.beforeEnter, g = o.enter, y = o.afterEnter, _ = o.enterCancelled, b = o.beforeAppear, C = o.appear, w = o.afterAppear, A = o.appearCancelled, k = o.duration, S = gr, I = gr.$vnode; I && I.parent; )
+                for (var a = o.css, s = o.type, u = o.enterClass, l = o.enterToClass, d = o.enterActiveClass, f = o.appearClass, h = o.appearToClass, v = o.appearActiveClass, m = o.beforeEnter, g = o.enter, y = o.afterEnter, _ = o.enterCancelled, b = o.beforeAppear, C = o.appear, w = o.afterAppear, A = o.appearCancelled, k = o.duration, S = gr, I = gr.$vnode; I && I.parent; )
                     I = I.parent,
                     S = I.context;
                 var E = !S._isMounted || !t.isRootInsert;
                 if (!E || C || "" === C) {
-                    var O = E && p ? p : u
+                    var O = E && f ? f : u
                       , M = E && v ? v : d
                       , T = E && h ? h : l
                       , R = E ? b || m : m
                       , B = E && "function" == typeof C ? C : g
                       , z = E ? w || y : y
                       , j = E ? A || _ : _
-                      , L = f(c(k) ? k.enter : k)
+                      , L = p(c(k) ? k.enter : k)
                       , N = !1 !== a && !zi
                       , D = Zn(B)
                       , P = n._enterCb = x(function() {
@@ -2566,7 +2566,7 @@ webpackJsonp([0], [function(t, e) {
                 A.cancelled || (t.data.show || ((o.parentNode._pending || (o.parentNode._pending = {}))[t.key] = t),
                 h && h(o),
                 b && (Pn(o, l),
-                Pn(o, p),
+                Pn(o, f),
                 Dn(function() {
                     Pn(o, d),
                     Un(o, l),
@@ -2586,7 +2586,7 @@ webpackJsonp([0], [function(t, e) {
                   , u = a.type
                   , l = a.leaveClass
                   , d = a.leaveToClass
-                  , p = a.leaveActiveClass
+                  , f = a.leaveActiveClass
                   , h = a.beforeLeave
                   , v = a.leave
                   , m = a.afterLeave
@@ -2595,11 +2595,11 @@ webpackJsonp([0], [function(t, e) {
                   , _ = a.duration
                   , b = !1 !== s && !zi
                   , C = Zn(v)
-                  , w = f(c(_) ? _.leave : _)
+                  , w = p(c(_) ? _.leave : _)
                   , A = o._leaveCb = x(function() {
                     o.parentNode && o.parentNode._pending && (o.parentNode._pending[t.key] = null),
                     b && (Un(o, d),
-                    Un(o, p)),
+                    Un(o, f)),
                     A.cancelled ? (b && Un(o, l),
                     g && g(o)) : (e(),
                     m && m(o)),
@@ -2715,8 +2715,8 @@ webpackJsonp([0], [function(t, e) {
  * (c) 2014-2017 Evan You
  * Released under the MIT License.
  */
-        var pi = Object.freeze({})
-          , fi = Object.prototype.toString
+        var fi = Object.freeze({})
+          , pi = Object.prototype.toString
           , hi = (h("slot,component", !0),
         h("key,ref,slot,slot-scope,is"))
           , vi = Object.prototype.hasOwnProperty
@@ -2973,16 +2973,16 @@ webpackJsonp([0], [function(t, e) {
             ;
         else {
             var dr = new MessageChannel
-              , pr = dr.port2;
+              , fr = dr.port2;
             dr.port1.onmessage = rt,
             ar = function() {
-                pr.postMessage(1)
+                fr.postMessage(1)
             }
         }
         if ("undefined" != typeof Promise && O(Promise)) {
-            var fr = Promise.resolve();
+            var pr = Promise.resolve();
             or = function() {
-                fr.then(rt),
+                pr.then(rt),
                 Ni && setTimeout(w)
             }
         } else
@@ -3112,7 +3112,7 @@ webpackJsonp([0], [function(t, e) {
           , Ir = {
             lazy: !0
         };
-        fe(he.prototype);
+        pe(he.prototype);
         var Er = {
             init: function(t, e, n, i) {
                 if (!t.componentInstance || t.componentInstance._isDestroyed) {
@@ -3298,7 +3298,7 @@ webpackJsonp([0], [function(t, e) {
             }
         }(Me),
         function(t) {
-            fe(t.prototype),
+            pe(t.prototype),
             t.prototype.$nextTick = function(t) {
                 return at(t, this)
             }
@@ -3313,7 +3313,7 @@ webpackJsonp([0], [function(t, e) {
                         var o = t.$slots[r];
                         (o._rendered || o[0] && o[0].elm) && (t.$slots[r] = z(o, !0))
                     }
-                t.$scopedSlots = i && i.data.scopedSlots || pi,
+                t.$scopedSlots = i && i.data.scopedSlots || fi,
                 t.$vnode = i;
                 var a;
                 try {
@@ -3473,10 +3473,10 @@ webpackJsonp([0], [function(t, e) {
         }, co = "__r", uo = "__c", lo = {
             create: Sn,
             update: Sn
-        }, po = {
+        }, fo = {
             create: In,
             update: In
-        }, fo = g(function(t) {
+        }, po = g(function(t) {
             var e = {}
               , n = /;(?![^(]*\))/g
               , i = /:(.+)/;
@@ -3537,7 +3537,7 @@ webpackJsonp([0], [function(t, e) {
                 !0 !== t.data.show ? Vn(t, e) : e()
             }
         } : {}
-          , To = [ao, so, lo, po, _o, Mo]
+          , To = [ao, so, lo, fo, _o, Mo]
           , Ro = To.concat(oo)
           , Bo = function(t) {
             function e(t) {
@@ -3562,11 +3562,11 @@ webpackJsonp([0], [function(t, e) {
                       , l = t.tag;
                     r(l) ? (t.elm = t.ns ? T.createElementNS(t.ns, l) : T.createElement(l, t),
                     g(t),
-                    f(t, c, e),
+                    p(t, c, e),
                     r(s) && m(t, e),
-                    p(n, t.elm, i)) : o(t.isComment) ? (t.elm = T.createComment(t.text),
-                    p(n, t.elm, i)) : (t.elm = T.createTextNode(t.text),
-                    p(n, t.elm, i))
+                    f(n, t.elm, i)) : o(t.isComment) ? (t.elm = T.createComment(t.text),
+                    f(n, t.elm, i)) : (t.elm = T.createTextNode(t.text),
+                    f(n, t.elm, i))
                 }
             }
             function u(t, e, n, i) {
@@ -3597,12 +3597,12 @@ webpackJsonp([0], [function(t, e) {
                         e.push(a);
                         break
                     }
-                p(n, t.elm, i)
-            }
-            function p(t, e, n) {
-                r(t) && (r(n) ? n.parentNode === t && T.insertBefore(t, e, n) : T.appendChild(t, e))
+                f(n, t.elm, i)
             }
             function f(t, e, n) {
+                r(t) && (r(n) ? n.parentNode === t && T.insertBefore(t, e, n) : T.appendChild(t, e))
+            }
+            function p(t, e, n) {
                 if (Array.isArray(e))
                     for (var i = 0; i < e.length; ++i)
                         c(e[i], n, t.elm, null, !0);
@@ -3664,26 +3664,26 @@ webpackJsonp([0], [function(t, e) {
                     a(t.elm)
             }
             function w(t, e, n, o, a) {
-                for (var s, u, l, d, p = 0, f = 0, h = e.length - 1, v = e[0], m = e[h], g = n.length - 1, _ = n[0], C = n[g], w = !a; p <= h && f <= g; )
-                    i(v) ? v = e[++p] : i(m) ? m = e[--h] : dn(v, _) ? (k(v, _, o),
-                    v = e[++p],
-                    _ = n[++f]) : dn(m, C) ? (k(m, C, o),
+                for (var s, u, l, d, f = 0, p = 0, h = e.length - 1, v = e[0], m = e[h], g = n.length - 1, _ = n[0], C = n[g], w = !a; f <= h && p <= g; )
+                    i(v) ? v = e[++f] : i(m) ? m = e[--h] : dn(v, _) ? (k(v, _, o),
+                    v = e[++f],
+                    _ = n[++p]) : dn(m, C) ? (k(m, C, o),
                     m = e[--h],
                     C = n[--g]) : dn(v, C) ? (k(v, C, o),
                     w && T.insertBefore(t, v.elm, T.nextSibling(m.elm)),
-                    v = e[++p],
+                    v = e[++f],
                     C = n[--g]) : dn(m, _) ? (k(m, _, o),
                     w && T.insertBefore(t, m.elm, v.elm),
                     m = e[--h],
-                    _ = n[++f]) : (i(s) && (s = fn(e, p, h)),
-                    u = r(_.key) ? s[_.key] : A(_, e, p, h),
+                    _ = n[++p]) : (i(s) && (s = pn(e, f, h)),
+                    u = r(_.key) ? s[_.key] : A(_, e, f, h),
                     i(u) ? c(_, o, t, v.elm) : (l = e[u],
                     dn(l, _) ? (k(l, _, o),
                     e[u] = void 0,
                     w && T.insertBefore(t, l.elm, v.elm)) : c(_, o, t, v.elm)),
-                    _ = n[++f]);
-                p > h ? (d = i(n[g + 1]) ? null : n[g + 1].elm,
-                y(t, d, n, f, g, o)) : f > g && b(t, e, p, h)
+                    _ = n[++p]);
+                f > h ? (d = i(n[g + 1]) ? null : n[g + 1].elm,
+                y(t, d, n, p, g, o)) : p > g && b(t, e, f, h)
             }
             function A(t, e, n, i) {
                 for (var o = n; o < i; o++) {
@@ -3738,18 +3738,18 @@ webpackJsonp([0], [function(t, e) {
                                 if (a !== t.innerHTML)
                                     return !1
                             } else {
-                                for (var d = !0, p = t.firstChild, h = 0; h < u.length; h++) {
-                                    if (!p || !S(p, u[h], n, i)) {
+                                for (var d = !0, f = t.firstChild, h = 0; h < u.length; h++) {
+                                    if (!f || !S(f, u[h], n, i)) {
                                         d = !1;
                                         break
                                     }
-                                    p = p.nextSibling
+                                    f = f.nextSibling
                                 }
-                                if (!d || p)
+                                if (!d || f)
                                     return !1
                             }
                         else
-                            f(e, u, n);
+                            p(e, u, n);
                     if (r(c)) {
                         var v = !1;
                         for (var g in c)
@@ -3774,26 +3774,26 @@ webpackJsonp([0], [function(t, e) {
                 if (i(n))
                     return void (r(t) && _(t));
                 var d = !1
-                  , p = [];
+                  , f = [];
                 if (i(t))
                     d = !0,
-                    c(n, p, u, l);
+                    c(n, f, u, l);
                 else {
-                    var f = r(t.nodeType);
-                    if (!f && dn(t, n))
-                        k(t, n, p, s);
+                    var p = r(t.nodeType);
+                    if (!p && dn(t, n))
+                        k(t, n, f, s);
                     else {
-                        if (f) {
+                        if (p) {
                             if (1 === t.nodeType && t.hasAttribute(Ai) && (t.removeAttribute(Ai),
                             a = !0),
-                            o(a) && S(t, n, p))
-                                return x(n, p, !0),
+                            o(a) && S(t, n, f))
+                                return x(n, f, !0),
                                 t;
                             t = e(t)
                         }
                         var h = t.elm
                           , m = T.parentNode(h);
-                        if (c(n, p, h._leaveCb ? null : m, T.nextSibling(h)),
+                        if (c(n, f, h._leaveCb ? null : m, T.nextSibling(h)),
                         r(n.parent))
                             for (var g = n.parent, y = v(n); g; ) {
                                 for (var C = 0; C < O.destroy.length; ++C)
@@ -3813,7 +3813,7 @@ webpackJsonp([0], [function(t, e) {
                         r(m) ? b(m, [t], 0, 0) : r(t.tag) && _(t)
                     }
                 }
-                return x(n, p, d),
+                return x(n, f, d),
                 n.elm
             }
         }({
@@ -3936,13 +3936,13 @@ webpackJsonp([0], [function(t, e) {
                         if ("in-out" === i) {
                             if (Ct(o))
                                 return u;
-                            var p, f = function() {
-                                p()
+                            var f, p = function() {
+                                f()
                             };
-                            dt(c, "afterEnter", f),
-                            dt(c, "enterCancelled", f),
+                            dt(c, "afterEnter", p),
+                            dt(c, "enterCancelled", p),
                             dt(d, "delayLeave", function(t) {
-                                p = t
+                                f = t
                             })
                         }
                     }
@@ -3970,10 +3970,10 @@ webpackJsonp([0], [function(t, e) {
                 }
                 if (i) {
                     for (var u = [], l = [], d = 0; d < i.length; d++) {
-                        var p = i[d];
-                        p.data.transition = a,
-                        p.data.pos = p.elm.getBoundingClientRect(),
-                        n[p.key] ? u.push(p) : l.push(p)
+                        var f = i[d];
+                        f.data.transition = a,
+                        f.data.pos = f.elm.getBoundingClientRect(),
+                        n[f.key] ? u.push(f) : l.push(f)
                     }
                     this.kept = t(e, null, u),
                     this.removed = l
@@ -4047,63 +4047,77 @@ webpackJsonp([0], [function(t, e) {
         }, 0),
         e.a = Me
     }
-    ).call(e, n(242), n(288).setImmediate)
+    ).call(e, n(283), n(334).setImmediate)
 }
-, , function(t, e) {
+, , function(t, e, n) {
+    "use strict";
+    n.d(e, "h", function() {
+        return i
+    }),
+    n.d(e, "i", function() {
+        return r
+    }),
+    n.d(e, "e", function() {
+        return o
+    }),
+    n.d(e, "c", function() {
+        return a
+    }),
+    n.d(e, "g", function() {
+        return s
+    }),
+    n.d(e, "d", function() {
+        return c
+    }),
+    n.d(e, "f", function() {
+        return u
+    }),
+    n.d(e, "b", function() {
+        return l
+    }),
+    n.d(e, "a", function() {
+        return d
+    });
+    var i = "/signin/activity/user"
+      , r = "/signin/api/user"
+      , o = "/signin/api/getHabitRanking"
+      , a = "/signin/api/getHabit"
+      , s = "/signin/api/addHabit"
+      , c = "/signin/api/getCompleteHabit"
+      , u = "/signin/mood/isHabitMood"
+      , l = "/Signin/shop/ZodiacStoreExchange"
+      , d = "http://auth.pocketuniversity.cn/api/auth/auth"
+}
+, , , function(t, e) {
     var n = t.exports = "undefined" != typeof window && window.Math == Math ? window : "undefined" != typeof self && self.Math == Math ? self : Function("return this")();
     "number" == typeof __g && (__g = n)
 }
 , function(t, e, n) {
-    var i = n(94)("wks")
-      , r = n(81)
-      , o = n(6).Symbol
+    var i = n(110)("wks")
+      , r = n(93)
+      , o = n(9).Symbol
       , a = "function" == typeof o;
     (t.exports = function(t) {
         return i[t] || (i[t] = a && o[t] || (a ? o : r)("Symbol." + t))
     }
     ).store = i
 }
-, , function(t, e) {
+, function(t, e) {
     var n = t.exports = {
         version: "2.5.3"
     };
     "number" == typeof __e && (__e = n)
 }
 , function(t, e, n) {
-    "use strict";
-    n.d(e, "g", function() {
-        return i
-    }),
-    n.d(e, "d", function() {
-        return r
-    }),
-    n.d(e, "b", function() {
-        return o
-    }),
-    n.d(e, "f", function() {
-        return a
-    }),
-    n.d(e, "c", function() {
-        return s
-    }),
-    n.d(e, "e", function() {
-        return c
-    }),
-    n.d(e, "a", function() {
-        return u
-    });
-    var i = "/signin/activity/user"
-      , r = "/signin/api/getHabitRanking"
-      , o = "/signin/api/getHabit"
-      , a = "/signin/api/addHabit"
-      , s = "/signin/api/getCompleteHabit"
-      , c = "http://www.pocketuniversity.cn/signin/mood/isHabitMood"
-      , u = "http://www.pocketuniversity.cn/index.php/Signin/shop/ZodiacStoreExchange"
+    t.exports = {
+        default: n(339),
+        __esModule: !0
+    }
 }
 , function(t, e, n) {
     var i, r, o;
     !function(a, s) {
-        r = [t, n(320), n(322), n(323)],
+        r = [t, n(367), n(369), n(370)],
         i = s,
         void 0 !== (o = "function" == typeof i ? i.apply(e, r) : i) && (t.exports = o)
     }(0, function(t, e, n, i) {
@@ -4143,13 +4157,13 @@ webpackJsonp([0], [function(t, e) {
         var u = r(e)
           , l = r(n)
           , d = r(i)
-          , p = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
+          , f = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
             return typeof t
         }
         : function(t) {
             return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
         }
-          , f = function() {
+          , p = function() {
             function t(t, e) {
                 for (var n = 0; n < e.length; n++) {
                     var i = e[n];
@@ -4174,14 +4188,14 @@ webpackJsonp([0], [function(t, e) {
                 i
             }
             return s(e, t),
-            f(e, [{
+            p(e, [{
                 key: "resolveOptions",
                 value: function() {
                     var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
                     this.action = "function" == typeof t.action ? t.action : this.defaultAction,
                     this.target = "function" == typeof t.target ? t.target : this.defaultTarget,
                     this.text = "function" == typeof t.text ? t.text : this.defaultText,
-                    this.container = "object" === p(t.container) ? t.container : document.body
+                    this.container = "object" === f(t.container) ? t.container : document.body
                 }
             }, {
                 key: "listenClick",
@@ -4247,12 +4261,12 @@ webpackJsonp([0], [function(t, e) {
         t.exports = h
     })
 }
-, function(t, e, n) {
-    var i = n(17)
-      , r = n(244)
-      , o = n(90)
+, , function(t, e, n) {
+    var i = n(19)
+      , r = n(285)
+      , o = n(106)
       , a = Object.defineProperty;
-    e.f = n(21) ? Object.defineProperty : function(t, e, n) {
+    e.f = n(23) ? Object.defineProperty : function(t, e, n) {
         if (i(t),
         e = o(e, !0),
         i(n),
@@ -4268,33 +4282,54 @@ webpackJsonp([0], [function(t, e) {
 }
 , function(t, e, n) {
     "use strict";
-    function i(t) {
-        n(327)
-    }
-    var r = n(259)
-      , o = n(330)
-      , a = n(0)
-      , s = i
-      , c = a(r.a, o.a, !1, s, "data-v-1acbba5d", null);
-    e.a = c.exports
-}
-, , function(t, e, n) {
-    t.exports = {
-        default: n(293),
-        __esModule: !0
-    }
+    n.d(e, "c", function() {
+        return i
+    }),
+    n.d(e, "e", function() {
+        return r
+    }),
+    n.d(e, "f", function() {
+        return o
+    }),
+    n.d(e, "b", function() {
+        return a
+    }),
+    n.d(e, "a", function() {
+        return s
+    }),
+    n.d(e, "d", function() {
+        return c
+    });
+    var i = "/signin/banner/list5paybarrage"
+      , r = "/signin/banner/content"
+      , o = "/signin/barrage/top5pay"
+      , a = "/signin/barrage/paylist"
+      , s = "/signin/barrage/sxcardlist"
+      , c = "/signin/barrage/create"
 }
 , function(t, e, n) {
-    var i = n(6)
-      , r = n(9)
-      , o = n(25)
-      , a = n(19)
+    "use strict";
+    function i(t) {
+        n(379)
+    }
+    var r = n(304)
+      , o = n(380)
+      , a = n(0)
+      , s = i
+      , c = a(r.a, o.a, !1, s, "data-v-5639b312", null);
+    e.a = c.exports
+}
+, function(t, e, n) {
+    var i = n(9)
+      , r = n(11)
+      , o = n(29)
+      , a = n(21)
       , s = function(t, e, n) {
-        var c, u, l, d = t & s.F, p = t & s.G, f = t & s.S, h = t & s.P, v = t & s.B, m = t & s.W, g = p ? r : r[e] || (r[e] = {}), y = g.prototype, _ = p ? i : f ? i[e] : (i[e] || {}).prototype;
-        p && (n = e);
+        var c, u, l, d = t & s.F, f = t & s.G, p = t & s.S, h = t & s.P, v = t & s.B, m = t & s.W, g = f ? r : r[e] || (r[e] = {}), y = g.prototype, _ = f ? i : p ? i[e] : (i[e] || {}).prototype;
+        f && (n = e);
         for (c in n)
             (u = !d && _ && void 0 !== _[c]) && c in g || (l = u ? _[c] : n[c],
-            g[c] = p && "function" != typeof _[c] ? n[c] : v && u ? o(l, i) : m && _[c] == l ? function(t) {
+            g[c] = f && "function" != typeof _[c] ? n[c] : v && u ? o(l, i) : m && _[c] == l ? function(t) {
                 var e = function(e, n, i) {
                     if (this instanceof t) {
                         switch (arguments.length) {
@@ -4326,7 +4361,7 @@ webpackJsonp([0], [function(t, e) {
     t.exports = s
 }
 , function(t, e, n) {
-    var i = n(20);
+    var i = n(22);
     t.exports = function(t) {
         if (!i(t))
             throw TypeError(t + " is not an object!");
@@ -4335,14 +4370,14 @@ webpackJsonp([0], [function(t, e) {
 }
 , function(t, e, n) {
     t.exports = {
-        default: n(300),
+        default: n(347),
         __esModule: !0
     }
 }
 , function(t, e, n) {
-    var i = n(12)
-      , r = n(26);
-    t.exports = n(21) ? function(t, e, n) {
+    var i = n(15)
+      , r = n(30);
+    t.exports = n(23) ? function(t, e, n) {
         return i.f(t, e, r(1, n))
     }
     : function(t, e, n) {
@@ -4356,7 +4391,7 @@ webpackJsonp([0], [function(t, e) {
     }
 }
 , function(t, e, n) {
-    t.exports = !n(29)(function() {
+    t.exports = !n(33)(function() {
         return 7 != Object.defineProperty({}, "a", {
             get: function() {
                 return 7
@@ -4404,8 +4439,8 @@ webpackJsonp([0], [function(t, e) {
         addLeadingZero: r
     }
 }
-, , function(t, e, n) {
-    var i = n(78);
+, , , , function(t, e, n) {
+    var i = n(90);
     t.exports = function(t, e, n) {
         if (i(t),
         void 0 === e)
@@ -4442,8 +4477,8 @@ webpackJsonp([0], [function(t, e) {
     }
 }
 , function(t, e, n) {
-    var i = n(246)
-      , r = n(91);
+    var i = n(287)
+      , r = n(107);
     t.exports = function(t) {
         return i(r(t))
     }
@@ -4526,10 +4561,10 @@ webpackJsonp([0], [function(t, e) {
             hash: e.hash || "",
             query: o,
             params: e.params || {},
-            fullPath: f(e, r),
-            matched: t ? p(t) : []
+            fullPath: p(e, r),
+            matched: t ? f(t) : []
         };
-        return n && (a.redirectedFrom = f(n, r)),
+        return n && (a.redirectedFrom = p(n, r)),
         Object.freeze(a)
     }
     function d(t) {
@@ -4543,13 +4578,13 @@ webpackJsonp([0], [function(t, e) {
         }
         return t
     }
-    function p(t) {
+    function f(t) {
         for (var e = []; t; )
             e.unshift(t),
             t = t.parent;
         return e
     }
-    function f(t, e) {
+    function p(t, e) {
         var n = t.path
           , i = t.query;
         void 0 === i && (i = {});
@@ -4686,22 +4721,22 @@ webpackJsonp([0], [function(t, e) {
                 a += u[1];
             else {
                 var d = t[o]
-                  , p = n[2]
-                  , f = n[3]
+                  , f = n[2]
+                  , p = n[3]
                   , h = n[4]
                   , v = n[5]
                   , m = n[6]
                   , g = n[7];
                 a && (i.push(a),
                 a = "");
-                var y = null != p && null != d && d !== p
+                var y = null != f && null != d && d !== f
                   , _ = "+" === m || "*" === m
                   , b = "?" === m || "*" === m
                   , C = n[2] || s
                   , w = h || v;
                 i.push({
-                    name: f || r++,
-                    prefix: p || "",
+                    name: p || r++,
+                    prefix: f || "",
                     delimiter: C,
                     optional: b,
                     repeat: _,
@@ -4751,11 +4786,11 @@ webpackJsonp([0], [function(t, e) {
                                 continue;
                             throw new TypeError('Expected "' + u.name + '" to not be empty')
                         }
-                        for (var p = 0; p < d.length; p++) {
-                            if (l = s(d[p]),
+                        for (var f = 0; f < d.length; f++) {
+                            if (l = s(d[f]),
                             !e[c].test(l))
                                 throw new TypeError('Expected all "' + u.name + '" to match "' + u.pattern + '", but received `' + JSON.stringify(l) + "`");
-                            r += (0 === p ? u.prefix : u.delimiter) + l
+                            r += (0 === f ? u.prefix : u.delimiter) + l
                         }
                     } else {
                         if (l = u.asterisk ? I(d) : s(d),
@@ -4932,13 +4967,13 @@ webpackJsonp([0], [function(t, e) {
           , u = e && e.path || "/"
           , l = c.path ? C(c.path, u, n || r.append) : u
           , d = s(c.query, r.query, i && i.options.parseQuery)
-          , p = r.hash || c.hash;
-        return p && "#" !== p.charAt(0) && (p = "#" + p),
+          , f = r.hash || c.hash;
+        return f && "#" !== f.charAt(0) && (f = "#" + f),
         {
             _normalized: !0,
             path: l,
             query: d,
-            hash: p
+            hash: f
         }
     }
     function Q(t, e) {
@@ -4964,15 +4999,15 @@ webpackJsonp([0], [function(t, e) {
                 });
                 if ("object" != typeof r.params && (r.params = {}),
                 n && "object" == typeof n.params)
-                    for (var p in n.params)
-                        !(p in r.params) && l.indexOf(p) > -1 && (r.params[p] = n.params[p]);
+                    for (var f in n.params)
+                        !(f in r.params) && l.indexOf(f) > -1 && (r.params[f] = n.params[f]);
                 if (s)
                     return r.path = D(s.path, r.params, 'named route "' + o + '"'),
                     a(s, r, i)
             } else if (r.path) {
                 r.params = {};
-                for (var f = 0; f < c.length; f++) {
-                    var h = c[f]
+                for (var p = 0; p < c.length; p++) {
+                    var h = c[p]
                       , v = u[h];
                     if (V(v.regex, r.path, r.params))
                         return a(v, r, i)
@@ -4991,19 +5026,19 @@ webpackJsonp([0], [function(t, e) {
             var s = o
               , c = s.name
               , u = s.path
-              , p = n.query
-              , f = n.hash
+              , f = n.query
+              , p = n.hash
               , h = n.params;
-            if (p = s.hasOwnProperty("query") ? s.query : p,
-            f = s.hasOwnProperty("hash") ? s.hash : f,
+            if (f = s.hasOwnProperty("query") ? s.query : f,
+            p = s.hasOwnProperty("hash") ? s.hash : p,
             h = s.hasOwnProperty("params") ? s.params : h,
             c) {
                 d[c];
                 return i({
                     _normalized: !0,
                     name: c,
-                    query: p,
-                    hash: f,
+                    query: f,
+                    hash: p,
                     params: h
                 }, void 0, n)
             }
@@ -5012,8 +5047,8 @@ webpackJsonp([0], [function(t, e) {
                 return i({
                     _normalized: !0,
                     path: D(v, h, 'redirect route with path "' + v + '"'),
-                    query: p,
-                    hash: f
+                    query: f,
+                    hash: p
                 }, void 0, n)
             }
             return a(null, n)
@@ -5178,7 +5213,7 @@ webpackJsonp([0], [function(t, e) {
                     o = !0,
                     a++;
                     var u, l = ht(function(e) {
-                        ft(e) && (e = e.default),
+                        pt(e) && (e = e.default),
                         t.resolved = "function" == typeof e ? e : zt.extend(e),
                         n.components[c] = e,
                         --a <= 0 && i()
@@ -5196,8 +5231,8 @@ webpackJsonp([0], [function(t, e) {
                         if ("function" == typeof u.then)
                             u.then(l, d);
                         else {
-                            var p = u.component;
-                            p && "function" == typeof p.then && p.then(l, d)
+                            var f = u.component;
+                            f && "function" == typeof f.then && f.then(l, d)
                         }
                 }
             }),
@@ -5205,16 +5240,16 @@ webpackJsonp([0], [function(t, e) {
         }
     }
     function dt(t, e) {
-        return pt(t.map(function(t) {
+        return ft(t.map(function(t) {
             return Object.keys(t.components).map(function(n) {
                 return e(t.components[n], t.instances[n], t, n)
             })
         }))
     }
-    function pt(t) {
+    function ft(t) {
         return Array.prototype.concat.apply([], t)
     }
-    function ft(t) {
+    function pt(t) {
         return t.__esModule || oe && "Module" === t[Symbol.toStringTag]
     }
     function ht(t) {
@@ -5256,7 +5291,7 @@ webpackJsonp([0], [function(t, e) {
                     return n(t, i, r, o)
                 }) : n(a, i, r, o)
         });
-        return pt(i ? r.reverse() : r)
+        return ft(i ? r.reverse() : r)
     }
     function yt(t, e) {
         return "function" != typeof t && (t = zt.extend(t)),
@@ -5352,14 +5387,14 @@ webpackJsonp([0], [function(t, e) {
               , r = e.parent
               , s = e.data;
             s.routerView = !0;
-            for (var c = r.$createElement, u = n.name, l = r.$route, d = r._routerViewCache || (r._routerViewCache = {}), p = 0, f = !1; r && r._routerRoot !== r; )
-                r.$vnode && r.$vnode.data.routerView && p++,
-                r._inactive && (f = !0),
+            for (var c = r.$createElement, u = n.name, l = r.$route, d = r._routerViewCache || (r._routerViewCache = {}), f = 0, p = !1; r && r._routerRoot !== r; )
+                r.$vnode && r.$vnode.data.routerView && f++,
+                r._inactive && (p = !0),
                 r = r.$parent;
-            if (s.routerViewDepth = p,
-            f)
+            if (s.routerViewDepth = f,
+            p)
                 return c(d[u], s, i);
-            var h = l.matched[p];
+            var h = l.matched[f];
             if (!h)
                 return d[u] = null,
                 c();
@@ -5421,10 +5456,10 @@ webpackJsonp([0], [function(t, e) {
               , c = {}
               , u = n.options.linkActiveClass
               , d = n.options.linkExactActiveClass
-              , p = null == u ? "router-link-active" : u
-              , f = null == d ? "router-link-exact-active" : d
-              , v = null == this.activeClass ? p : this.activeClass
-              , g = null == this.exactActiveClass ? f : this.exactActiveClass
+              , f = null == u ? "router-link-active" : u
+              , p = null == d ? "router-link-exact-active" : d
+              , v = null == this.activeClass ? f : this.activeClass
+              , g = null == this.exactActiveClass ? p : this.exactActiveClass
               , b = o.path ? l(null, o, null, n) : a;
             c[g] = h(i, b),
             c[v] = this.exact ? c[g] : m(i, b);
@@ -5534,11 +5569,11 @@ webpackJsonp([0], [function(t, e) {
           , u = c.updated
           , l = c.deactivated
           , d = c.activated
-          , p = [].concat(_t(l), this.router.beforeHooks, bt(u), d.map(function(t) {
+          , f = [].concat(_t(l), this.router.beforeHooks, bt(u), d.map(function(t) {
             return t.beforeEnter
         }), lt(d));
         this.pending = t;
-        var f = function(e, n) {
+        var p = function(e, n) {
             if (o.pending !== t)
                 return s();
             try {
@@ -5551,11 +5586,11 @@ webpackJsonp([0], [function(t, e) {
                 s(t)
             }
         };
-        ut(p, f, function() {
+        ut(f, p, function() {
             var n = [];
             ut(wt(d, n, function() {
                 return o.current === t
-            }).concat(o.router.resolveHooks), f, function() {
+            }).concat(o.router.resolveHooks), p, function() {
                 if (o.pending !== t)
                     return s();
                 o.pending = null,
@@ -5896,7 +5931,7 @@ webpackJsonp([0], [function(t, e) {
 , , , , , , , function(t, e) {
     t.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYIAAAGICAMAAAB7vxfdAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo2NDU0M2FlYi1iNzkzLWE3NDgtYTZkMy1jNDMzYjY1OTgwZTgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDA3MUU1QUZDRjM1MTFFNkFBRDFDMzcyNjYxMTgyRTYiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDA3MUU1QUVDRjM1MTFFNkFBRDFDMzcyNjYxMTgyRTYiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NjQ1NDNhZWItYjc5My1hNzQ4LWE2ZDMtYzQzM2I2NTk4MGU4IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY0NTQzYWViLWI3OTMtYTc0OC1hNmQzLWM0MzNiNjU5ODBlOCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PooPbTcAAAAGUExURf///////1V89WwAAAACdFJOU/8A5bcwSgAABQ5JREFUeNrs3VFyIjkQBNCq+196N/ZrxvYODNCdUunVt40d+UhJ3YBdbS6Z+nee/EphXUfwnAKCSwWeYUBwNQCCvACCNACCvACCuACC1UuA4PoSaEFcAEFc4JEBAgQHCCCICzwwQHCDAIK4AIK4AIK4AIK4AIK4wJ8NENwhgCAugCANgCAO8GcDBAimETSCsEEjCBu8csMawScNGkGY4E/bM4I7DBpB1uDRIRXB1QYP92YE8eMRAgQHEjSCfAn6qf0YAYLJ69BzKxECBJPXIQT5EiBAYB1qL99/ItW3CNoHnT7xtH5H4KnvE/TDSBGssrUiiG2sT+b5qgCCxwBPJorgSoG6UgDBEwAI4gDPZFoILgX4W4JG8GkABLMFELy/BiG4uAEvfD+C2yvwXgkQvHMSRXCtQN8kgKDfBkCQrgCCzB2h/3+gRnDvEvT9wRDcvAR9f0AEmQq895sQCAsgSAMcS7CQAIK4AII0gL0gL4AgDYAgL+DSLB/AwfeIcvn//pO9XhAvH4LQDoRgoTMAgvhJGEG8BgjiNUCA4FyCQrBKDRAgcCZCgAABAgQIECBAgACBazMECKxECBAgQPBqkB/bDBC8kePbBIXg7dUEwQILOoJVDvcvEhSC+wkaQVrgh/85JNG7CRoBguMFECCYRdAIdiwBgrUICkFAAEGe4MtjILhfAEGeoBGkBRCsRVAIAgJL/S0eBAhC64e9IP7cRZBfPlwd5xdwt+nye6g3saxzmEcQP0giQHC8AAIECBDEBRAgOP2iAMECJUAQLwGCeAkQICCAAAEBBAhOP5EiWKAECBAQQIBgM4JGMLAECBAQQIAAAYK4AAIEBBAgIIAAwT4EjQDB6QiNII2AII6AYLKwCBAgEAECBCJAgEAECBCIAAECESBAIAIECESAAIEIECAQAQIEIkCAQAQIEIgAAQIRIEAgAgQIRPBLGJH/N4ngN4EEAoIvAvcjIPhOcDMCgh8E7jVAgGBJAQRHlQBBvAQI4iVAEC8BgngJEMRLgCBeAgTxEiCICyBAQABBeC9GsEAJEMRLgKAQHF+C4wkKAQEECAggQHD6ceh0gkJAAAECAghWEDiYoBAowekEhYAAAgQEECAggAABAQSrCBxJUAiU4HSCQkAAAQICCBAQQLCWwGkEhUAJTicoBEqAAAEC23GvJ3DuPaJGkDZAkFZoBAYBAoMAgUGAwCBAYBAgMAgQGAQIDAIEBgECgwCBQYDAIEBgECAwCBAYBAjMdIK1PsRxLMEuCDVYYBOEGi2whcF0gg0QaroAgrgAAiU4kKAQKMHpBNsJjCMoBEpwOsGGAqMJGoESnE7QCJTgPII9BRAgIIAAAYE5BIWAAAIEBM4m2FlgBsHWAiMICgGBwwl2F5hH0AiU4DSC/QV2JxggsDnBBIGtCaoQEDibYIrAJIJGQOAogpojsCnBJIE9CUYJbEkwS2BHgmEC+xHUNIHtCOYJDCBoBFmCbgRZgkYQNmgEYYNGEDZoBGGDRhAmaARhhEZgECAwCBAYBAgMAgQGAYIrfpdRt372I5h2C3o3gnGvhO1FMPAF+a0IauD7gnYiqJ8HQTR+BPn8DzSo1fJHkI4fQT5/BPKfSFAl/yBByT9JUPKPEsg/SiD+KIH4NyKQ/S8En4xM/q8Q1M0EQv9KULcSSPzytVv++e1T/GsSyDlJIOL7z/HyD5+Ixn0qeL/rgv8MxJq8Ojbxe0Tmr+cfAQYAsNI2LxHR4wQAAAAASUVORK5CYII="
 }
-, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , function(t, e, n) {
+, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , function(t, e, n) {
     "use strict";
     function i(t) {
         return t && t.__esModule ? t : {
@@ -5904,9 +5939,9 @@ webpackJsonp([0], [function(t, e) {
         }
     }
     e.__esModule = !0;
-    var r = n(333)
+    var r = n(399)
       , o = i(r)
-      , a = n(335)
+      , a = n(401)
       , s = i(a)
       , c = "function" == typeof s.default && "symbol" == typeof o.default ? function(t) {
         return typeof t
@@ -5922,7 +5957,7 @@ webpackJsonp([0], [function(t, e) {
         return t && "function" == typeof s.default && t.constructor === s.default && t !== s.default.prototype ? "symbol" : void 0 === t ? "undefined" : c(t)
     }
 }
-, , , , , function(t, e) {
+, , , function(t, e) {
     t.exports = function(t) {
         if ("function" != typeof t)
             throw TypeError(t + " is not a function!");
@@ -5930,14 +5965,14 @@ webpackJsonp([0], [function(t, e) {
     }
 }
 , function(t, e, n) {
-    var i = n(245)
-      , r = n(95);
+    var i = n(286)
+      , r = n(111);
     t.exports = Object.keys || function(t) {
         return i(t, r)
     }
 }
 , function(t, e, n) {
-    var i = n(92)
+    var i = n(108)
       , r = Math.min;
     t.exports = function(t) {
         return t > 0 ? r(i(t), 9007199254740991) : 0
@@ -5954,15 +5989,15 @@ webpackJsonp([0], [function(t, e) {
     e.f = {}.propertyIsEnumerable
 }
 , function(t, e, n) {
-    var i = n(91);
+    var i = n(107);
     t.exports = function(t) {
         return Object(i(t))
     }
 }
 , function(t, e, n) {
     "use strict";
-    var i = n(302)(!0);
-    n(248)(String, "String", function(t) {
+    var i = n(349)(!0);
+    n(289)(String, "String", function(t) {
         this._t = String(t),
         this._i = 0
     }, function() {
@@ -5982,9 +6017,9 @@ webpackJsonp([0], [function(t, e) {
     t.exports = !0
 }
 , function(t, e, n) {
-    var i = n(12).f
-      , r = n(22)
-      , o = n(7)("toStringTag");
+    var i = n(15).f
+      , r = n(24)
+      , o = n(10)("toStringTag");
     t.exports = function(t, e, n) {
         t && !r(t = n ? t : t.prototype, o) && i(t, o, {
             configurable: !0,
@@ -5995,25 +6030,25 @@ webpackJsonp([0], [function(t, e) {
 , function(t, e, n) {
     "use strict";
     function i(t) {
-        n(328)
+        n(375)
     }
-    var r = n(260)
-      , o = n(329)
+    var r = n(301)
+      , o = n(376)
       , a = n(0)
       , s = i
       , c = a(r.a, o.a, !1, s, "data-v-1a215b65", null);
     e.a = c.exports
 }
-, , function(t, e, n) {
-    var i = n(20)
-      , r = n(6).document
+, , , , , , function(t, e, n) {
+    var i = n(22)
+      , r = n(9).document
       , o = i(r) && i(r.createElement);
     t.exports = function(t) {
         return o ? r.createElement(t) : {}
     }
 }
 , function(t, e, n) {
-    var i = n(20);
+    var i = n(22);
     t.exports = function(t, e) {
         if (!i(t))
             return t;
@@ -6042,14 +6077,14 @@ webpackJsonp([0], [function(t, e) {
     }
 }
 , function(t, e, n) {
-    var i = n(94)("keys")
-      , r = n(81);
+    var i = n(110)("keys")
+      , r = n(93);
     t.exports = function(t) {
         return i[t] || (i[t] = r(t))
     }
 }
 , function(t, e, n) {
-    var i = n(6)
+    var i = n(9)
       , r = i["__core-js_shared__"] || (i["__core-js_shared__"] = {});
     t.exports = function(t) {
         return r[t] || (r[t] = {})
@@ -6090,7 +6125,7 @@ webpackJsonp([0], [function(t, e) {
     })
 }
 , , , , function(t, e, n) {
-    var i = n(17);
+    var i = n(19);
     t.exports = function(t, e, n, r) {
         try {
             return r ? e(i(n)[0], n[1]) : e(n)
@@ -6102,18 +6137,18 @@ webpackJsonp([0], [function(t, e) {
     }
 }
 , function(t, e, n) {
-    var i = n(32)
-      , r = n(7)("iterator")
+    var i = n(36)
+      , r = n(10)("iterator")
       , o = Array.prototype;
     t.exports = function(t) {
         return void 0 !== t && (i.Array === t || o[r] === t)
     }
 }
 , function(t, e, n) {
-    var i = n(253)
-      , r = n(7)("iterator")
-      , o = n(32);
-    t.exports = n(9).getIteratorMethod = function(t) {
+    var i = n(294)
+      , r = n(10)("iterator")
+      , o = n(36);
+    t.exports = n(11).getIteratorMethod = function(t) {
         if (void 0 != t)
             return t[r] || t["@@iterator"] || o[i(t)]
     }
@@ -6132,13 +6167,13 @@ webpackJsonp([0], [function(t, e) {
         this.resolve = r(e),
         this.reject = r(n)
     }
-    var r = n(78);
+    var r = n(90);
     t.exports.f = function(t) {
         return new i(t)
     }
 }
 , function(t, e, n) {
-    var i = n(7)("iterator")
+    var i = n(10)("iterator")
       , r = !1;
     try {
         var o = [7][i]();
@@ -6175,36 +6210,48 @@ webpackJsonp([0], [function(t, e) {
 , , , , , , , , , , , , , , , , function(t, e, n) {
     "use strict";
     function i(t) {
-        n(318)
+        n(365)
     }
-    var r = n(258)
-      , o = n(319)
+    var r = n(299)
+      , o = n(366)
       , a = n(0)
       , s = i
       , c = a(r.a, o.a, !1, s, null, null);
     e.a = c.exports
 }
-, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , function(t, e, n) {
+, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , function(t, e, n) {
     "use strict";
     function i(t) {
-        n(331)
+        n(374)
     }
-    var r = n(261)
-      , o = n(332)
+    var r = n(300)
+      , o = n(381)
+      , a = n(0)
+      , s = i
+      , c = a(r.a, o.a, !1, s, "data-v-5d51d4aa", null);
+    e.a = c.exports
+}
+, , , , , , , , , , , , , , , , , , , , , , , function(t, e, n) {
+    "use strict";
+    function i(t) {
+        n(382)
+    }
+    var r = n(305)
+      , o = n(383)
       , a = n(0)
       , s = i
       , c = a(r.a, o.a, !1, s, "data-v-d868012c", null);
     e.a = c.exports
 }
-, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , function(t, e, n) {
-    e.f = n(7)
+, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , function(t, e, n) {
+    e.f = n(10)
 }
 , function(t, e, n) {
-    var i = n(6)
-      , r = n(9)
-      , o = n(85)
-      , a = n(210)
-      , s = n(12).f;
+    var i = n(9)
+      , r = n(11)
+      , o = n(97)
+      , a = n(259)
+      , s = n(15).f;
     t.exports = function(t) {
         var e = r.Symbol || (r.Symbol = o ? {} : i.Symbol || {});
         "_" == t.charAt(0) || t in e || s(e, t, {
@@ -6212,38 +6259,40 @@ webpackJsonp([0], [function(t, e) {
         })
     }
 }
-, , , , , , , , , , , , , function(t, e, n) {
+, , , , , function(t, e, n) {
     "use strict";
     function i(t) {
-        n(345)
+        n(411)
     }
-    var r = n(263)
-      , o = n(394)
+    var r = n(312)
+      , o = n(455)
       , a = n(0)
       , s = i
-      , c = a(r.a, o.a, !1, s, "data-v-cc618d60", null);
+      , c = a(r.a, o.a, !1, s, "data-v-a44bdfa4", null);
     e.a = c.exports
 }
 , , , , , , , , , , , , , , , , , function(t, e, n) {
     "use strict";
-    var i = n(18)
+    var i = n(20)
       , r = n.n(i)
       , o = n(3)
       , a = n.n(o)
-      , s = n(15)
+      , s = n(12)
       , c = n.n(s)
       , u = n(4)
       , l = n(1)
-      , d = n(399)
-      , p = n(400)
-      , f = n(401)
-      , h = n(402)
-      , v = n(403)
-      , m = n(404)
-      , g = n(405)
-      , y = n(10);
+      , d = n(460)
+      , f = n(461)
+      , p = n(462)
+      , h = n(463)
+      , v = n(464)
+      , m = n(465)
+      , g = n(466)
+      , y = n(467)
+      , _ = n(468)
+      , b = n(6);
     u.a.use(l.a);
-    var _ = new l.a.Store({
+    var C = new l.a.Store({
         state: {
             collegeList: [],
             userInfo: {},
@@ -6332,8 +6381,10 @@ webpackJsonp([0], [function(t, e) {
                     }
                     var s = {}
                       , c = _kd.parseQueryString().media_id;
-                    c && (s.media_id = c),
-                    axios.get(y.g, {
+                    c && (s.media_id = c);
+                    var u = b.h;
+                    (new Date).getTime() > new Date(2018,1,16,0,0,0).getTime() && (u = b.i),
+                    axios.get(u, {
                         params: s
                     }).then(function(i) {
                         var o = i.data;
@@ -6401,7 +6452,7 @@ webpackJsonp([0], [function(t, e) {
                 };
                 return e.code && (r.code = e.code),
                 new a.a(function(t, e) {
-                    axios.get("http://www.pocketuniversity.cn/signin/sxcard/sendCard", {
+                    axios.get("/signin/sxcard/sendCard", {
                         params: r
                     }).then(function(n) {
                         var i = n.data;
@@ -6419,7 +6470,7 @@ webpackJsonp([0], [function(t, e) {
                 var n = t.commit;
                 t.state;
                 return new a.a(function(t, i) {
-                    axios.get("http://www.pocketuniversity.cn/index.php/signin/common/getMediaInfo", {
+                    axios.get("/signin/common/getMediaInfo", {
                         params: {
                             media_id: e && e.media_id || _kd.parseQueryString().media_id
                         }
@@ -6436,16 +6487,18 @@ webpackJsonp([0], [function(t, e) {
         },
         modules: {
             habit: d.a,
-            redbag: p.a,
-            user: f.a,
+            redbag: f.a,
+            user: p.a,
             zodiac: h.a,
             cache: v.a,
             list: m.a,
-            topData: g.a
+            topData: g.a,
+            suprise: y.a,
+            time: _.a
         },
         strict: !1
     });
-    e.a = _
+    e.a = C
 }
 , function(t, e) {
     var n;
@@ -6461,8 +6514,8 @@ webpackJsonp([0], [function(t, e) {
     t.exports = n
 }
 , , function(t, e, n) {
-    t.exports = !n(21) && !n(29)(function() {
-        return 7 != Object.defineProperty(n(89)("div"), "a", {
+    t.exports = !n(23) && !n(33)(function() {
+        return 7 != Object.defineProperty(n(105)("div"), "a", {
             get: function() {
                 return 7
             }
@@ -6470,10 +6523,10 @@ webpackJsonp([0], [function(t, e) {
     })
 }
 , function(t, e, n) {
-    var i = n(22)
-      , r = n(27)
-      , o = n(296)(!1)
-      , a = n(93)("IE_PROTO");
+    var i = n(24)
+      , r = n(31)
+      , o = n(342)(!1)
+      , a = n(109)("IE_PROTO");
     t.exports = function(t, e) {
         var n, s = r(t), c = 0, u = [];
         for (n in s)
@@ -6484,7 +6537,7 @@ webpackJsonp([0], [function(t, e) {
     }
 }
 , function(t, e, n) {
-    var i = n(30);
+    var i = n(34);
     t.exports = Object("z").propertyIsEnumerable(0) ? Object : function(t) {
         return "String" == i(t) ? t.split("") : Object(t)
     }
@@ -6492,24 +6545,24 @@ webpackJsonp([0], [function(t, e) {
 , function(t, e) {}
 , function(t, e, n) {
     "use strict";
-    var i = n(85)
-      , r = n(16)
-      , o = n(249)
-      , a = n(19)
-      , s = n(22)
-      , c = n(32)
-      , u = n(303)
-      , l = n(86)
-      , d = n(305)
-      , p = n(7)("iterator")
-      , f = !([].keys && "next"in [].keys())
+    var i = n(97)
+      , r = n(18)
+      , o = n(290)
+      , a = n(21)
+      , s = n(24)
+      , c = n(36)
+      , u = n(350)
+      , l = n(98)
+      , d = n(352)
+      , f = n(10)("iterator")
+      , p = !([].keys && "next"in [].keys())
       , h = function() {
         return this
     };
     t.exports = function(t, e, n, v, m, g, y) {
         u(n, e, v);
         var _, b, C, w = function(t) {
-            if (!f && t in S)
+            if (!p && t in S)
                 return S[t];
             switch (t) {
             case "keys":
@@ -6521,15 +6574,15 @@ webpackJsonp([0], [function(t, e) {
             return function() {
                 return new n(this,t)
             }
-        }, A = e + " Iterator", k = "values" == m, x = !1, S = t.prototype, I = S[p] || S["@@iterator"] || m && S[m], E = !f && I || w(m), O = m ? k ? w("entries") : E : void 0, M = "Array" == e ? S.entries || I : I;
+        }, A = e + " Iterator", k = "values" == m, x = !1, S = t.prototype, I = S[f] || S["@@iterator"] || m && S[m], E = !p && I || w(m), O = m ? k ? w("entries") : E : void 0, M = "Array" == e ? S.entries || I : I;
         if (M && (C = d(M.call(new t))) !== Object.prototype && C.next && (l(C, A, !0),
-        i || s(C, p) || a(C, p, h)),
+        i || s(C, f) || a(C, f, h)),
         k && I && "values" !== I.name && (x = !0,
         E = function() {
             return I.call(this)
         }
         ),
-        i && !y || !f && !x && S[p] || a(S, p, E),
+        i && !y || !p && !x && S[f] || a(S, f, E),
         c[e] = E,
         c[A] = h,
         m)
@@ -6542,23 +6595,23 @@ webpackJsonp([0], [function(t, e) {
                 for (b in _)
                     b in S || o(S, b, _[b]);
             else
-                r(r.P + r.F * (f || x), e, _);
+                r(r.P + r.F * (p || x), e, _);
         return _
     }
 }
 , function(t, e, n) {
-    t.exports = n(19)
+    t.exports = n(21)
 }
 , function(t, e, n) {
-    var i = n(17)
-      , r = n(304)
-      , o = n(95)
-      , a = n(93)("IE_PROTO")
+    var i = n(19)
+      , r = n(351)
+      , o = n(111)
+      , a = n(109)("IE_PROTO")
       , s = function() {}
       , c = function() {
-        var t, e = n(89)("iframe"), i = o.length;
+        var t, e = n(105)("iframe"), i = o.length;
         for (e.style.display = "none",
-        n(251).appendChild(e),
+        n(292).appendChild(e),
         e.src = "javascript:",
         t = e.contentWindow.document,
         t.open(),
@@ -6578,12 +6631,12 @@ webpackJsonp([0], [function(t, e) {
     }
 }
 , function(t, e, n) {
-    var i = n(6).document;
+    var i = n(9).document;
     t.exports = i && i.documentElement
 }
 , function(t, e, n) {
-    n(306);
-    for (var i = n(6), r = n(19), o = n(32), a = n(7)("toStringTag"), s = "CSSRuleList,CSSStyleDeclaration,CSSValueList,ClientRectList,DOMRectList,DOMStringList,DOMTokenList,DataTransferItemList,FileList,HTMLAllCollection,HTMLCollection,HTMLFormElement,HTMLSelectElement,MediaList,MimeTypeArray,NamedNodeMap,NodeList,PaintRequestList,Plugin,PluginArray,SVGLengthList,SVGNumberList,SVGPathSegList,SVGPointList,SVGStringList,SVGTransformList,SourceBufferList,StyleSheetList,TextTrackCueList,TextTrackList,TouchList".split(","), c = 0; c < s.length; c++) {
+    n(353);
+    for (var i = n(9), r = n(21), o = n(36), a = n(10)("toStringTag"), s = "CSSRuleList,CSSStyleDeclaration,CSSValueList,ClientRectList,DOMRectList,DOMStringList,DOMTokenList,DataTransferItemList,FileList,HTMLAllCollection,HTMLCollection,HTMLFormElement,HTMLSelectElement,MediaList,MimeTypeArray,NamedNodeMap,NodeList,PaintRequestList,Plugin,PluginArray,SVGLengthList,SVGNumberList,SVGPathSegList,SVGPointList,SVGStringList,SVGTransformList,SourceBufferList,StyleSheetList,TextTrackCueList,TextTrackList,TouchList".split(","), c = 0; c < s.length; c++) {
         var u = s[c]
           , l = i[u]
           , d = l && l.prototype;
@@ -6592,8 +6645,8 @@ webpackJsonp([0], [function(t, e) {
     }
 }
 , function(t, e, n) {
-    var i = n(30)
-      , r = n(7)("toStringTag")
+    var i = n(34)
+      , r = n(10)("toStringTag")
       , o = "Arguments" == i(function() {
         return arguments
     }())
@@ -6608,16 +6661,16 @@ webpackJsonp([0], [function(t, e) {
     }
 }
 , function(t, e, n) {
-    var i = n(17)
-      , r = n(78)
-      , o = n(7)("species");
+    var i = n(19)
+      , r = n(90)
+      , o = n(10)("species");
     t.exports = function(t, e) {
         var n, a = i(t).constructor;
         return void 0 === a || void 0 == (n = i(a)[o]) ? e : r(n)
     }
 }
 , function(t, e, n) {
-    var i, r, o, a = n(25), s = n(312), c = n(251), u = n(89), l = n(6), d = l.process, p = l.setImmediate, f = l.clearImmediate, h = l.MessageChannel, v = l.Dispatch, m = 0, g = {}, y = function() {
+    var i, r, o, a = n(29), s = n(359), c = n(292), u = n(105), l = n(9), d = l.process, f = l.setImmediate, p = l.clearImmediate, h = l.MessageChannel, v = l.Dispatch, m = 0, g = {}, y = function() {
         var t = +this;
         if (g.hasOwnProperty(t)) {
             var e = g[t];
@@ -6627,7 +6680,7 @@ webpackJsonp([0], [function(t, e) {
     }, _ = function(t) {
         y.call(t.data)
     };
-    p && f || (p = function(t) {
+    f && p || (f = function(t) {
         for (var e = [], n = 1; arguments.length > n; )
             e.push(arguments[n++]);
         return g[++m] = function() {
@@ -6638,11 +6691,11 @@ webpackJsonp([0], [function(t, e) {
         m
     }
     ,
-    f = function(t) {
+    p = function(t) {
         delete g[t]
     }
     ,
-    "process" == n(30)(d) ? i = function(t) {
+    "process" == n(34)(d) ? i = function(t) {
         d.nextTick(a(y, t, 1))
     }
     : v && v.now ? i = function(t) {
@@ -6666,8 +6719,8 @@ webpackJsonp([0], [function(t, e) {
     }
     ),
     t.exports = {
-        set: p,
-        clear: f
+        set: f,
+        clear: p
     }
 }
 , function(t, e) {
@@ -6686,9 +6739,9 @@ webpackJsonp([0], [function(t, e) {
     }
 }
 , function(t, e, n) {
-    var i = n(17)
-      , r = n(20)
-      , o = n(105);
+    var i = n(19)
+      , r = n(22)
+      , o = n(121);
     t.exports = function(t, e) {
         if (i(t),
         r(e) && e.constructor === t)
@@ -6721,27 +6774,224 @@ webpackJsonp([0], [function(t, e) {
 }
 , function(t, e, n) {
     "use strict";
-    var i = n(87);
+    var i = n(2)
+      , r = n.n(i)
+      , o = n(99)
+      , a = n(138)
+      , s = n(302)
+      , c = n(17)
+      , u = n(1);
     e.a = {
         props: {
-            type: {
+            datas: {
+                type: Object,
                 required: !0
             },
-            btnText: {
+            mode: {
                 type: String,
-                default: "收藏此卡"
+                default: "view"
+            },
+            config: {
+                type: Object
             }
         },
         data: function() {
-            return {}
-        },
-        methods: {
-            close: function() {
-                this.$emit("close")
+            return {
+                theChoosedCard: [],
+                visible: {
+                    preview: !1,
+                    prompt: !1,
+                    share: !1,
+                    newCard: !1
+                },
+                previewZodiac: {},
+                newCardType: 0
             }
         },
+        computed: r()({
+            zodiacListLines: function() {
+                var t = []
+                  , e = [];
+                for (var n in this.datas)
+                    e.push(this.datas[n]),
+                    4 == e.length && (t.push([].concat(e)),
+                    e = []);
+                return t
+            },
+            tip: function() {
+                return this.config.tip || "请选择兑换所需的卡片"
+            }
+        }, Object(u.d)("user", ["userInfo"]), Object(u.d)(["publicInfo"])),
+        watch: {
+            mode: function(t) {
+                this.theChoosedCard = this.config.required.map(function(t) {
+                    return {
+                        type: t
+                    }
+                })
+            }
+        },
+        created: function() {
+            var t = _kd.parseQueryString().uuid
+              , e = _kd.parseQueryString().uuid_type;
+            t && this.getTheSendCard(t, e)
+        },
+        methods: r()({}, Object(u.b)("zodiac", ["send_zodiac_card"]), {
+            chooseTheSendCard: function(t, e) {
+                if ("choose" == this.mode) {
+                    if (0 == e.count)
+                        return;
+                    if (-1 != this.config.required.indexOf(e.type))
+                        return;
+                    var n = -1;
+                    this.theChoosedCard.filter(function(t, i) {
+                        return t.type == e.type && (n = i,
+                        !0)
+                    })[0] ? this.theChoosedCard.splice(n, 1) : this.theChoosedCard.length < this.config.count ? this.theChoosedCard.push(e) : weui.alert("最多选择" + this.config.count + "张生肖卡")
+                } else
+                    this.visible.preview = !0,
+                    this.previewZodiac = e
+            },
+            handlePreviewClose: function() {
+                this.visible.preview = !1,
+                this.visible.tip = !0
+            },
+            handleChooseThePreCard: function() {
+                this.visible.preview = !1,
+                this.theChoosedCard.push(this.previewZodiac),
+                this.visible.prompt = !0
+            },
+            isActiveCard: function(t) {
+                return "view" != this.mode && this.theChoosedCard.filter(function(e) {
+                    return e.type == t
+                }).length
+            },
+            handleConfirmChoose: function() {
+                if (!this.theChoosedCard.length)
+                    return void weui.alert(this.tip);
+                if (this.theChoosedCard.length < this.config.count)
+                    return void weui.alert(this.tip);
+                var t = this.theChoosedCard.map(function(t) {
+                    return t.type
+                });
+                this.config.callback({
+                    cards: t,
+                    cardInfos: [].concat(this.theChoosedCard)
+                }),
+                this.theChoosedCard = []
+            },
+            resetViewMode: function() {
+                this.previewZodiac = {},
+                this.visible.preview = !1,
+                this.theChoosedCard = [],
+                this.$emit("cancle")
+            },
+            setSendCard: function() {
+                this._$IS_WEIXIN ? this.setWxShareCard(this.previewZodiac) : (this.visible.prompt = !0,
+                this.visible.preview = !1)
+            },
+            setWxShareCard: function(t) {
+                var e = this
+                  , n = t.items[0]
+                  , i = n.uuid
+                  , r = n.type;
+                this.visible.share = !0;
+                var o = ""
+                  , a = ""
+                  , s = weui.loading();
+                "daka.fuyao.xyz" == location.hostname ? (axios.post("http://daka.fuyao.xyz/share.php", {
+                    url: location.href
+                }).then(function(t) {
+                    var e = t.data
+                      , n = e;
+                    wx.config({
+                        debug: !1,
+                        appId: n.appId,
+                        timestamp: n.timestamp,
+                        nonceStr: n.nonceStr,
+                        signature: n.signature,
+                        jsApiList: ["onMenuShareTimeline", "onMenuShareAppMessage", "hideAllNonBaseMenuItem", "showMenuItems"]
+                    })
+                }),
+                o = "http://daka.fuyao.xyz/zodiac.html?media_id=" + this.publicInfo.media_id + "&uuid=" + i + "&uuid_type=" + r,
+                a = "http://www.pocketuniversity.cn/static/roommate4/zodiac/images/" + r + ".png") : (_kd.insertWxConfig("http://www.pocketuniversity.cn/index.php/home/Wechat/getsignPackage", ["onMenuShareTimeline", "onMenuShareAppMessage", "hideAllNonBaseMenuItem", "showMenuItems"]),
+                o = "http://www.pocketuniversity.cn/index.php/Signin/Activity/zodiac?media_id=" + this.publicInfo.media_id + "&uuid=" + i + "&uuid_type=" + r,
+                a = "http://www.pocketuniversity.cn/static/roommate4/zodiac/images/" + r + ".png"),
+                wx.ready(function() {
+                    s.hide(),
+                    _kd.wxShare({
+                        title: e.userInfo.nickname + "有一张" + t.name + "卡要送给你，戳此领取",
+                        desc: "领生肖卡，抢千元现金红包、超多新年好礼！",
+                        imgUrl: a,
+                        link: o,
+                        success: function() {
+                            e.send_zodiac_card({
+                                uuid: i
+                            }).then(function() {
+                                weui.alert("生肖卡赠送成功"),
+                                e.visible.share = !1,
+                                e.$emit("sended")
+                            }).catch(function(t) {
+                                weui.alert("生肖卡赠送失败(" + t + ")")
+                            })
+                        }
+                    })
+                })
+            },
+            getTheSendCard: function(t, e) {
+                var n = this;
+                axios.get("/signin/sxcard/getCard", {
+                    params: {
+                        uuid: t
+                    }
+                }).then(function(t) {
+                    var i = t.data;
+                    if (0 != i.code)
+                        return weui.alert(i.msg);
+                    n.visible.newCard = !0,
+                    n.newCardType = e,
+                    weui.toast("恭喜, 成功领取一张生肖卡", {
+                        duration: 1e3
+                    }),
+                    n.$emit("sended")
+                })
+            },
+            handleSendCard: function(t) {
+                if (!t.data)
+                    return void weui.topTips("请输入正确的PUID");
+                this.theChoosedCard = [this.previewZodiac],
+                this.sendCard({
+                    uuid: this.theChoosedCard[0].items[0].uuid,
+                    pu_id: t.data
+                })
+            },
+            sendCard: function(t) {
+                var e = this;
+                if (!t.uuid)
+                    return void weui.alert("出错啦~");
+                this.sending = !0,
+                axios.post("/signin/sxcard/giveCard", {
+                    uuid: t.uuid,
+                    pu_id: t.pu_id
+                }).then(function(t) {
+                    t.data;
+                    weui.alert("赠送成功"),
+                    e.resetSendingStatus(),
+                    e.$emit("sended")
+                })
+            },
+            resetSendingStatus: function() {
+                this.visible.prompt = !1,
+                this.sending = !1,
+                this.theChoosedCard = [],
+                this.previewZodiac = {}
+            }
+        }),
         components: {
-            CnZodiac: i.a
+            CnZodiac: o.a,
+            Prompt: s.a,
+            ShareMask: a.a,
+            CnZodiacPopup: c.a
         }
     }
 }
@@ -6884,6 +7134,80 @@ webpackJsonp([0], [function(t, e) {
 }
 , function(t, e, n) {
     "use strict";
+    function i(t) {
+        n(377)
+    }
+    var r = n(303)
+      , o = n(378)
+      , a = n(0)
+      , s = i
+      , c = a(r.a, o.a, !1, s, "data-v-1c6c4b11", null);
+    e.a = c.exports
+}
+, function(t, e, n) {
+    "use strict";
+    e.a = {
+        props: {
+            loading: {
+                type: Boolean,
+                default: !1
+            }
+        },
+        data: function() {
+            return {
+                content: "",
+                title: "请确认被赠送者的PUID正确",
+                tip: "确认赠送后将无法撤销",
+                focus: !1
+            }
+        },
+        created: function() {},
+        mounted: function() {
+            var t = this;
+            this.$nextTick(function() {
+                t.$refs.input && t.$refs.input.focus()
+            })
+        },
+        methods: {
+            confirm: function() {
+                this.$emit("confirm", {
+                    data: this.content
+                })
+            },
+            close: function() {
+                this.$emit("close")
+            }
+        }
+    }
+}
+, function(t, e, n) {
+    "use strict";
+    var i = n(99);
+    e.a = {
+        props: {
+            type: {
+                required: !0
+            },
+            btnText: {
+                type: String,
+                default: "收藏此卡"
+            }
+        },
+        data: function() {
+            return {}
+        },
+        methods: {
+            close: function() {
+                this.$emit("close")
+            }
+        },
+        components: {
+            CnZodiac: i.a
+        }
+    }
+}
+, function(t, e, n) {
+    "use strict";
     var i = n(2)
       , r = n.n(i)
       , o = n(1);
@@ -6949,7 +7273,7 @@ webpackJsonp([0], [function(t, e) {
             fetchAYear: function() {
                 var t = this;
                 this.loading = !0,
-                axios.get("http://www.pocketuniversity.cn/index.php/Signin/api/getMonthDiary").then(function(e) {
+                axios.get("/Signin/api/getMonthDiary").then(function(e) {
                     var n = e.data;
                     t.loading = !1,
                     t.moodData = n.errmsg,
@@ -6974,28 +7298,6 @@ webpackJsonp([0], [function(t, e) {
                     })
                 }
             },
-            handleTakeTodayZodiac: function() {
-                this.canIGetNewCard ? this.takeTodayZodiac() : this.$router.push({
-                    path: "/iwanthome"
-                })
-            },
-            takeTodayZodiac: function() {
-                var t = this;
-                this.getting || (this.getting = !0,
-                axios.get("http://www.pocketuniversity.cn/signin/sxcard/sendCard").then(function(e) {
-                    var n = e.data;
-                    if (0 != n.errcode)
-                        return t.getting = !1,
-                        weui.alert(n.errmsg),
-                        void t.$router.push({
-                            path: "/iwanthome"
-                        });
-                    t.fetch_user_info().then(function() {
-                        t.getting = !1,
-                        t.handleTakeSuccess(n.errmsg)
-                    })
-                }))
-            },
             handleTakeSuccess: function(t) {
                 this.save_current_zodiac({
                     currentZodiac: t
@@ -7010,36 +7312,36 @@ webpackJsonp([0], [function(t, e) {
         })
     }
 }
-, function(t, e, n) {
-    var i = n(245)
-      , r = n(95).concat("length", "prototype");
+, , , , , , function(t, e, n) {
+    var i = n(286)
+      , r = n(111).concat("length", "prototype");
     e.f = Object.getOwnPropertyNames || function(t) {
         return i(t, r)
     }
 }
 , function(t, e, n) {
     "use strict";
-    var i = n(15)
+    var i = n(12)
       , r = n.n(i)
       , o = n(2)
       , a = n.n(o)
-      , s = n(87)
-      , c = n(346)
-      , u = n(352)
-      , l = n(370)
-      , d = n(277)
-      , p = n(13)
-      , f = (n(275),
-    n(267))
-      , h = n(381)
-      , v = n(272)
-      , m = n(384)
-      , g = n(391)
+      , s = n(99)
+      , c = n(412)
+      , u = n(418)
+      , l = n(184)
+      , d = n(323)
+      , f = n(17)
+      , p = (n(302),
+    n(316))
+      , h = n(442)
+      , v = n(321)
+      , m = n(445)
+      , g = n(452)
       , y = n(1)
-      , _ = n(11)
+      , _ = n(13)
       , b = n.n(_)
-      , C = n(279)
-      , w = n(10);
+      , C = n(325)
+      , w = n(6);
     e.a = {
         name: "IWantHome",
         data: function() {
@@ -7163,7 +7465,7 @@ webpackJsonp([0], [function(t, e) {
                 msyStatus: {}
             }
         },
-        computed: a()({}, Object(y.d)(["currentZodiac"]), Object(y.d)(["publicInfo", "guideToFpdxMedias"]), Object(y.d)("topData", ["topSchools", "everydayTopSchool"]), {
+        computed: a()({}, Object(y.d)(["currentZodiac"]), Object(y.d)(["publicInfo", "guideToFpdxMedias"]), Object(y.d)("topData", ["topSchools", "everydayTopSchool", "topMoney"]), {
             prizeDataCommon: function() {
                 return this.prizeData.filter(function(t) {
                     return 2 != t.inner_goods_type
@@ -7253,11 +7555,12 @@ webpackJsonp([0], [function(t, e) {
             parseAction: function() {
                 var t = this.$route.query.action;
                 "getOneMore" == t && (this.visible.oneMore = !0),
+                "memo" == t && (this.visible.oneMore = !0),
                 "topschool" != t && "topData" != t || document.getElementById("Gu").scrollIntoView()
             },
             fetchShopInfo: function() {
                 var t = this;
-                axios.get("http://www.pocketuniversity.cn/index.php/Signin/shop/info").then(function(e) {
+                axios.get("/Signin/shop/info").then(function(e) {
                     var n = e.data;
                     t.shopInfo = n.errmsg
                 })
@@ -7277,7 +7580,7 @@ webpackJsonp([0], [function(t, e) {
             },
             fetchZodiacCards: function() {
                 var t = this;
-                axios.get("http://www.pocketuniversity.cn/signin/sxcard/cardList").then(function(e) {
+                axios.get("/signin/sxcard/cardList").then(function(e) {
                     var n = e.data;
                     t.myCardList = n.errmsg;
                     for (var i in t.zodiacList)
@@ -7317,7 +7620,7 @@ webpackJsonp([0], [function(t, e) {
             },
             fetchKfUrl: function() {
                 var t = this;
-                axios.get("http://www.pocketuniversity.cn/signin/store/getKf", {
+                axios.get("/signin/store/getKf", {
                     params: {
                         media_id: this.publicInfo.media_id
                     }
@@ -7360,7 +7663,7 @@ webpackJsonp([0], [function(t, e) {
             },
             fetchZodiacList: function() {
                 var t = this;
-                axios.get("http://www.pocketuniversity.cn/index.php/Signin/shop/getZodiacStoreList").then(function(e) {
+                axios.get("/Signin/shop/getZodiacStoreList").then(function(e) {
                     var n = e.data;
                     t.prizeList = n.errmsg,
                     t.prizeData.forEach(function(e) {
@@ -7387,7 +7690,7 @@ webpackJsonp([0], [function(t, e) {
                     e[t.type] = 1
                 });
                 var n = weui.loading("奖品兑换中...");
-                axios.post(w.a, {
+                axios.post(w.b, {
                     goods_id: 33,
                     cards: e
                 }).then(function() {
@@ -7416,7 +7719,7 @@ webpackJsonp([0], [function(t, e) {
             },
             fetchExchangeList: function() {
                 var t = this;
-                axios.post("http://www.pocketuniversity.cn/index.php/Signin/shop/getCarouselList").then(function(e) {
+                axios.post("/Signin/shop/getCarouselList").then(function(e) {
                     var n = e.data;
                     t.exchageList = n.errmsg.map(function(e) {
                         var n = r()({}, e)
@@ -7430,7 +7733,7 @@ webpackJsonp([0], [function(t, e) {
             },
             howToTop: function() {
                 var t = this;
-                weui.confirm("用户参与打卡，即可为母校积攒冲顶积分（其中老用户积１分，新用户积５分）打卡人数越多，母校积分排名越高，直至冲顶。<br/>成功冲顶的高校，占领全国高校打卡封面一天并瓜分１０００元冲顶红包（第二天早上5：00放出，随机0.5-50，分完为止）", {
+                weui.confirm("用户参与打卡，即可为母校积攒冲顶积分（其中老用户积１分，新用户积５分）打卡人数越多，母校积分排名越高，直至冲顶。<br/>成功冲顶的高校，占领全国高校打卡封面一天并瓜分" + this.topMoney + "元冲顶红包（第二天早上5：00放出，随机0.5-50，分完为止）", {
                     title: "冲顶大作战",
                     className: "how-to-top-wrapper",
                     buttons: [{
@@ -7496,7 +7799,7 @@ webpackJsonp([0], [function(t, e) {
             },
             checkIsbucang: function() {
                 var t = this;
-                axios.get("http://www.pocketuniversity.cn/signin/sxcard/isbucang", {
+                axios.get("/signin/sxcard/isbucang", {
                     params: {
                         get_type: 10
                     }
@@ -7556,7 +7859,7 @@ webpackJsonp([0], [function(t, e) {
             },
             checkPublicMsyStatus: function() {
                 var t = this;
-                axios.post("http://www.pocketuniversity.cn/index.php/partner/partner/getDsgSquare", {
+                axios.post("/partner/partner/getDsgSquare", {
                     media_id: this.publicInfo.media_id
                 }).then(function(e) {
                     var n = e.data;
@@ -7589,9 +7892,9 @@ webpackJsonp([0], [function(t, e) {
             OneMoreWrapper: u.a,
             ZodiacCards: l.a,
             RedBag: d.a,
-            QRCodeSecret: f.a,
+            QRCodeSecret: p.a,
             Marquee: h.a,
-            CnZodiacPopup: p.a,
+            CnZodiacPopup: f.a,
             Modal: v.a,
             TopSchool: m.a,
             RedbagCountdown: g.a
@@ -7600,14 +7903,14 @@ webpackJsonp([0], [function(t, e) {
 }
 , function(t, e, n) {
     "use strict";
-    var i = n(18)
+    var i = n(20)
       , r = n.n(i)
       , o = n(2)
       , a = n.n(o)
-      , s = n(87)
-      , c = n(10)
+      , s = n(99)
+      , c = n(6)
       , u = n(1)
-      , l = n(11)
+      , l = n(13)
       , d = n.n(l);
     e.a = {
         props: {
@@ -7776,7 +8079,7 @@ webpackJsonp([0], [function(t, e) {
                     });
                     var n = this.data.goods_id;
                     "杭州" == this.city && 34 == n && (n = 52),
-                    axios.post(c.a, {
+                    axios.post(c.b, {
                         goods_id: n,
                         cards: e
                     }).then(function(e) {
@@ -7806,7 +8109,7 @@ webpackJsonp([0], [function(t, e) {
                     n[t] = 1
                 }),
                 this.loading || (this.loading = !0,
-                axios.post(c.a, {
+                axios.post(c.b, {
                     goods_id: this.data.goods_id,
                     cards: n
                 }).then(function(t) {
@@ -7845,16 +8148,16 @@ webpackJsonp([0], [function(t, e) {
     "use strict";
     var i = n(3)
       , r = n.n(i)
-      , o = n(73)
+      , o = n(87)
       , a = n.n(o)
       , s = n(2)
       , c = n.n(s)
-      , u = n(353)
-      , l = n(160)
-      , d = n(267)
-      , p = n(358)
-      , f = n(361)
-      , h = n(364)
+      , u = n(419)
+      , l = n(207)
+      , d = n(316)
+      , f = n(424)
+      , p = n(427)
+      , h = n(430)
       , v = n(1);
     e.a = {
         props: {
@@ -7883,11 +8186,15 @@ webpackJsonp([0], [function(t, e) {
             "miniapp" == e.action && (this.type = "miniapp",
             this.miniAppTitle = "再来一张",
             this.miniAppTip = '长按识别小程序码再领一张"生肖卡"',
-            this.miniAppOperation = ""),
+            this.miniAppOperation = "");
+            var n = this.$route.query.action;
+            "memo" == n && (this.type = "miniapp"),
             this.randomSecret(),
             this.fetchFpdxAttention().then(function() {
                 -1 != t.guideToFpdxMedias.indexOf(t.publicInfo.media_id) && t.isNew && (t.type = "appsecret"),
                 !t._$IS_WEIXIN && "getOneMore" == t.$route.query.action && t.isNew && (t.type = "appsecret")
+            }).catch(function(e) {
+                t.type = "memo" == n ? "miniapp" : "oneMore"
             })
         },
         methods: c()({}, Object(v.b)("zodiac", ["is_zodiac_reach_limit"]), {
@@ -7928,9 +8235,8 @@ webpackJsonp([0], [function(t, e) {
                         t.hasFpdx = !1,
                         n()
                     }).catch(function(e) {
-                        t.hasFpdx = !0,
                         i(),
-                        t.type = "oneMore"
+                        t.hasFpdx = !0
                     })
                 }
                 )
@@ -7940,8 +8246,8 @@ webpackJsonp([0], [function(t, e) {
             OneMore: u.a,
             AYearCard: l.a,
             QRCodeSecret: d.a,
-            InviteCode: p.a,
-            MiniAppQrcode: f.a,
+            InviteCode: f.a,
+            MiniAppQrcode: p.a,
             GetPublicFans: h.a
         }
     }
@@ -7951,7 +8257,7 @@ webpackJsonp([0], [function(t, e) {
     var i = n(2)
       , r = n.n(i)
       , o = n(1)
-      , a = n(13);
+      , a = n(17);
     e.a = {
         data: function() {
             return {
@@ -7998,6 +8304,7 @@ webpackJsonp([0], [function(t, e) {
                 }).then(function(e) {
                     t.visible.newCard = !0,
                     t.newCardType = e.type,
+                    t.enable.signin = !1,
                     weui.toast("恭喜领取早起生肖卡成功", {
                         duration: 1e3
                     })
@@ -8043,10 +8350,10 @@ webpackJsonp([0], [function(t, e) {
 , function(t, e, n) {
     "use strict";
     function i(t) {
-        n(356)
+        n(422)
     }
-    var r = n(268)
-      , o = n(357)
+    var r = n(317)
+      , o = n(423)
       , a = n(0)
       , s = i
       , c = a(r.a, o.a, !1, s, "data-v-420574c4", null);
@@ -8056,7 +8363,7 @@ webpackJsonp([0], [function(t, e) {
     "use strict";
     var i = n(2)
       , r = n.n(i)
-      , o = n(11)
+      , o = n(13)
       , a = n.n(o)
       , s = n(1);
     e.a = {
@@ -8122,9 +8429,9 @@ webpackJsonp([0], [function(t, e) {
     var i = n(2)
       , r = n.n(i)
       , o = n(1)
-      , a = n(11)
+      , a = n(13)
       , s = n.n(a)
-      , c = n(13);
+      , c = n(17);
     e.a = {
         data: function() {
             return {
@@ -8159,7 +8466,7 @@ webpackJsonp([0], [function(t, e) {
         methods: r()({}, Object(o.b)(["fetch_zodiac_card"]), {
             fetchInvitedList: function() {
                 var t = this;
-                axios.get("http://www.pocketuniversity.cn/signin/Sxcard/invites").then(function(e) {
+                axios.get("/signin/Sxcard/invites").then(function(e) {
                     var n = e.data;
                     t.invitedList = n.data.users,
                     t.invitedCount = n.data.count,
@@ -8169,7 +8476,7 @@ webpackJsonp([0], [function(t, e) {
             checkInviteCode: function() {
                 var t = this
                   , e = weui.loading();
-                axios.get("http://www.pocketuniversity.cn/signin/Sxcard/inputInviteCode", {
+                axios.get("/Sxcard/inputInviteCode", {
                     params: {
                         code: this.inviteCode,
                         media_id: this.publicInfo.media_id
@@ -8191,7 +8498,7 @@ webpackJsonp([0], [function(t, e) {
             },
             fetchMyInviteCode: function() {
                 var t = this;
-                axios.get("http://www.pocketuniversity.cn/signin/Sxcard/getInviteCode").then(function(e) {
+                axios.get("/signin/Sxcard/getInviteCode").then(function(e) {
                     var n = e.data;
                     t.secret = n.data.code
                 })
@@ -8219,9 +8526,9 @@ webpackJsonp([0], [function(t, e) {
       , r = n.n(i)
       , o = n(2)
       , a = n.n(o)
-      , s = n(11)
+      , s = n(13)
       , c = (n.n(s),
-    n(13))
+    n(17))
       , u = n(1);
     e.a = {
         props: {
@@ -8280,7 +8587,7 @@ webpackJsonp([0], [function(t, e) {
             fetchLockId: function() {
                 var t = this;
                 return new r.a(function(e, n) {
-                    axios.get("http://www.pocketuniversity.cn/signin/sxcard/getLockQrcode").then(function(n) {
+                    axios.get("/signin/sxcard/getLockQrcode").then(function(n) {
                         var i = n.data;
                         t.lockId = i.data.lock,
                         t.reachLimit = !1,
@@ -8292,7 +8599,7 @@ webpackJsonp([0], [function(t, e) {
             fetchLockIdFromPuapp: function() {
                 var t = this;
                 return new r.a(function(e, n) {
-                    axios.get("http://www.pocketuniversity.cn/signin/sxcard/getLock13Qrcode", {
+                    axios.get("/signin/sxcard/getLock13Qrcode", {
                         params: {
                             uid: _kd.parseQueryString().puappuid
                         }
@@ -8308,7 +8615,7 @@ webpackJsonp([0], [function(t, e) {
             fetchLockIdFromPublic: function() {
                 var t = this;
                 return new r.a(function(e, n) {
-                    axios.get("http://www.pocketuniversity.cn/signin/sxcard/getLock23Qrcode", {
+                    axios.get("/signin/sxcard/getLock23Qrcode", {
                         params: {}
                     }).then(function(n) {
                         var i = n.data;
@@ -8320,7 +8627,7 @@ webpackJsonp([0], [function(t, e) {
             },
             getScanStatus: function() {
                 var t = this;
-                axios.get("http://www.pocketuniversity.cn/signin/sxcard/flushLock", {
+                axios.get("/signin/sxcard/flushLock", {
                     params: {
                         lock: this.lockId,
                         uid: _kd.parseQueryString().puappuid || this.userInfo.uid
@@ -8348,7 +8655,7 @@ webpackJsonp([0], [function(t, e) {
             },
             fetMiniCardFromApp: function() {
                 var t = _kd.parseQueryString().puappuid;
-                axios.get("http://www.pocketuniversity.cn/signin/sxcard/sendCardOfCode", {
+                axios.get("/signin/sxcard/sendCardOfCode", {
                     params: {
                         uid: t,
                         media_id: "gh_faf56d98f3b7",
@@ -8383,7 +8690,7 @@ webpackJsonp([0], [function(t, e) {
     var i = n(2)
       , r = n.n(i)
       , o = n(1)
-      , a = n(272);
+      , a = n(321);
     e.a = {
         props: {
             title: {
@@ -8435,10 +8742,10 @@ webpackJsonp([0], [function(t, e) {
 , function(t, e, n) {
     "use strict";
     function i(t) {
-        n(366)
+        n(432)
     }
-    var r = n(273)
-      , o = n(367)
+    var r = n(322)
+      , o = n(433)
       , a = n(0)
       , s = i
       , c = a(r.a, o.a, !1, s, "data-v-6568e593", null);
@@ -8470,281 +8777,11 @@ webpackJsonp([0], [function(t, e) {
 }
 , function(t, e, n) {
     "use strict";
-    var i = n(2)
-      , r = n.n(i)
-      , o = n(87)
-      , a = n(122)
-      , s = n(275)
-      , c = n(13)
-      , u = n(1);
-    e.a = {
-        props: {
-            datas: {
-                type: Object,
-                required: !0
-            },
-            mode: {
-                type: String,
-                default: "view"
-            },
-            config: {
-                type: Object
-            }
-        },
-        data: function() {
-            return {
-                theChoosedCard: [],
-                visible: {
-                    preview: !1,
-                    prompt: !1,
-                    share: !1,
-                    newCard: !1
-                },
-                previewZodiac: {},
-                newCardType: 0
-            }
-        },
-        computed: r()({
-            zodiacListLines: function() {
-                var t = []
-                  , e = [];
-                for (var n in this.datas)
-                    e.push(this.datas[n]),
-                    4 == e.length && (t.push([].concat(e)),
-                    e = []);
-                return t
-            },
-            tip: function() {
-                return this.config.tip || "请选择兑换所需的卡片"
-            }
-        }, Object(u.d)("user", ["userInfo"]), Object(u.d)(["publicInfo"])),
-        watch: {
-            mode: function(t) {
-                this.theChoosedCard = this.config.required.map(function(t) {
-                    return {
-                        type: t
-                    }
-                })
-            }
-        },
-        created: function() {
-            var t = _kd.parseQueryString().uuid
-              , e = _kd.parseQueryString().uuid_type;
-            t && this.getTheSendCard(t, e)
-        },
-        methods: r()({}, Object(u.b)("zodiac", ["send_zodiac_card"]), {
-            chooseTheSendCard: function(t, e) {
-                if ("choose" == this.mode) {
-                    if (0 == e.count)
-                        return;
-                    if (-1 != this.config.required.indexOf(e.type))
-                        return;
-                    var n = -1;
-                    this.theChoosedCard.filter(function(t, i) {
-                        return t.type == e.type && (n = i,
-                        !0)
-                    })[0] ? this.theChoosedCard.splice(n, 1) : this.theChoosedCard.length < this.config.count ? this.theChoosedCard.push(e) : weui.alert("最多选择" + this.config.count + "张生肖卡")
-                } else
-                    this.visible.preview = !0,
-                    this.previewZodiac = e
-            },
-            handlePreviewClose: function() {
-                this.visible.preview = !1,
-                this.visible.tip = !0
-            },
-            handleChooseThePreCard: function() {
-                this.visible.preview = !1,
-                this.theChoosedCard.push(this.previewZodiac),
-                this.visible.prompt = !0
-            },
-            isActiveCard: function(t) {
-                return "view" != this.mode && this.theChoosedCard.filter(function(e) {
-                    return e.type == t
-                }).length
-            },
-            handleConfirmChoose: function() {
-                if (!this.theChoosedCard.length)
-                    return void weui.alert(this.tip);
-                if (this.theChoosedCard.length < this.config.count)
-                    return void weui.alert(this.tip);
-                var t = this.theChoosedCard.map(function(t) {
-                    return t.type
-                });
-                this.theChoosedCard = [],
-                this.config.callback({
-                    cards: t
-                })
-            },
-            resetViewMode: function() {
-                this.previewZodiac = {},
-                this.visible.preview = !1,
-                this.theChoosedCard = [],
-                this.$emit("cancle")
-            },
-            setSendCard: function() {
-                this._$IS_WEIXIN ? this.setWxShareCard(this.previewZodiac) : (this.visible.prompt = !0,
-                this.visible.preview = !1)
-            },
-            setWxShareCard: function(t) {
-                var e = this
-                  , n = t.items[0]
-                  , i = n.uuid
-                  , r = n.type;
-                this.visible.share = !0;
-                var o = ""
-                  , a = ""
-                  , s = weui.loading();
-                "daka.fuyao.xyz" == location.hostname ? (axios.post("http://daka.fuyao.xyz/share.php", {
-                    url: location.href
-                }).then(function(t) {
-                    var e = t.data
-                      , n = e;
-                    wx.config({
-                        debug: !1,
-                        appId: n.appId,
-                        timestamp: n.timestamp,
-                        nonceStr: n.nonceStr,
-                        signature: n.signature,
-                        jsApiList: ["onMenuShareTimeline", "onMenuShareAppMessage", "hideAllNonBaseMenuItem", "showMenuItems"]
-                    })
-                }),
-                o = "http://daka.fuyao.xyz/zodiac.html?media_id=" + this.publicInfo.media_id + "&uuid=" + i + "&uuid_type=" + r,
-                a = "http://www.pocketuniversity.cn/static/roommate4/zodiac/images/" + r + ".png") : (_kd.insertWxConfig("http://www.pocketuniversity.cn/index.php/home/Wechat/getsignPackage", ["onMenuShareTimeline", "onMenuShareAppMessage", "hideAllNonBaseMenuItem", "showMenuItems"]),
-                o = "http://www.pocketuniversity.cn/index.php/Signin/Activity/zodiac?media_id=" + this.publicInfo.media_id + "&uuid=" + i + "&uuid_type=" + r,
-                a = "http://www.pocketuniversity.cn/static/roommate4/zodiac/images/" + r + ".png"),
-                wx.ready(function() {
-                    s.hide(),
-                    _kd.wxShare({
-                        title: e.userInfo.nickname + "有一张" + t.name + "卡要送给你，戳此领取",
-                        desc: "领生肖卡，抢千元现金红包、超多新年好礼！",
-                        imgUrl: a,
-                        link: o,
-                        success: function() {
-                            e.send_zodiac_card({
-                                uuid: i
-                            }).then(function() {
-                                weui.alert("生肖卡赠送成功"),
-                                e.visible.share = !1,
-                                e.$emit("sended")
-                            }).catch(function(t) {
-                                weui.alert("生肖卡赠送失败(" + t + ")")
-                            })
-                        }
-                    })
-                })
-            },
-            getTheSendCard: function(t, e) {
-                var n = this;
-                axios.get("http://www.pocketuniversity.cn/signin/sxcard/getCard", {
-                    params: {
-                        uuid: t
-                    }
-                }).then(function(t) {
-                    var i = t.data;
-                    if (0 != i.code)
-                        return weui.alert(i.msg);
-                    n.visible.newCard = !0,
-                    n.newCardType = e,
-                    weui.toast("恭喜, 成功领取一张生肖卡", {
-                        duration: 1e3
-                    }),
-                    n.$emit("sended")
-                })
-            },
-            handleSendCard: function(t) {
-                if (!t.data)
-                    return void weui.topTips("请输入正确的PUID");
-                this.theChoosedCard = [this.previewZodiac],
-                this.sendCard({
-                    uuid: this.theChoosedCard[0].items[0].uuid,
-                    pu_id: t.data
-                })
-            },
-            sendCard: function(t) {
-                var e = this;
-                if (!t.uuid)
-                    return void weui.alert("出错啦~");
-                this.sending = !0,
-                axios.post("http://www.pocketuniversity.cn/signin/sxcard/giveCard", {
-                    uuid: t.uuid,
-                    pu_id: t.pu_id
-                }).then(function(t) {
-                    t.data;
-                    weui.alert("赠送成功"),
-                    e.resetSendingStatus(),
-                    e.$emit("sended")
-                })
-            },
-            resetSendingStatus: function() {
-                this.visible.prompt = !1,
-                this.sending = !1,
-                this.theChoosedCard = [],
-                this.previewZodiac = {}
-            }
-        }),
-        components: {
-            CnZodiac: o.a,
-            Prompt: s.a,
-            ShareMask: a.a,
-            CnZodiacPopup: c.a
-        }
-    }
-}
-, function(t, e, n) {
-    "use strict";
     function i(t) {
-        n(372)
+        n(436)
     }
-    var r = n(276)
-      , o = n(373)
-      , a = n(0)
-      , s = i
-      , c = a(r.a, o.a, !1, s, "data-v-1c6c4b11", null);
-    e.a = c.exports
-}
-, function(t, e, n) {
-    "use strict";
-    e.a = {
-        props: {
-            loading: {
-                type: Boolean,
-                default: !1
-            }
-        },
-        data: function() {
-            return {
-                content: "",
-                title: "请确认被赠送者的PUID正确",
-                tip: "确认赠送后将无法撤销",
-                focus: !1
-            }
-        },
-        created: function() {},
-        mounted: function() {
-            var t = this;
-            this.$nextTick(function() {
-                t.$refs.input && t.$refs.input.focus()
-            })
-        },
-        methods: {
-            confirm: function() {
-                this.$emit("confirm", {
-                    data: this.content
-                })
-            },
-            close: function() {
-                this.$emit("close")
-            }
-        }
-    }
-}
-, function(t, e, n) {
-    "use strict";
-    function i(t) {
-        n(375)
-    }
-    var r = n(278)
-      , o = n(376)
+    var r = n(324)
+      , o = n(437)
       , a = n(0)
       , s = i
       , c = a(r.a, o.a, !1, s, "data-v-5a5895cd", null);
@@ -8755,7 +8792,7 @@ webpackJsonp([0], [function(t, e) {
     var i = n(2)
       , r = n.n(i)
       , o = n(1)
-      , a = n(279);
+      , a = n(325);
     e.a = {
         props: {
             data: {
@@ -9061,9 +9098,9 @@ webpackJsonp([0], [function(t, e) {
       , o = n(2)
       , a = n.n(o)
       , s = n(1)
-      , c = n(10)
-      , u = n(387)
-      , l = n(277);
+      , c = n(6)
+      , u = n(448)
+      , l = n(323);
     e.a = {
         data: function() {
             return {
@@ -9080,7 +9117,7 @@ webpackJsonp([0], [function(t, e) {
                 isTime: !0
             }
         },
-        computed: a()({}, Object(s.d)("user", ["userInfo"]), Object(s.d)("topData", ["topData"]), {
+        computed: a()({}, Object(s.d)("user", ["userInfo"]), Object(s.d)("topData", ["topData", "topMoney"]), {
             restMoney: function() {
                 var t = this.topData ? Number(this.topData.total_amount).toFixed(2) : 0;
                 t = Number(t);
@@ -9104,7 +9141,7 @@ webpackJsonp([0], [function(t, e) {
             fetchMyTopStatus: function() {
                 var t = this;
                 return new r.a(function(e, n) {
-                    axios.get("http://www.pocketuniversity.cn/index.php/signin/activity/isReward").then(function(n) {
+                    axios.get("/signin/activity/isReward").then(function(n) {
                         var i = n.data;
                         t.topStatus = i,
                         e()
@@ -9121,7 +9158,7 @@ webpackJsonp([0], [function(t, e) {
                     return weui.alert("\b早上5点后才能领取冲顶红包哦~");
                 var n = !0;
                 return this.topData && this.userInfo.school && this.userInfo.school != this.topData.yesterday_school && (n = !1),
-                10001 == e ? void weui.alert("您昨日未参与打卡, 无法领取冲顶红包") : 10002 != e && n ? 10003 == e ? void weui.alert("您今日已领冲顶红包, 不可重复领取") : void this.open() : void weui.confirm("冲顶成功的学校成员才能瓜分冲顶红包哦！(需参与昨日打卡)<br>和母校小伙伴一起打卡，当日冲顶积分最高的学校将在第二天瓜分1000元现金”冲顶红包“，并占领全国打卡成就卡封面！", {
+                10001 == e ? void weui.alert("您昨日未参与打卡, 无法领取冲顶红包") : 10002 != e && n ? 10003 == e ? void weui.alert("您今日已领冲顶红包, 不可重复领取") : void this.open() : void weui.confirm("冲顶成功的学校成员才能瓜分冲顶红包哦！(需参与昨日打卡)<br>和母校小伙伴一起打卡，当日冲顶积分最高的学校将在第二天瓜分" + this.topMoney + "元现金”冲顶红包“，并占领全国打卡成就卡封面！", {
                     title: "您不具备领取资格",
                     className: "topschool__no-permission",
                     buttons: [{
@@ -9143,14 +9180,14 @@ webpackJsonp([0], [function(t, e) {
             open: function() {
                 var t = this;
                 this.opening || (this.opening = !0,
-                axios.post(c.a, {
+                axios.post(c.b, {
                     goods_id: 45
                 }).then(function(e) {
                     var n = e.data;
                     return 10003 == n.errcode ? (weui.alert("啊哦, 您来晚了。5点准时刷新冲顶红包哦! 随机0.5-50元, 先到先得!"),
                     void (t.opening = !1)) : 10004 == n.errcode ? (weui.alert("您今日已领冲顶红包, 不可重复领取"),
                     void (t.opening = !1)) : 0 != n.errcode ? (t.opening = !1,
-                    weui.alert(n.errmsg)) : void t.exchange_red_bag({
+                    void weui.alert(n.errmsg)) : void t.exchange_red_bag({
                         flow_id: n.errmsg
                     }).then(function(e) {
                         t.fetch_top_data(),
@@ -9188,7 +9225,7 @@ webpackJsonp([0], [function(t, e) {
         methods: {
             fetchExchangeList: function() {
                 var t = this;
-                axios.post("http://www.pocketuniversity.cn/index.php/Signin/shop/getCarouselList", {
+                axios.post("/Signin/shop/getCarouselList", {
                     goods: [45]
                 }).then(function(e) {
                     var n = e.data;
@@ -9256,14 +9293,14 @@ webpackJsonp([0], [function(t, e) {
                   , u = s - c
                   , l = u
                   , d = [864e5, 36e5, 6e4, 1e3]
-                  , p = ["restDays", "restHours", "resetMins", "resetSeconds"]
-                  , f = {};
+                  , f = ["restDays", "restHours", "resetMins", "resetSeconds"]
+                  , p = {};
                 d.forEach(function(t, e) {
                     var n = parseInt(l / t);
                     l = parseInt(l % t),
-                    f[p[e]] = n
+                    p[f[e]] = n
                 }),
-                this.resetTime = 5 == a ? i(f.restHours) + "时" + i(f.resetMins) + "分" + i(f.resetSeconds) + "秒" : i(f.resetMins) + "分" + i(f.resetSeconds) + "秒"
+                this.resetTime = 5 == a ? i(p.restHours) + "时" + i(p.resetMins) + "分" + i(p.resetSeconds) + "秒" : i(p.resetMins) + "分" + i(p.resetSeconds) + "秒"
             }
         }
     }
@@ -9271,7 +9308,7 @@ webpackJsonp([0], [function(t, e) {
 , , function(t, e, n) {
     "use strict";
     var i = n(4)
-      , r = n(23);
+      , r = n(25);
     for (var o in r.b)
         i.a.filter(o, r.b[o])
 }
@@ -9317,7 +9354,7 @@ webpackJsonp([0], [function(t, e) {
         }, e))
     }
     ,
-    n(289),
+    n(335),
     e.setImmediate = setImmediate,
     e.clearImmediate = clearImmediate
 }
@@ -9377,8 +9414,8 @@ webpackJsonp([0], [function(t, e) {
                 }
             }
             if (!t.setImmediate) {
-                var s, c = 1, u = {}, l = !1, d = t.document, p = Object.getPrototypeOf && Object.getPrototypeOf(t);
-                p = p && p.setTimeout ? p : t,
+                var s, c = 1, u = {}, l = !1, d = t.document, f = Object.getPrototypeOf && Object.getPrototypeOf(t);
+                f = f && f.setTimeout ? f : t,
                 "[object process]" === {}.toString.call(t.process) ? function() {
                     s = function(t) {
                         e.nextTick(function() {
@@ -9433,12 +9470,12 @@ webpackJsonp([0], [function(t, e) {
                         setTimeout(a, 0, t)
                     }
                 }(),
-                p.setImmediate = i,
-                p.clearImmediate = r
+                f.setImmediate = i,
+                f.clearImmediate = r
             }
         }("undefined" == typeof self ? void 0 === t ? this : t : self)
     }
-    ).call(e, n(242), n(290))
+    ).call(e, n(283), n(336))
 }
 , function(t, e) {
     function n() {
@@ -9480,8 +9517,8 @@ webpackJsonp([0], [function(t, e) {
         }
     }
     function a() {
-        v && f && (v = !1,
-        f.length ? h = f.concat(h) : m = -1,
+        v && p && (v = !1,
+        p.length ? h = p.concat(h) : m = -1,
         h.length && s())
     }
     function s() {
@@ -9489,13 +9526,13 @@ webpackJsonp([0], [function(t, e) {
             var t = r(a);
             v = !0;
             for (var e = h.length; e; ) {
-                for (f = h,
+                for (p = h,
                 h = []; ++m < e; )
-                    f && f[m].run();
+                    p && p[m].run();
                 m = -1,
                 e = h.length
             }
-            f = null,
+            p = null,
             v = !1,
             o(t)
         }
@@ -9505,7 +9542,7 @@ webpackJsonp([0], [function(t, e) {
         this.array = e
     }
     function u() {}
-    var l, d, p = t.exports = {};
+    var l, d, f = t.exports = {};
     !function() {
         try {
             l = "function" == typeof setTimeout ? setTimeout : n
@@ -9518,8 +9555,8 @@ webpackJsonp([0], [function(t, e) {
             d = i
         }
     }();
-    var f, h = [], v = !1, m = -1;
-    p.nextTick = function(t) {
+    var p, h = [], v = !1, m = -1;
+    f.nextTick = function(t) {
         var e = new Array(arguments.length - 1);
         if (arguments.length > 1)
             for (var n = 1; n < arguments.length; n++)
@@ -9532,60 +9569,60 @@ webpackJsonp([0], [function(t, e) {
         this.fun.apply(null, this.array)
     }
     ,
-    p.title = "browser",
-    p.browser = !0,
-    p.env = {},
-    p.argv = [],
-    p.version = "",
-    p.versions = {},
-    p.on = u,
-    p.addListener = u,
-    p.once = u,
-    p.off = u,
-    p.removeListener = u,
-    p.removeAllListeners = u,
-    p.emit = u,
-    p.prependListener = u,
-    p.prependOnceListener = u,
-    p.listeners = function(t) {
+    f.title = "browser",
+    f.browser = !0,
+    f.env = {},
+    f.argv = [],
+    f.version = "",
+    f.versions = {},
+    f.on = u,
+    f.addListener = u,
+    f.once = u,
+    f.off = u,
+    f.removeListener = u,
+    f.removeAllListeners = u,
+    f.emit = u,
+    f.prependListener = u,
+    f.prependOnceListener = u,
+    f.listeners = function(t) {
         return []
     }
     ,
-    p.binding = function(t) {
+    f.binding = function(t) {
         throw new Error("process.binding is not supported")
     }
     ,
-    p.cwd = function() {
+    f.cwd = function() {
         return "/"
     }
     ,
-    p.chdir = function(t) {
+    f.chdir = function(t) {
         throw new Error("process.chdir is not supported")
     }
     ,
-    p.umask = function() {
+    f.umask = function() {
         return 0
     }
 }
 , , , function(t, e, n) {
-    n(294),
-    t.exports = n(9).Object.assign
+    n(340),
+    t.exports = n(11).Object.assign
 }
 , function(t, e, n) {
-    var i = n(16);
+    var i = n(18);
     i(i.S + i.F, "Object", {
-        assign: n(295)
+        assign: n(341)
     })
 }
 , function(t, e, n) {
     "use strict";
-    var i = n(79)
-      , r = n(96)
-      , o = n(82)
-      , a = n(83)
-      , s = n(246)
+    var i = n(91)
+      , r = n(112)
+      , o = n(94)
+      , a = n(95)
+      , s = n(287)
       , c = Object.assign;
-    t.exports = !c || n(29)(function() {
+    t.exports = !c || n(33)(function() {
         var t = {}
           , e = {}
           , n = Symbol()
@@ -9597,16 +9634,16 @@ webpackJsonp([0], [function(t, e) {
         7 != c({}, t)[n] || Object.keys(c({}, e)).join("") != i
     }) ? function(t, e) {
         for (var n = a(t), c = arguments.length, u = 1, l = r.f, d = o.f; c > u; )
-            for (var p, f = s(arguments[u++]), h = l ? i(f).concat(l(f)) : i(f), v = h.length, m = 0; v > m; )
-                d.call(f, p = h[m++]) && (n[p] = f[p]);
+            for (var f, p = s(arguments[u++]), h = l ? i(p).concat(l(p)) : i(p), v = h.length, m = 0; v > m; )
+                d.call(p, f = h[m++]) && (n[f] = p[f]);
         return n
     }
     : c
 }
 , function(t, e, n) {
-    var i = n(27)
-      , r = n(80)
-      , o = n(297);
+    var i = n(31)
+      , r = n(92)
+      , o = n(343);
     t.exports = function(t) {
         return function(e, n, a) {
             var s, c = i(e), u = r(c.length), l = o(a, u);
@@ -9623,7 +9660,7 @@ webpackJsonp([0], [function(t, e) {
     }
 }
 , function(t, e, n) {
-    var i = n(92)
+    var i = n(108)
       , r = Math.max
       , o = Math.min;
     t.exports = function(t, e) {
@@ -9631,8 +9668,8 @@ webpackJsonp([0], [function(t, e) {
         t < 0 ? r(t + e, 0) : o(t, e)
     }
 }
-, , , function(t, e, n) {
-    var i = n(9)
+, , , , function(t, e, n) {
+    var i = n(11)
       , r = i.JSON || (i.JSON = {
         stringify: JSON.stringify
     });
@@ -9641,17 +9678,17 @@ webpackJsonp([0], [function(t, e) {
     }
 }
 , function(t, e, n) {
-    n(247),
-    n(84),
-    n(252),
-    n(309),
-    n(316),
-    n(317),
-    t.exports = n(9).Promise
+    n(288),
+    n(96),
+    n(293),
+    n(356),
+    n(363),
+    n(364),
+    t.exports = n(11).Promise
 }
 , function(t, e, n) {
-    var i = n(92)
-      , r = n(91);
+    var i = n(108)
+      , r = n(107);
     t.exports = function(t) {
         return function(e, n) {
             var o, a, s = String(r(e)), c = i(n), u = s.length;
@@ -9662,11 +9699,11 @@ webpackJsonp([0], [function(t, e) {
 }
 , function(t, e, n) {
     "use strict";
-    var i = n(250)
-      , r = n(26)
-      , o = n(86)
+    var i = n(291)
+      , r = n(30)
+      , o = n(98)
       , a = {};
-    n(19)(a, n(7)("iterator"), function() {
+    n(21)(a, n(10)("iterator"), function() {
         return this
     }),
     t.exports = function(t, e, n) {
@@ -9677,10 +9714,10 @@ webpackJsonp([0], [function(t, e) {
     }
 }
 , function(t, e, n) {
-    var i = n(12)
-      , r = n(17)
-      , o = n(79);
-    t.exports = n(21) ? Object.defineProperties : function(t, e) {
+    var i = n(15)
+      , r = n(19)
+      , o = n(91);
+    t.exports = n(23) ? Object.defineProperties : function(t, e) {
         r(t);
         for (var n, a = o(e), s = a.length, c = 0; s > c; )
             i.f(t, n = a[c++], e[n]);
@@ -9688,9 +9725,9 @@ webpackJsonp([0], [function(t, e) {
     }
 }
 , function(t, e, n) {
-    var i = n(22)
-      , r = n(83)
-      , o = n(93)("IE_PROTO")
+    var i = n(24)
+      , r = n(95)
+      , o = n(109)("IE_PROTO")
       , a = Object.prototype;
     t.exports = Object.getPrototypeOf || function(t) {
         return t = r(t),
@@ -9699,11 +9736,11 @@ webpackJsonp([0], [function(t, e) {
 }
 , function(t, e, n) {
     "use strict";
-    var i = n(307)
-      , r = n(308)
-      , o = n(32)
-      , a = n(27);
-    t.exports = n(248)(Array, "Array", function(t, e) {
+    var i = n(354)
+      , r = n(355)
+      , o = n(36)
+      , a = n(31);
+    t.exports = n(289)(Array, "Array", function(t, e) {
         this._t = a(t),
         this._i = 0,
         this._k = e
@@ -9732,10 +9769,10 @@ webpackJsonp([0], [function(t, e) {
 }
 , function(t, e, n) {
     "use strict";
-    var i, r, o, a, s = n(85), c = n(6), u = n(25), l = n(253), d = n(16), p = n(20), f = n(78), h = n(310), v = n(311), m = n(254), g = n(255).set, y = n(313)(), _ = n(105), b = n(256), C = n(257), w = c.TypeError, A = c.process, k = c.Promise, x = "process" == l(A), S = function() {}, I = r = _.f, E = !!function() {
+    var i, r, o, a, s = n(97), c = n(9), u = n(29), l = n(294), d = n(18), f = n(22), p = n(90), h = n(357), v = n(358), m = n(295), g = n(296).set, y = n(360)(), _ = n(121), b = n(297), C = n(298), w = c.TypeError, A = c.process, k = c.Promise, x = "process" == l(A), S = function() {}, I = r = _.f, E = !!function() {
         try {
             var t = k.resolve(1)
-              , e = (t.constructor = {})[n(7)("species")] = function(t) {
+              , e = (t.constructor = {})[n(10)("species")] = function(t) {
                 t(S, S)
             }
             ;
@@ -9743,7 +9780,7 @@ webpackJsonp([0], [function(t, e) {
         } catch (t) {}
     }(), O = function(t) {
         var e;
-        return !(!p(t) || "function" != typeof (e = t.then)) && e
+        return !(!f(t) || "function" != typeof (e = t.then)) && e
     }, M = function(t, e) {
         if (!t._n) {
             t._n = !0;
@@ -9831,7 +9868,7 @@ webpackJsonp([0], [function(t, e) {
     };
     E || (k = function(t) {
         h(this, k, "Promise", "_h"),
-        f(t),
+        p(t),
         i.call(this);
         try {
             t(u(j, this, 1), u(z, this, 1))
@@ -9850,7 +9887,7 @@ webpackJsonp([0], [function(t, e) {
         this._n = !1
     }
     ,
-    i.prototype = n(314)(k.prototype, {
+    i.prototype = n(361)(k.prototype, {
         then: function(t, e) {
             var n = I(m(this, k));
             return n.ok = "function" != typeof t || t,
@@ -9879,9 +9916,9 @@ webpackJsonp([0], [function(t, e) {
     d(d.G + d.W + d.F * !E, {
         Promise: k
     }),
-    n(86)(k, "Promise"),
-    n(315)("Promise"),
-    a = n(9).Promise,
+    n(98)(k, "Promise"),
+    n(362)("Promise"),
+    a = n(11).Promise,
     d(d.S + d.F * !E, "Promise", {
         reject: function(t) {
             var e = I(this);
@@ -9895,7 +9932,7 @@ webpackJsonp([0], [function(t, e) {
             return C(s && this === a ? k : this, t)
         }
     }),
-    d(d.S + d.F * !(E && n(106)(function(t) {
+    d(d.S + d.F * !(E && n(122)(function(t) {
         k.all(t).catch(S)
     })), "Promise", {
         all: function(t) {
@@ -9945,23 +9982,23 @@ webpackJsonp([0], [function(t, e) {
     }
 }
 , function(t, e, n) {
-    var i = n(25)
-      , r = n(102)
-      , o = n(103)
-      , a = n(17)
-      , s = n(80)
-      , c = n(104)
+    var i = n(29)
+      , r = n(118)
+      , o = n(119)
+      , a = n(19)
+      , s = n(92)
+      , c = n(120)
       , u = {}
       , l = {}
-      , e = t.exports = function(t, e, n, d, p) {
-        var f, h, v, m, g = p ? function() {
+      , e = t.exports = function(t, e, n, d, f) {
+        var p, h, v, m, g = f ? function() {
             return t
         }
         : c(t), y = i(n, d, e ? 2 : 1), _ = 0;
         if ("function" != typeof g)
             throw TypeError(t + " is not iterable!");
         if (o(g)) {
-            for (f = s(t.length); f > _; _++)
+            for (p = s(t.length); p > _; _++)
                 if ((m = e ? y(a(h = t[_])[0], h[1]) : y(t[_])) === u || m === l)
                     return m
         } else
@@ -9992,12 +10029,12 @@ webpackJsonp([0], [function(t, e) {
     }
 }
 , function(t, e, n) {
-    var i = n(6)
-      , r = n(255).set
+    var i = n(9)
+      , r = n(296).set
       , o = i.MutationObserver || i.WebKitMutationObserver
       , a = i.process
       , s = i.Promise
-      , c = "process" == n(30)(a);
+      , c = "process" == n(34)(a);
     t.exports = function() {
         var t, e, n, u = function() {
             var i, r;
@@ -10032,12 +10069,12 @@ webpackJsonp([0], [function(t, e) {
                 ;
         else {
             var d = !0
-              , p = document.createTextNode("");
-            new o(u).observe(p, {
+              , f = document.createTextNode("");
+            new o(u).observe(f, {
                 characterData: !0
             }),
             n = function() {
-                p.data = d = !d
+                f.data = d = !d
             }
         }
         return function(i) {
@@ -10053,7 +10090,7 @@ webpackJsonp([0], [function(t, e) {
     }
 }
 , function(t, e, n) {
-    var i = n(19);
+    var i = n(21);
     t.exports = function(t, e, n) {
         for (var r in e)
             n && t[r] ? t[r] = e[r] : i(t, r, e[r]);
@@ -10062,11 +10099,11 @@ webpackJsonp([0], [function(t, e) {
 }
 , function(t, e, n) {
     "use strict";
-    var i = n(6)
-      , r = n(9)
-      , o = n(12)
-      , a = n(21)
-      , s = n(7)("species");
+    var i = n(9)
+      , r = n(11)
+      , o = n(15)
+      , a = n(23)
+      , s = n(10)("species");
     t.exports = function(t) {
         var e = "function" == typeof r[t] ? r[t] : i[t];
         a && e && !e[s] && o.f(e, s, {
@@ -10079,11 +10116,11 @@ webpackJsonp([0], [function(t, e) {
 }
 , function(t, e, n) {
     "use strict";
-    var i = n(16)
-      , r = n(9)
-      , o = n(6)
-      , a = n(254)
-      , s = n(257);
+    var i = n(18)
+      , r = n(11)
+      , o = n(9)
+      , a = n(295)
+      , s = n(298);
     i(i.P + i.R, "Promise", {
         finally: function(t) {
             var e = a(this, r.Promise || o.Promise)
@@ -10104,9 +10141,9 @@ webpackJsonp([0], [function(t, e) {
 }
 , function(t, e, n) {
     "use strict";
-    var i = n(16)
-      , r = n(105)
-      , o = n(256);
+    var i = n(18)
+      , r = n(121)
+      , o = n(297);
     i(i.S, "Promise", {
         try: function(t) {
             var e = r.f(this)
@@ -10133,7 +10170,7 @@ webpackJsonp([0], [function(t, e) {
         }, [i("img", {
             staticClass: "ShareMask__arrow",
             attrs: {
-                src: n(39),
+                src: n(43),
                 alt: ""
             }
         }), t._v(" "), i("div", {
@@ -10150,7 +10187,7 @@ webpackJsonp([0], [function(t, e) {
 , function(t, e, n) {
     var i, r, o;
     !function(a, s) {
-        r = [t, n(321)],
+        r = [t, n(368)],
         i = s,
         void 0 !== (o = "function" == typeof i ? i.apply(e, r) : i) && (t.exports = o)
     }(0, function(t, e) {
@@ -10424,8 +10461,8 @@ webpackJsonp([0], [function(t, e) {
     function a(t, e, n) {
         return c(document.body, t, e, n)
     }
-    var s = n(324)
-      , c = n(325);
+    var s = n(371)
+      , c = n(372);
     t.exports = i
 }
 , function(t, e) {
@@ -10468,7 +10505,7 @@ webpackJsonp([0], [function(t, e) {
             n.delegateTarget && i.call(t, n)
         }
     }
-    var a = n(326);
+    var a = n(373);
     t.exports = r
 }
 , function(t, e) {
@@ -10512,6 +10549,93 @@ webpackJsonp([0], [function(t, e) {
     };
     e.a = o
 }
+, function(t, e) {}
+, function(t, e, n) {
+    "use strict";
+    var i = function() {
+        var t = this
+          , e = t.$createElement
+          , n = t._self._c || e;
+        return n("div", {
+            staticClass: "prompt"
+        }, [n("div", {
+            staticClass: "prompt__mask"
+        }), t._v(" "), n("div", {
+            staticClass: "prompt__wrap"
+        }, [n("div", {
+            staticClass: "prompt__content"
+        }, [n("div", {
+            staticClass: "weui-dialog weui-skin_android"
+        }, [n("div", {
+            staticClass: "weui-dialog__hd"
+        }, [n("strong", {
+            staticClass: "weui-dialog__title prompt__title"
+        }, [t._v(t._s(t.title))])]), t._v(" "), n("div", {
+            staticClass: "content__bd weui-dialog__bd"
+        }, [n("div", {
+            staticClass: "prompt__input",
+            class: {
+                prompt__input_focus: t.focus
+            }
+        }, [n("input", {
+            directives: [{
+                name: "model",
+                rawName: "v-model",
+                value: t.content,
+                expression: "content"
+            }],
+            ref: "input",
+            staticClass: "input__inner",
+            attrs: {
+                type: "number",
+                placeholder: "请输入被赠送者的PUID"
+            },
+            domProps: {
+                value: t.content
+            },
+            on: {
+                focus: function(e) {
+                    t.focus = !0
+                },
+                blur: function(e) {
+                    t.focus = !1
+                },
+                input: function(e) {
+                    e.target.composing || (t.content = e.target.value)
+                }
+            }
+        })]), t._v(" "), n("p", {
+            staticClass: "prompt__tip"
+        }, [t._v(t._s(t.tip))])]), t._v(" "), n("div", {
+            staticClass: "weui-dialog__ft"
+        }, [n("a", {
+            staticClass: "weui-dialog__btn weui-dialog__btn_default",
+            attrs: {
+                href: "javascript:;"
+            },
+            on: {
+                click: t.close
+            }
+        }, [t._v("\n                        取消\n                    ")]), t._v(" "), n("a", {
+            staticClass: "prompt__btn_confirm weui-dialog__btn weui-dialog__btn_primary",
+            attrs: {
+                href: "javascript:;"
+            },
+            on: {
+                click: t.confirm
+            }
+        }, [t.loading ? n("i", {
+            staticClass: "weui-loading"
+        }) : n("span", [t._v("确认赠送")])])])])])])])
+    }
+      , r = []
+      , o = {
+        render: i,
+        staticRenderFns: r
+    };
+    e.a = o
+}
+, function(t, e) {}
 , function(t, e, n) {
     "use strict";
     var i = function() {
@@ -10535,7 +10659,7 @@ webpackJsonp([0], [function(t, e) {
         })]), t._v(" "), n("div", {
             staticClass: "CnZodiacPopup__container modal__container"
         }, [n("div", {
-            staticClass: "animated bounceIn"
+            staticClass: "animated bounceIn CnZodiacPopup__card"
         }, [n("CnZodiac", {
             attrs: {
                 type: t.type
@@ -10548,6 +10672,131 @@ webpackJsonp([0], [function(t, e) {
                 click: t.close
             }
         }, [t._v("\n                " + t._s(t.btnText) + "\n            ")])])])])
+    }
+      , r = []
+      , o = {
+        render: i,
+        staticRenderFns: r
+    };
+    e.a = o
+}
+, function(t, e, n) {
+    "use strict";
+    var i = function() {
+        var t = this
+          , e = t.$createElement
+          , n = t._self._c || e;
+        return n("div", {
+            staticClass: "ZodiacCards"
+        }, [n("div", {
+            staticClass: "ZodiacCards__container"
+        }, ["choose" == t.mode ? n("div", {
+            staticClass: "choose__tip"
+        }, [n("span", [t._v(t._s(t.tip))])]) : t._e(), t._v(" "), t._l(t.zodiacListLines, function(e, i) {
+            return n("div", {
+                key: i,
+                staticClass: "cards__line"
+            }, t._l(e, function(e, i) {
+                return n("div", {
+                    key: i,
+                    staticClass: "card__wrapper",
+                    class: {
+                        card__wrapper_active: t.isActiveCard(e.type)
+                    },
+                    on: {
+                        click: function(n) {
+                            t.chooseTheSendCard(n, e)
+                        }
+                    }
+                }, [n("div", {
+                    key: e.name,
+                    staticClass: "card__card card-animation"
+                }, [n("CnZodiac", {
+                    staticClass: "card__zodiac",
+                    attrs: {
+                        type: e.type,
+                        active: e.count
+                    }
+                })], 1), t._v(" "), n("p", {
+                    staticClass: "card__name font-fangzheng"
+                }, [t._v(t._s(e.name) + "×" + t._s(e.count))])])
+            }))
+        }), t._v(" "), "choose" == t.mode ? n("div", {
+            staticClass: "choose__btn zodiac-btn zodiac-btn_primary font-fangzheng",
+            style: {
+                "background-color": t.config.btnBg
+            },
+            on: {
+                click: t.handleConfirmChoose
+            }
+        }, [t._v("\n            " + t._s(t.config.btnText || "确定选择") + "\n        ")]) : t._e()], 2), t._v(" "), t.visible.preview ? n("div", {
+            staticClass: "newcard__mask modal__mask",
+            staticStyle: {
+                "z-index": "1005"
+            }
+        }) : t._e(), t._v(" "), "choose" == t.mode ? n("div", {
+            staticClass: "newcard__mask modal__mask"
+        }) : t._e(), t._v(" "), t.visible.preview || "choose" == t.mode ? n("div", {
+            staticClass: "newcard__btn_close",
+            on: {
+                click: t.resetViewMode
+            }
+        }, [n("i", {
+            staticClass: "icon weui-icon-cancel"
+        })]) : t._e(), t._v(" "), t.visible.preview ? n("div", {
+            staticClass: "iWantHome__newcard",
+            class: {
+                zodiac_active: t.previewZodiac.count
+            }
+        }, [n("div", {
+            staticClass: "newcard__container modal__container"
+        }, [n("div", {
+            staticClass: "newcard__card animated bounceIn"
+        }, [n("CnZodiac", {
+            attrs: {
+                type: t.previewZodiac.type,
+                active: t.previewZodiac.count
+            }
+        }), t._v(" "), n("p", {
+            staticClass: "preview__count font-fangzheng"
+        }, [t.previewZodiac.count ? n("span", {
+            staticClass: "yes"
+        }, [t._v("已收集此卡" + t._s(t.previewZodiac.count) + "张")]) : n("span", {
+            staticClass: "no"
+        }, [t._v("暂未获得此卡")])])], 1), t._v(" "), n("div", {
+            staticClass: "newcard__btn_collect"
+        }, [t.previewZodiac.count ? n("a", {
+            staticClass: "zodiac-btn zodiac-btn_primary font-fangzheng",
+            on: {
+                click: t.setSendCard
+            }
+        }, [t._v("\n                    赠送此卡给好友\n                ")]) : t._e()])])]) : t._e(), t._v(" "), t.visible.prompt ? n("Prompt", {
+            attrs: {
+                loading: !1
+            },
+            on: {
+                confirm: t.handleSendCard,
+                close: t.resetSendingStatus
+            }
+        }) : t._e(), t._v(" "), t.visible.newCard ? n("CnZodiacPopup", {
+            attrs: {
+                type: t.newCardType
+            },
+            on: {
+                close: function(e) {
+                    t.visible.newCard = !1
+                }
+            }
+        }) : t._e(), t._v(" "), t.visible.share ? n("ShareMask", {
+            attrs: {
+                tip: "点击又上角分享出去, 赠送卡片给好友"
+            },
+            on: {
+                close: function(e) {
+                    t.visible.share = !1
+                }
+            }
+        }) : t._e()], 1)
     }
       , r = []
       , o = {
@@ -10616,65 +10865,65 @@ webpackJsonp([0], [function(t, e) {
     };
     e.a = o
 }
-, function(t, e, n) {
+, , , , , , , , , , , , , , , , function(t, e, n) {
     t.exports = {
-        default: n(334),
+        default: n(400),
         __esModule: !0
     }
 }
 , function(t, e, n) {
-    n(84),
-    n(252),
-    t.exports = n(210).f("iterator")
+    n(96),
+    n(293),
+    t.exports = n(259).f("iterator")
 }
 , function(t, e, n) {
     t.exports = {
-        default: n(336),
+        default: n(402),
         __esModule: !0
     }
 }
 , function(t, e, n) {
-    n(337),
-    n(247),
-    n(343),
-    n(344),
-    t.exports = n(9).Symbol
+    n(403),
+    n(288),
+    n(409),
+    n(410),
+    t.exports = n(11).Symbol
 }
 , function(t, e, n) {
     "use strict";
-    var i = n(6)
-      , r = n(22)
-      , o = n(21)
-      , a = n(16)
-      , s = n(249)
-      , c = n(338).KEY
-      , u = n(29)
-      , l = n(94)
-      , d = n(86)
-      , p = n(81)
-      , f = n(7)
-      , h = n(210)
-      , v = n(211)
-      , m = n(339)
-      , g = n(340)
-      , y = n(17)
-      , _ = n(20)
-      , b = n(27)
-      , C = n(90)
-      , w = n(26)
-      , A = n(250)
-      , k = n(341)
-      , x = n(342)
-      , S = n(12)
-      , I = n(79)
+    var i = n(9)
+      , r = n(24)
+      , o = n(23)
+      , a = n(18)
+      , s = n(290)
+      , c = n(404).KEY
+      , u = n(33)
+      , l = n(110)
+      , d = n(98)
+      , f = n(93)
+      , p = n(10)
+      , h = n(259)
+      , v = n(260)
+      , m = n(405)
+      , g = n(406)
+      , y = n(19)
+      , _ = n(22)
+      , b = n(31)
+      , C = n(106)
+      , w = n(30)
+      , A = n(291)
+      , k = n(407)
+      , x = n(408)
+      , S = n(15)
+      , I = n(91)
       , E = x.f
       , O = S.f
       , M = k.f
       , T = i.Symbol
       , R = i.JSON
       , B = R && R.stringify
-      , z = f("_hidden")
-      , j = f("toPrimitive")
+      , z = p("_hidden")
+      , j = p("toPrimitive")
       , L = {}.propertyIsEnumerable
       , N = l("symbol-registry")
       , D = l("symbols")
@@ -10756,7 +11005,7 @@ webpackJsonp([0], [function(t, e) {
     F || (T = function() {
         if (this instanceof T)
             throw TypeError("Symbol is not a constructor!");
-        var t = p(arguments.length > 0 ? arguments[0] : void 0)
+        var t = f(arguments.length > 0 ? arguments[0] : void 0)
           , e = function(n) {
             this === U && e.call(P, n),
             r(this, z) && r(this[z], t) && (this[z][t] = !1),
@@ -10774,20 +11023,20 @@ webpackJsonp([0], [function(t, e) {
     }),
     x.f = K,
     S.f = W,
-    n(262).f = k.f = X,
-    n(82).f = J,
-    n(96).f = $,
-    o && !n(85) && s(U, "propertyIsEnumerable", J, !0),
+    n(311).f = k.f = X,
+    n(94).f = J,
+    n(112).f = $,
+    o && !n(97) && s(U, "propertyIsEnumerable", J, !0),
     h.f = function(t) {
-        return H(f(t))
+        return H(p(t))
     }
     ),
     a(a.G + a.W + a.F * !F, {
         Symbol: T
     });
     for (var tt = "hasInstance,isConcatSpreadable,iterator,match,replace,search,species,split,toPrimitive,toStringTag,unscopables".split(","), et = 0; tt.length > et; )
-        f(tt[et++]);
-    for (var nt = I(f.store), it = 0; nt.length > it; )
+        p(tt[et++]);
+    for (var nt = I(p.store), it = 0; nt.length > it; )
         v(nt[it++]);
     a(a.S + a.F * !F, "Symbol", {
         for: function(t) {
@@ -10836,21 +11085,21 @@ webpackJsonp([0], [function(t, e) {
                 B.apply(R, i)
         }
     }),
-    T.prototype[j] || n(19)(T.prototype, j, T.prototype.valueOf),
+    T.prototype[j] || n(21)(T.prototype, j, T.prototype.valueOf),
     d(T, "Symbol"),
     d(Math, "Math", !0),
     d(i.JSON, "JSON", !0)
 }
 , function(t, e, n) {
-    var i = n(81)("meta")
-      , r = n(20)
-      , o = n(22)
-      , a = n(12).f
+    var i = n(93)("meta")
+      , r = n(22)
+      , o = n(24)
+      , a = n(15).f
       , s = 0
       , c = Object.isExtensible || function() {
         return !0
     }
-      , u = !n(29)(function() {
+      , u = !n(33)(function() {
         return c(Object.preventExtensions({}))
     })
       , l = function(t) {
@@ -10873,7 +11122,7 @@ webpackJsonp([0], [function(t, e) {
         }
         return t[i].i
     }
-      , p = function(t, e) {
+      , f = function(t, e) {
         if (!o(t, i)) {
             if (!c(t))
                 return !0;
@@ -10883,7 +11132,7 @@ webpackJsonp([0], [function(t, e) {
         }
         return t[i].w
     }
-      , f = function(t) {
+      , p = function(t) {
         return u && h.NEED && c(t) && !o(t, i) && l(t),
         t
     }
@@ -10891,14 +11140,14 @@ webpackJsonp([0], [function(t, e) {
         KEY: i,
         NEED: !1,
         fastKey: d,
-        getWeak: p,
-        onFreeze: f
+        getWeak: f,
+        onFreeze: p
     }
 }
 , function(t, e, n) {
-    var i = n(79)
-      , r = n(96)
-      , o = n(82);
+    var i = n(91)
+      , r = n(112)
+      , o = n(94);
     t.exports = function(t) {
         var e = i(t)
           , n = r.f;
@@ -10909,14 +11158,14 @@ webpackJsonp([0], [function(t, e) {
     }
 }
 , function(t, e, n) {
-    var i = n(30);
+    var i = n(34);
     t.exports = Array.isArray || function(t) {
         return "Array" == i(t)
     }
 }
 , function(t, e, n) {
-    var i = n(27)
-      , r = n(262).f
+    var i = n(31)
+      , r = n(311).f
       , o = {}.toString
       , a = "object" == typeof window && window && Object.getOwnPropertyNames ? Object.getOwnPropertyNames(window) : []
       , s = function(t) {
@@ -10931,14 +11180,14 @@ webpackJsonp([0], [function(t, e) {
     }
 }
 , function(t, e, n) {
-    var i = n(82)
-      , r = n(26)
-      , o = n(27)
-      , a = n(90)
-      , s = n(22)
-      , c = n(244)
+    var i = n(94)
+      , r = n(30)
+      , o = n(31)
+      , a = n(106)
+      , s = n(24)
+      , c = n(285)
       , u = Object.getOwnPropertyDescriptor;
-    e.f = n(21) ? u : function(t, e) {
+    e.f = n(23) ? u : function(t, e) {
         if (t = o(t),
         e = a(e, !0),
         c)
@@ -10950,19 +11199,19 @@ webpackJsonp([0], [function(t, e) {
     }
 }
 , function(t, e, n) {
-    n(211)("asyncIterator")
+    n(260)("asyncIterator")
 }
 , function(t, e, n) {
-    n(211)("observable")
+    n(260)("observable")
 }
 , function(t, e) {}
 , function(t, e, n) {
     "use strict";
     function i(t) {
-        n(347)
+        n(413)
     }
-    var r = n(264)
-      , o = n(348)
+    var r = n(313)
+      , o = n(414)
       , a = n(0)
       , s = i
       , c = a(r.a, o.a, !1, s, "data-v-1e16c7e2", null);
@@ -11006,7 +11255,7 @@ webpackJsonp([0], [function(t, e) {
                 staticClass: "item__name font-fangzheng"
             }, [i("img", {
                 attrs: {
-                    src: n(349)
+                    src: n(415)
                 }
             }), t._v(" "), i("span", [t._v(t._s(e.name) + "×" + t._s(e.count))])])])
         }) : [i("p", {
@@ -11039,7 +11288,7 @@ webpackJsonp([0], [function(t, e) {
                 exchanging: t.loading
             },
             attrs: {
-                src: n(350)
+                src: n(416)
             }
         })]), t._v(" "), t.visible.qrcode ? i("div", {
             staticClass: "prize__qrcode",
@@ -11112,7 +11361,7 @@ webpackJsonp([0], [function(t, e) {
         }, [i("img", {
             staticClass: "equal",
             attrs: {
-                src: n(351)
+                src: n(417)
             }
         })])
     }
@@ -11144,8 +11393,8 @@ webpackJsonp([0], [function(t, e) {
 }
 , function(t, e, n) {
     "use strict";
-    var i = n(265)
-      , r = n(369)
+    var i = n(314)
+      , r = n(435)
       , o = n(0)
       , a = o(i.a, r.a, !1, null, null, null);
     e.a = a.exports
@@ -11153,10 +11402,10 @@ webpackJsonp([0], [function(t, e) {
 , function(t, e, n) {
     "use strict";
     function i(t) {
-        n(354)
+        n(420)
     }
-    var r = n(266)
-      , o = n(355)
+    var r = n(315)
+      , o = n(421)
       , a = n(0)
       , s = i
       , c = a(r.a, o.a, !1, s, "data-v-3167f4e0", null);
@@ -11424,10 +11673,10 @@ webpackJsonp([0], [function(t, e) {
 , function(t, e, n) {
     "use strict";
     function i(t) {
-        n(359)
+        n(425)
     }
-    var r = n(269)
-      , o = n(360)
+    var r = n(318)
+      , o = n(426)
       , a = n(0)
       , s = i
       , c = a(r.a, o.a, !1, s, "data-v-a417cf4c", null);
@@ -11535,10 +11784,10 @@ webpackJsonp([0], [function(t, e) {
 , function(t, e, n) {
     "use strict";
     function i(t) {
-        n(362)
+        n(428)
     }
-    var r = n(270)
-      , o = n(363)
+    var r = n(319)
+      , o = n(429)
       , a = n(0)
       , s = i
       , c = a(r.a, o.a, !1, s, "data-v-79d07d6b", null);
@@ -11624,10 +11873,10 @@ webpackJsonp([0], [function(t, e) {
 , function(t, e, n) {
     "use strict";
     function i(t) {
-        n(365)
+        n(431)
     }
-    var r = n(271)
-      , o = n(368)
+    var r = n(320)
+      , o = n(434)
       , a = n(0)
       , s = i
       , c = a(r.a, o.a, !1, s, "data-v-b31f8ef6", null);
@@ -11777,227 +12026,6 @@ webpackJsonp([0], [function(t, e) {
     };
     e.a = o
 }
-, function(t, e, n) {
-    "use strict";
-    function i(t) {
-        n(371)
-    }
-    var r = n(274)
-      , o = n(374)
-      , a = n(0)
-      , s = i
-      , c = a(r.a, o.a, !1, s, "data-v-61c2a9ae", null);
-    e.a = c.exports
-}
-, function(t, e) {}
-, function(t, e) {}
-, function(t, e, n) {
-    "use strict";
-    var i = function() {
-        var t = this
-          , e = t.$createElement
-          , n = t._self._c || e;
-        return n("div", {
-            staticClass: "prompt"
-        }, [n("div", {
-            staticClass: "prompt__mask"
-        }), t._v(" "), n("div", {
-            staticClass: "prompt__wrap"
-        }, [n("div", {
-            staticClass: "prompt__content"
-        }, [n("div", {
-            staticClass: "weui-dialog weui-skin_android"
-        }, [n("div", {
-            staticClass: "weui-dialog__hd"
-        }, [n("strong", {
-            staticClass: "weui-dialog__title prompt__title"
-        }, [t._v(t._s(t.title))])]), t._v(" "), n("div", {
-            staticClass: "content__bd weui-dialog__bd"
-        }, [n("div", {
-            staticClass: "prompt__input",
-            class: {
-                prompt__input_focus: t.focus
-            }
-        }, [n("input", {
-            directives: [{
-                name: "model",
-                rawName: "v-model",
-                value: t.content,
-                expression: "content"
-            }],
-            ref: "input",
-            staticClass: "input__inner",
-            attrs: {
-                type: "number",
-                placeholder: "请输入被赠送者的PUID"
-            },
-            domProps: {
-                value: t.content
-            },
-            on: {
-                focus: function(e) {
-                    t.focus = !0
-                },
-                blur: function(e) {
-                    t.focus = !1
-                },
-                input: function(e) {
-                    e.target.composing || (t.content = e.target.value)
-                }
-            }
-        })]), t._v(" "), n("p", {
-            staticClass: "prompt__tip"
-        }, [t._v(t._s(t.tip))])]), t._v(" "), n("div", {
-            staticClass: "weui-dialog__ft"
-        }, [n("a", {
-            staticClass: "weui-dialog__btn weui-dialog__btn_default",
-            attrs: {
-                href: "javascript:;"
-            },
-            on: {
-                click: t.close
-            }
-        }, [t._v("\n                        取消\n                    ")]), t._v(" "), n("a", {
-            staticClass: "prompt__btn_confirm weui-dialog__btn weui-dialog__btn_primary",
-            attrs: {
-                href: "javascript:;"
-            },
-            on: {
-                click: t.confirm
-            }
-        }, [t.loading ? n("i", {
-            staticClass: "weui-loading"
-        }) : n("span", [t._v("确认赠送")])])])])])])])
-    }
-      , r = []
-      , o = {
-        render: i,
-        staticRenderFns: r
-    };
-    e.a = o
-}
-, function(t, e, n) {
-    "use strict";
-    var i = function() {
-        var t = this
-          , e = t.$createElement
-          , n = t._self._c || e;
-        return n("div", {
-            staticClass: "ZodiacCards"
-        }, [n("div", {
-            staticClass: "ZodiacCards__container"
-        }, ["choose" == t.mode ? n("div", {
-            staticClass: "choose__tip"
-        }, [n("span", [t._v(t._s(t.tip))])]) : t._e(), t._v(" "), t._l(t.zodiacListLines, function(e, i) {
-            return n("div", {
-                key: i,
-                staticClass: "cards__line"
-            }, t._l(e, function(e, i) {
-                return n("div", {
-                    key: i,
-                    staticClass: "card__wrapper",
-                    class: {
-                        card__wrapper_active: t.isActiveCard(e.type)
-                    },
-                    on: {
-                        click: function(n) {
-                            t.chooseTheSendCard(n, e)
-                        }
-                    }
-                }, [n("div", {
-                    key: e.name,
-                    staticClass: "card__card card-animation"
-                }, [n("CnZodiac", {
-                    staticClass: "card__zodiac",
-                    attrs: {
-                        type: e.type,
-                        active: e.count
-                    }
-                })], 1), t._v(" "), n("p", {
-                    staticClass: "card__name font-fangzheng"
-                }, [t._v(t._s(e.name) + "×" + t._s(e.count))])])
-            }))
-        }), t._v(" "), "choose" == t.mode ? n("div", {
-            staticClass: "choose__btn zodiac-btn zodiac-btn_primary font-fangzheng",
-            on: {
-                click: t.handleConfirmChoose
-            }
-        }, [t._v("\n            确定选择\n        ")]) : t._e()], 2), t._v(" "), t.visible.preview ? n("div", {
-            staticClass: "newcard__mask modal__mask",
-            staticStyle: {
-                "z-index": "1005"
-            }
-        }) : t._e(), t._v(" "), "choose" == t.mode ? n("div", {
-            staticClass: "newcard__mask modal__mask"
-        }) : t._e(), t._v(" "), t.visible.preview || "choose" == t.mode ? n("div", {
-            staticClass: "newcard__btn_close",
-            on: {
-                click: t.resetViewMode
-            }
-        }, [n("i", {
-            staticClass: "icon weui-icon-cancel"
-        })]) : t._e(), t._v(" "), t.visible.preview ? n("div", {
-            staticClass: "iWantHome__newcard",
-            class: {
-                zodiac_active: t.previewZodiac.count
-            }
-        }, [n("div", {
-            staticClass: "newcard__container modal__container"
-        }, [n("div", {
-            staticClass: "newcard__card animated bounceIn"
-        }, [n("CnZodiac", {
-            attrs: {
-                type: t.previewZodiac.type,
-                active: t.previewZodiac.count
-            }
-        }), t._v(" "), n("p", {
-            staticClass: "preview__count font-fangzheng"
-        }, [t.previewZodiac.count ? n("span", {
-            staticClass: "yes"
-        }, [t._v("已收集此卡" + t._s(t.previewZodiac.count) + "张")]) : n("span", {
-            staticClass: "no"
-        }, [t._v("暂未获得此卡")])])], 1), t._v(" "), n("div", {
-            staticClass: "newcard__btn_collect"
-        }, [t.previewZodiac.count ? n("a", {
-            staticClass: "zodiac-btn zodiac-btn_primary font-fangzheng",
-            on: {
-                click: t.setSendCard
-            }
-        }, [t._v("\n                    赠送此卡给好友\n                ")]) : t._e()])])]) : t._e(), t._v(" "), t.visible.prompt ? n("Prompt", {
-            attrs: {
-                loading: !1
-            },
-            on: {
-                confirm: t.handleSendCard,
-                close: t.resetSendingStatus
-            }
-        }) : t._e(), t._v(" "), t.visible.newCard ? n("CnZodiacPopup", {
-            attrs: {
-                type: t.newCardType
-            },
-            on: {
-                close: function(e) {
-                    t.visible.newCard = !1
-                }
-            }
-        }) : t._e(), t._v(" "), t.visible.share ? n("ShareMask", {
-            attrs: {
-                tip: "点击又上角分享出去, 赠送卡片给好友"
-            },
-            on: {
-                close: function(e) {
-                    t.visible.share = !1
-                }
-            }
-        }) : t._e()], 1)
-    }
-      , r = []
-      , o = {
-        render: i,
-        staticRenderFns: r
-    };
-    e.a = o
-}
 , function(t, e) {}
 , function(t, e, n) {
     "use strict";
@@ -12024,25 +12052,25 @@ webpackJsonp([0], [function(t, e) {
         }, [i("p", [i("span", [t._v("恭喜获得" + t._s(t.redbagName) + "一个")])]), t._v(" "), t._m(0)])]), t._v(" "), 1 == t.currentRedBag.type ? i("img", {
             staticClass: "redbag-img",
             attrs: {
-                src: n(377),
+                src: n(438),
                 alt: ""
             }
         }) : t._e(), t._v(" "), 2 == t.currentRedBag.type ? i("img", {
             staticClass: "redbag-img",
             attrs: {
-                src: n(378),
+                src: n(439),
                 alt: ""
             }
         }) : t._e(), t._v(" "), 3 == t.currentRedBag.type ? i("img", {
             staticClass: "redbag-img",
             attrs: {
-                src: n(379),
+                src: n(440),
                 alt: ""
             }
         }) : t._e(), t._v(" "), 4 == t.currentRedBag.type ? i("img", {
             staticClass: "redbag-img",
             attrs: {
-                src: n(380),
+                src: n(441),
                 alt: ""
             }
         }) : t._e()]) : t._e(), t._v(" "), 2 == t.step ? i("div", {
@@ -12116,10 +12144,10 @@ webpackJsonp([0], [function(t, e) {
 , function(t, e, n) {
     "use strict";
     function i(t) {
-        n(382)
+        n(443)
     }
-    var r = n(280)
-      , o = n(383)
+    var r = n(326)
+      , o = n(444)
       , a = n(0)
       , s = i
       , c = a(r.a, o.a, !1, s, null, null);
@@ -12173,14 +12201,14 @@ webpackJsonp([0], [function(t, e) {
 , function(t, e, n) {
     "use strict";
     function i(t) {
-        n(385),
-        n(386)
+        n(446),
+        n(447)
     }
-    var r = n(281)
-      , o = n(390)
+    var r = n(327)
+      , o = n(451)
       , a = n(0)
       , s = i
-      , c = a(r.a, o.a, !1, s, "data-v-6887c04c", null);
+      , c = a(r.a, o.a, !1, s, "data-v-5cd953ce", null);
     e.a = c.exports
 }
 , function(t, e) {}
@@ -12188,10 +12216,10 @@ webpackJsonp([0], [function(t, e) {
 , function(t, e, n) {
     "use strict";
     function i(t) {
-        n(388)
+        n(449)
     }
-    var r = n(282)
-      , o = n(389)
+    var r = n(328)
+      , o = n(450)
       , a = n(0)
       , s = i
       , c = a(r.a, o.a, !1, s, "data-v-59e8c1a8", null);
@@ -12284,12 +12312,16 @@ webpackJsonp([0], [function(t, e) {
             staticClass: "TopSchool__hd"
         }, [n("p", {
             staticClass: "header__item header__item_first"
-        }, [t._v("\n            恭喜来自「" + t._s(t.topData.yesterday_school) + "」的小伙伴们\n        ")]), t._v(" "), t._m(0)]) : t._e(), t._v(" "), n("div", {
+        }, [t._v("\n            恭喜来自「" + t._s(t.topData.yesterday_school) + "」的小伙伴们\n        ")]), t._v(" "), n("p", {
+            staticClass: "header__item"
+        }, [t._v("\n            瓜分今日" + t._s(t.topMoney) + "元"), n("span", {
+            staticClass: "TopSchool__emphasize"
+        }, [t._v("冲顶红包")])])]) : t._e(), t._v(" "), n("div", {
             staticClass: "TopSchool__bd"
         }, [n("img", {
             staticClass: "TopSchool__bg",
             attrs: {
-                src: "http://oss.pocketuniversity.cn/media/2018-01-29/5a6e83a493579.png",
+                src: "http://oss.pocketuniversity.cn/media/2018-02-07/5a7aa7ac4f343.png",
                 alt: ""
             }
         }), t._v(" "), t.topStatus ? n("a", {
@@ -12312,17 +12344,7 @@ webpackJsonp([0], [function(t, e) {
             }
         }) : t._e()], 1)
     }
-      , r = [function() {
-        var t = this
-          , e = t.$createElement
-          , n = t._self._c || e;
-        return n("p", {
-            staticClass: "header__item"
-        }, [t._v("\n            瓜分今日1000元"), n("span", {
-            staticClass: "TopSchool__emphasize"
-        }, [t._v("冲顶红包")])])
-    }
-    ]
+      , r = []
       , o = {
         render: i,
         staticRenderFns: r
@@ -12332,10 +12354,10 @@ webpackJsonp([0], [function(t, e) {
 , function(t, e, n) {
     "use strict";
     function i(t) {
-        n(392)
+        n(453)
     }
-    var r = n(283)
-      , o = n(393)
+    var r = n(329)
+      , o = n(454)
       , a = n(0)
       , s = i
       , c = a(r.a, o.a, !1, s, null, null);
@@ -12635,7 +12657,7 @@ webpackJsonp([0], [function(t, e) {
         }, [n("img", {
             staticClass: "msy",
             attrs: {
-                src: "http://oss.pocketuniversity.cn/media/2018-01-30/5a7017254fff5.jpg",
+                src: "http://oss.pocketuniversity.cn/media/2018-02-07/5a7aa74d4b260.png",
                 alt: ""
             }
         })]) : t._e(), t._v(" "), t.visible.oneMore ? n("OneMoreWrapper", {
@@ -12748,7 +12770,7 @@ webpackJsonp([0], [function(t, e) {
         }, [i("img", {
             staticClass: "bz bz1",
             attrs: {
-                src: n(395),
+                src: n(456),
                 alt: ""
             }
         }), t._v(" "), i("div", {
@@ -12763,7 +12785,7 @@ webpackJsonp([0], [function(t, e) {
         }, [t._v("领生肖卡兑换“新年”好礼")])]), t._v(" "), i("img", {
             staticClass: "bz bz2",
             attrs: {
-                src: n(396),
+                src: n(457),
                 alt: ""
             }
         })])
@@ -12780,13 +12802,13 @@ webpackJsonp([0], [function(t, e) {
         }, [i("img", {
             staticClass: "image",
             attrs: {
-                src: n(397),
+                src: n(458),
                 alt: ""
             }
         }), t._v(" "), i("img", {
             staticClass: "image-text",
             attrs: {
-                src: n(398),
+                src: n(459),
                 alt: ""
             }
         })])
@@ -12872,7 +12894,7 @@ webpackJsonp([0], [function(t, e) {
 }
 , function(t, e, n) {
     "use strict";
-    var i = n(15)
+    var i = n(12)
       , r = n.n(i)
       , o = {
         myHabit: null
@@ -12899,7 +12921,7 @@ webpackJsonp([0], [function(t, e) {
     "use strict";
     var i = n(3)
       , r = n.n(i)
-      , o = n(15)
+      , o = n(12)
       , a = n.n(o)
       , s = {}
       , c = {
@@ -12916,7 +12938,7 @@ webpackJsonp([0], [function(t, e) {
         exchange_red_bag: function(t, e) {
             t.commit;
             return new r.a(function(t, n) {
-                axios.get("http://www.pocketuniversity.cn/signin/wallet/exchangeWallet", {
+                axios.get("/signin/wallet/exchangeWallet", {
                     params: {
                         flow_id: e.flow_id
                     }
@@ -12943,22 +12965,23 @@ webpackJsonp([0], [function(t, e) {
     "use strict";
     var i = n(3)
       , r = n.n(i)
-      , o = n(15)
+      , o = n(12)
       , a = n.n(o)
-      , s = {
+      , s = n(6)
+      , c = {
         userInfo: {}
     }
-      , c = {
+      , u = {
         save_user_info: function(t, e) {
             t.userInfo = a()({}, t.userInfo, e)
         }
     }
-      , u = {
+      , l = {
         fetch_user_info: function(t) {
             var e = t.commit;
             t.state;
             return new r.a(function(t, n) {
-                axios.get("http://auth.pocketuniversity.cn/api/auth/auth").then(function(n) {
+                axios.get(s.a).then(function(n) {
                     var i = n.data;
                     t(i.data.user_info),
                     e("save_user_info", i.data.user_info)
@@ -12971,9 +12994,9 @@ webpackJsonp([0], [function(t, e) {
     };
     e.a = {
         namespaced: !0,
-        state: s,
-        mutations: c,
-        actions: u
+        state: c,
+        mutations: u,
+        actions: l
     }
 }
 , function(t, e, n) {
@@ -12986,7 +13009,7 @@ webpackJsonp([0], [function(t, e) {
         send_zodiac_card: function(t, e) {
             t.commit;
             return new r.a(function(t, n) {
-                axios.post("http://www.pocketuniversity.cn/signin/sxcard/giveCard", {
+                axios.post("/signin/sxcard/giveCard", {
                     uuid: e.uuid
                 }).then(function(e) {
                     var i = e.data;
@@ -13001,7 +13024,7 @@ webpackJsonp([0], [function(t, e) {
         is_zodiac_reach_limit: function(t, e) {
             t.commit;
             return new r.a(function(t, n) {
-                axios.get("http://www.pocketuniversity.cn/signin/sxcard/isbucang", {
+                axios.get("/signin/sxcard/isbucang", {
                     params: {
                         get_type: e.get_type
                     }
@@ -13024,12 +13047,8 @@ webpackJsonp([0], [function(t, e) {
     var i = {}
       , r = {
         clearPocketCacheAfterSign: function() {
-            try {
-                localStorage.removeItem("pocket_cache_21days"),
-                localStorage.removeItem("pocket_cache_my_habit")
-            } catch (t) {}
             Cookies.remove("pocket_cache_21days"),
-            Cookies.remove("pocket_cache_my_habit")
+            Cookies.remove("pocket_cache_my_habit_v2")
         }
     }
       , o = {};
@@ -13062,12 +13081,19 @@ webpackJsonp([0], [function(t, e) {
     "use strict";
     var i = n(3)
       , r = n.n(i)
-      , o = {
+      , o = 1e3
+      , a = new Date(2018,1,17,0,0,0)
+      , s = new Date(2018,1,18,0,0,0);
+    (new Date).getTime() > a.getTime() && (o = 500);
+    var c = {
         topData: null,
         topSchools: {},
-        everydayTopSchool: null
+        everydayTopSchool: null,
+        topMoney: o,
+        top2stTimeStamp: a.getTime(),
+        top2stAfterTimeStamp: s
     }
-      , a = {
+      , u = {
         save_top_data: function(t, e) {
             t.topData = e.topData
         },
@@ -13078,11 +13104,11 @@ webpackJsonp([0], [function(t, e) {
             t.everydayTopSchool = e.everydayTopSchool
         }
     }
-      , s = {
+      , l = {
         fetch_top_data: function(t) {
             var e = t.commit;
             return new r.a(function(t, n) {
-                axios.post("http://www.pocketuniversity.cn/index.php/Signin/activity/getSchoolReward").then(function(n) {
+                axios.post("/Signin/activity/getSchoolReward").then(function(n) {
                     var i = n.data;
                     e("save_top_data", {
                         topData: i.data
@@ -13095,7 +13121,7 @@ webpackJsonp([0], [function(t, e) {
         fetch_top_schools: function(t) {
             var e = t.commit;
             return new r.a(function(t, n) {
-                axios.post("http://www.pocketuniversity.cn/index.php/Signin/rank/getSchoolHeadimg").then(function(n) {
+                axios.post("/Signin/rank/getSchoolHeadimg").then(function(n) {
                     var i = n.data;
                     e("save_top_schools", {
                         topSchools: i.data
@@ -13108,7 +13134,7 @@ webpackJsonp([0], [function(t, e) {
         fetch_everyday_top_school: function(t) {
             var e = t.commit;
             return new r.a(function(t, n) {
-                axios.post("http://www.pocketuniversity.cn/signin/rank/schoolRewardList").then(function(n) {
+                axios.post("/signin/rank/schoolRewardList").then(function(n) {
                     var i = n.data
                       , r = new Date
                       , o = r.getFullYear() + "-" + (r.getMonth() + 1) + "-" + r.getDate();
@@ -13124,9 +13150,82 @@ webpackJsonp([0], [function(t, e) {
     };
     e.a = {
         namespaced: !0,
-        state: o,
-        mutations: a,
-        actions: s
+        state: c,
+        mutations: u,
+        actions: l
+    }
+}
+, function(t, e, n) {
+    "use strict";
+    var i = n(3)
+      , r = n.n(i)
+      , o = n(16)
+      , a = {
+        barrageContent: "",
+        contentLimit: {
+            min: 3,
+            max: 20
+        },
+        topFiveUsers: []
+    }
+      , s = {
+        save_barrage_content: function(t, e) {
+            t.barrageContent = e.content
+        },
+        clear_barrage_content: function(t, e) {
+            t.barrageContent = ""
+        },
+        save_top_five_users: function(t, e) {
+            t.topFiveUsers = e.data
+        }
+    }
+      , c = {
+        send_barrage: function(t, e) {
+            var n = (t.commit,
+            t.state);
+            return new r.a(function(t, i) {
+                if (e.content.length < n.contentLimit.min || e.content.length > n.contentLimit.max)
+                    return void i("弹幕字数为" + n.contentLimit.min + "至" + n.contentLimit.max + "个");
+                axios.post(o.d, {
+                    content: e.content,
+                    type: e.type,
+                    attach: e.attach
+                }).then(function(e) {
+                    var n = e.data;
+                    if (0 != n.code)
+                        return void i(n.msg);
+                    t(n)
+                })
+            }
+            )
+        }
+    };
+    e.a = {
+        namespaced: !0,
+        state: a,
+        mutations: s,
+        actions: c
+    }
+}
+, function(t, e, n) {
+    "use strict";
+    var i = new Date(2018,1,15,5,0,0).getTime()
+      , r = new Date(2018,1,16,5,0,0).getTime()
+      , o = new Date(2018,1,26,0,0,0).getTime()
+      , a = new Date
+      , s = (a.getFullYear(),
+    a.getMonth(),
+    a.getDate(),
+    a.getHours(),
+    "inTheActivity")
+      , c = a.getTime();
+    c < i ? s = "inTheActivity" : c > i && c < r ? s = "surpriseTime" : c > r && c < o ? s = "rankViewTime" : c > o && (s = "deeplyEndTime");
+    var u = {
+        activityTime: s
+    };
+    e.a = {
+        namespaced: !0,
+        state: u
     }
 }
 , , , , , , , , , , , function(t, e, n) {
@@ -13136,10 +13235,10 @@ webpackJsonp([0], [function(t, e) {
     });
     var i = n(4)
       , r = (n(1),
-    n(28));
-    n(285);
+    n(32));
+    n(331);
     i.a.use(r.a),
     i.a.prototype._$DKKEY = "ahlqsxk",
     i.a.prototype._$IS_WEIXIN = _kd.checkIsWeixin()
 }
-], [416]);
+], [479]);
